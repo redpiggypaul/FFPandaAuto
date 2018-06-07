@@ -1,0 +1,36 @@
+<page name="test2">
+    <element OperationName="editProfileReferenceCompany2" Step="3" PageName="ProfileEditReferenceEdit" OperationType="toOtherPage" elementName="saveBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileReferenceCompany2" Step="4" PageName="ProfileEdit" OperationType="" elementName="saveBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileReferenceCompany2" Step="1" PageName="ProfileEdit" OperationType="" elementName="reference" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileReferenceCompany2" Step="2" PageName="ProfileEditReferenceEdit" OperationType="" elementName="company" elementType="textfield_input" elementParameter="" />
+    <element OperationName="search4star" Step="1" PageName="Home" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4star" Step="3" PageName="Search4Role" OperationType="" elementName="SearchContent" elementType="textfield" elementParameter="" />
+    <element OperationName="search4star" Step="2" PageName="NaviBar" OperationType="" elementName="SearchRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4star" Step="5" PageName="RoleFilter" OperationType="" elementName="StarRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4star" Step="4" PageName="Search4Role" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileReferenceCompanyCheck2" Step="1" PageName="Profile" OperationType="" elementName="reference_record" elementType="btn" elementParameter="" />
+    <element OperationName="search4star" Step="6" PageName="RoleFilter" OperationType="" elementName="ApplyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileReferenceCompanyCheck2" Step="2" PageName="ProfileEditReferenceEdit" OperationType="" elementName="company" elementType="checkcontentn" elementParameter="" />
+    <element OperationName="search4share" Step="7" PageName="Search4Role" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="8" PageName="NaviBar" OperationType="" elementName="SearchRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4interest" Step="6" PageName="RoleFilter" OperationType="" elementName="ApplyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4interest" Step="5" PageName="RoleFilter" OperationType="" elementName="InterestRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4interest" Step="4" PageName="Search4Role" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="3" PageName="Search4Role" OperationType="" elementName="SearchContent" elementType="textfield" elementParameter="" />
+    <element OperationName="search4interest" Step="3" PageName="Search4Role" OperationType="" elementName="SearchContent" elementType="textfield" elementParameter="" />
+    <element OperationName="search4share" Step="4" PageName="Search4Role" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4interest" Step="2" PageName="NaviBar" OperationType="" elementName="SearchRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="eleList" Step="1" PageName="Profile" OperationType="toOtherPage" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="5" PageName="RoleFilter" OperationType="" elementName="SharedRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="6" PageName="RoleFilter" OperationType="" elementName="ApplyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="1" PageName="Home" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="eleList" Step="2" PageName="ProfileEdit" OperationType="" elementName="skills" elementType="btn" elementParameter="" />
+    <element OperationName="search4share" Step="2" PageName="NaviBar" OperationType="" elementName="SearchRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="eleList" Step="3" PageName="ProfileEditSkills" OperationType="" elementName="searchFiled" elementType="textfield_input" elementParameter="" />
+    <element OperationName="test2" Step="1" PageName="Home" OperationType="" elementName="closePrefer" elementType="btn" elementParameter="" />
+    <element OperationName="test2" Step="2" PageName="Home" OperationType="" elementName="InPricingEvent" elementType="btn" elementParameter="" />
+    <element OperationName="test2" Step="3" PageName="RoleTracking" OperationType="" elementName="Back2Home" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileWorkExp" Step="3" PageName="ProfileEditWorkExp" OperationType="" elementName="OKBtn_calendar" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileWorkExp" Step="2" PageName="ProfileEditWorkExp" OperationType="" elementName="startdate" elementType="btn" elementParameter="" />
+    <element OperationName="editProfileWorkExp" Step="1" PageName="ProfileEdit" OperationType="" elementName="workExp" elementType="btn" elementParameter="" />
+</page>

@@ -1,0 +1,5 @@
+<page name="RoleDistance">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Distance"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Filter"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="RoleFilter" triggerWindow="" showMode="ready" />
+	<element name="single_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="classname" value="UIAStaticText" NextPage="" triggerWindow="" showMode="ready" />
+</page>

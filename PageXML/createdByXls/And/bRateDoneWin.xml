@@ -1,0 +1,4 @@
+<page name="bRateDoneWin">
+	<element name="YESBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="NOBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="" triggerWindow="" showMode="ready" />
+</page>

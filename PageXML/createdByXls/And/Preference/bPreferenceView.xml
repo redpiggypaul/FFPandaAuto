@@ -1,0 +1,16 @@
+<page name="bPreferenceView">
+	<element name="whatsapp" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="whatsapp" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="TravelAmountView" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="view_travel_preferences" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="mail" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="email" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="TravelInfoView" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="add_destination" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="wechat" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="wechat" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="google" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="google" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="overTimeView" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="view_overtime" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="skype" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="skype" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="phoneNumber" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="phone" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="moneyView" parentElementName="" waitTime="0" textContent=""  defaultValue="No preference" type="id" value="view_preferred_rate" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="NaviBarBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="NaviBar" triggerWindow="" showMode="ready" />
+	<element name="locationView" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="view_location" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="search_text_view" NextPage="Profile" triggerWindow="" showMode="ready" />
+</page>

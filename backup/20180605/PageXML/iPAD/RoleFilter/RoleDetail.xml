@@ -1,0 +1,9 @@
+<page name="RoleDetail">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Role"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Search for Roles"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="RoleFilter" triggerWindow="" showMode="ready" />
+	<element name="withdrawBtn" parentElementName="" waitTime="0" textContent="Just let us know."  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[5]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="sendInterestBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="I'm interested in this role" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[3]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="shareBtn" parentElementName="" waitTime="0" textContent="share"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="ShareRole" triggerWindow="" showMode="ready" />
+	<element name="markBtn" parentElementName="" waitTime="0" textContent="bookmark outline"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

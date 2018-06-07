@@ -1,0 +1,8 @@
+<page name="HomeAvailability">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Availability"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="" triggerWindow="ErrorWin" showMode="ready" />
+    <element name="availableBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIASwitch[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="CellItem" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[:REXitem:]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="mm/dd/yyyy" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

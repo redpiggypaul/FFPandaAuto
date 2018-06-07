@@ -1,0 +1,5 @@
+<page name="AccountConfirmWin">
+	<element name="confirmMessage" parentElementName="" waitTime="0" textContent="Are you sure you want to update this email? It will update the email you use to login to the application."  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="noBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]/UIAButton[1]" NextPage="Account" triggerWindow="" showMode="ready" />
+	<element name="yesBtn" parentElementName="" waitTime="0" textContent="OK"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]" NextPage="AccountEmailVerification" triggerWindow="" showMode="ready" />
+</page>

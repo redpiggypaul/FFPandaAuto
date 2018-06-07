@@ -1,0 +1,9 @@
+<page name="DateWin">
+	<element name="overview_Year" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAPicker[1]/UIAPickerWheel[3]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAButton[1]" NextPage="ProfileEditEducation" triggerWindow="" showMode="ready" />
+	<element name="monthRoll" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAPicker[1]/UIAPickerWheel[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="overview_Month" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAPicker[1]/UIAPickerWheel[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAButton[2]" NextPage="ProfileEditEducation" triggerWindow="" showMode="ready" />
+	<element name="dayRoll" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAPicker[1]/UIAPickerWheel[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="yearRoll" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAPicker[1]/UIAPickerWheel[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

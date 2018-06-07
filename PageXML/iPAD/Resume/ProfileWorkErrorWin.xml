@@ -1,0 +1,5 @@
+<page name="ProfileWorkErrorWin">
+    <element name="errorTitle" parentElementName="" waitTime="0" textContent="Start date should be less than End date"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="errorMessage" parentElementName="" waitTime="0" textContent="Start date should be less than End date"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="OKBtn" parentElementName="" waitTime="0" textContent="K"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]" NextPage="ProfileEditWorkExp" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,10 @@
+<page name="bInviteMail">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Invite Talent via Email"  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="inviteBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="invite_people_sendEmail" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="mailToAddress" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_email_to" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="mailFromAddress" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_email_from" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="mailSubject" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_email_subject" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="mailContent" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="email_content" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="sendBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="invite_people_sendEmail" NextPage="" triggerWindow="" showMode="ready" />
+</page>

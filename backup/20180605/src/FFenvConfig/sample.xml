@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REXAUTO4AND" verbose="5">
+    <listeners>
+        <listener class-name="utility.TestngListeners"/>
+    </listeners>
+    <test name="20160617" preserve-order="true">
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="REXSH.REXAUTO.AppTestEditProfileSkill">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileCertificationANDlicense">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileReference">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileTitleNew">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileSummaryNew">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileWorkExp">
+            </class>
+        </classes>
+    </test>
+</suite>

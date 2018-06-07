@@ -1,0 +1,6 @@
+<page name="bTaERollWin">
+	<element name="min" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="time_decimal_pick" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="hour" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="time_integer_pick" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="TimeAndExpense" triggerWindow="" showMode="ready" />
+</page>

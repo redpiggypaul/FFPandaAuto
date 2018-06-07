@@ -1,0 +1,14 @@
+<page name="AddMealEntry">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Time and Expenses"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="date" parentElementName="" waitTime="0" textContent="mm/dd/yyyy"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="type" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[5]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="additionalInformation" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="amount" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[6]" NextPage="" triggerWindow="" showMode="ready" />
+
+
+	<element name="description" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="total" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableGroup[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="vendor" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[3]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="removeBtn" parentElementName="" waitTime="0" textContent="i timesheet icon delete phone"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="receipt" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[3]/UIATextField[7]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

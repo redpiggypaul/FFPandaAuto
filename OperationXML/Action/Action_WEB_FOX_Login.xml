@@ -1,0 +1,5 @@
+<page name="WEB_FOX_Login">
+    <element OperationName="login_FOX" Step="1" PageName="Login_WEBfox" OperationType="" elementName="usr" elementType="textfield" elementParameter="" />
+    <element OperationName="login_FOX" Step="2" PageName="Login_WEBfox" OperationType="" elementName="psw" elementType="textfield" elementParameter="" />
+    <element OperationName="login_FOX" Step="3" PageName="Login_WEBfox" OperationType="" elementName="confirm" elementType="btn" elementParameter="" />
+</page>

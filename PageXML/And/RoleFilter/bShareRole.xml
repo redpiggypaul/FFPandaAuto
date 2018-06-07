@@ -1,0 +1,4 @@
+<page name="bShareRole">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="SHARE ROLE VIA"  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="email" parentElementName="" waitTime="0" textContent="Email"  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.TextView[1]" NextPage="RoleMail" triggerWindow="" showMode="ready" />
+</page>

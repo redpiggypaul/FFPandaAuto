@@ -1,0 +1,6 @@
+<page name="bProfileEducationDeleteConfirmW">
+	<element name="confirmMessage" parentElementName="" waitTime="0" textContent="Are you sure you want to remove this school?"  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="confirmTitle" parentElementName="" waitTime="0" textContent="Are you sure you want to remove this school?"  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="noBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="ProfileEditEducation" triggerWindow="" showMode="ready" />
+	<element name="yesBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,5 @@
+<page name="bProfileEditClearWin">
+	<element name="YESBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="NOBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="message" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+</page>

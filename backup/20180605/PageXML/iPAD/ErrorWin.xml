@@ -1,0 +1,5 @@
+<page name="ErrorWin">
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent="OK"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="errorTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="errorMessage" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

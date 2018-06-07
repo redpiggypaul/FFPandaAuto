@@ -1,0 +1,15 @@
+<page name="bregistPage">
+	<element name="loginus" parentElementName="" waitTime="0" textContent="Not a member yet? Join us"  defaultValue="" type="id" value="signup_register" NextPage="Regist" triggerWindow="" showMode="ready" />
+	<element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="date_picker_start" NextPage="registDateWin" triggerWindow="" showMode="ready" />
+	<element name="lastName" parentElementName="" waitTime="0" textContent=""  defaultValue="Last Name" type="id" value="signup_lastName" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="mail" parentElementName="" waitTime="0" textContent=""  defaultValue="Email Address" type="id" value="signup_email" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="joinBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="First Name" type="id" value="signup_btn" NextPage="Home" triggerWindow="" showMode="ready" />
+	<element name="conpsw" parentElementName="" waitTime="0" textContent=""  defaultValue="Confirm Password" type="id" value="signup_confirm_password" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="managerLastName" parentElementName="" waitTime="0" textContent=""  defaultValue="Last Name" type="id" value="manage_lastName" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="firstName" parentElementName="" waitTime="0" textContent=""  defaultValue="First Name" type="id" value="signup_firstName" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="psw" parentElementName="" waitTime="0" textContent=""  defaultValue="Password" type="id" value="signup_password" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="service" parentElementName="" waitTime="0" textContent=""  defaultValue="Please select" type="id" value="text1" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="managerFirstName" parentElementName="" waitTime="0" textContent=""  defaultValue="First Name" type="id" value="manage_firstName" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="dropdown_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.CheckedTextView[:REXitem:]" NextPage="" triggerWindow="" showMode="ready_degree" />
+	<element name="alumniBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="btn_alumni" NextPage="" triggerWindow="" showMode="ready" />
+</page>

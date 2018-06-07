@@ -1,0 +1,4 @@
+<page name="ShareRole">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Copy"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAActivityView[1]/UIAActionSheet[1]/UIAScrollView[1]/UIACollectionView[1]/UIACollectionCell[2]/UIACollectionView[1]/UIACollectionCell[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="email" parentElementName="" waitTime="0" textContent="Email"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAActivityView[1]/UIAActionSheet[1]/UIAScrollView[1]/UIACollectionView[1]/UIACollectionCell[2]/UIACollectionView[1]/UIACollectionCell[2]" NextPage="RoleMail" triggerWindow="" showMode="ready" />
+</page>

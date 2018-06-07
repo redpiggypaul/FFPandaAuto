@@ -1,0 +1,5 @@
+<page name="bExpenseSubmitWin">
+	<element name="submitBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="ProjectAddExpense" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="ProjectAddExpense" triggerWindow="" showMode="ready" />
+	<element name="message" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+</page>

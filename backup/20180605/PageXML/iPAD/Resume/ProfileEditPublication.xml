@@ -1,0 +1,11 @@
+<page name="ProfileEditPublication">
+	<element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="mm/dd/yyyy" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[1]" NextPage="ProfilePatentDateWin" triggerWindow="" showMode="ready" />
+	<element name="name" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., Forbes" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Publication"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Back"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="title" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., Rethinking M&amp;A valuation assumptions" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="url" parentElementName="" waitTime="0" textContent="e.g., forbes.com/stories/M&amp;A.html"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="description" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[5]/UIATextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

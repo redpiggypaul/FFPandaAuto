@@ -1,0 +1,8 @@
+<page name="bProfileLicenseDateWin">
+	<element name="overview" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rex_calender_overview" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="DateItem" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="calendar_item" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="forwardBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rex_calender_forward" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rex_calender_backward" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="ProfileEditLicense" triggerWindow="" showMode="ready" />
+	<element name="backwardBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rex_calender_backward" NextPage="" triggerWindow="" showMode="ready" />
+</page>

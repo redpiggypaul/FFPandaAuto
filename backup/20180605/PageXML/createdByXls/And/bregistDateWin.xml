@@ -1,0 +1,5 @@
+<page name="bregistDateWin">
+	<element name="overview" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rex_calender_overview" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="DateItem" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="calendar_item" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="Regist" triggerWindow="" showMode="ready" />
+</page>

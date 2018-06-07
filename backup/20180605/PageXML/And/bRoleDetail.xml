@@ -1,0 +1,22 @@
+<page name="bRoleDetail">
+	<element name="starBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="single_role_star" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="summary" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_role_details_role_summary_content" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="RateBar" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_select_your_rate" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="endDate" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_timeframe_end_date" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="year" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_role_requirement_years_of_experience_content" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="description" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_role_details_role_description_content" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="expense" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_billing_information_expenses" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="classification" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_billing_information_preliminary_billing_classification" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="similarRole" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="rolesdetail_similar_roles" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="duration" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_timeframe_duration" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="rateRange" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_billing_information_date_range" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="shareBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="ima_share_other" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="overtime" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_billing_information_overtime" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="location" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_location_and_travel_location" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="travel" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_location_and_travel_travel_requirements" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="startDate" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_contract_details_timeframe_startdate" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="withdrawBtn" parentElementName="" waitTime="0" textContent="Just let us know."  defaultValue="" type="id" value="tv_undo" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="sendInterestBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="I'm interested in this role" type="id" value="btn_role_details_base_information_consider_me" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="RoleFilter" triggerWindow="" showMode="ready" />
+	<element name="shareBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="ima_share_other" NextPage="ShareRole" triggerWindow="" showMode="ready" />
+</page>

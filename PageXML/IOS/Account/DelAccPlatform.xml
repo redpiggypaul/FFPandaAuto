@@ -1,0 +1,5 @@
+<page name="DelAccPlatform">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Other Platforms"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="backBtn" parentElementName="" waitTime="0" textContent="Back"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />>
+    <element name="single_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="delete_reason_text" NextPage="" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,5 @@
+<page name="IOS_file">
+    <element OperationName="ios_action_key" Step="1" PageName="Account" OperationType="" elementName="generalBtn" elementType="btn" elementParameter="" />
+    <element OperationName="ios_action_key" Step="2" PageName="Account" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="ios_action_key" Step="3" PageName="Account" OperationType="" elementName="email" elementType="textfield_input" elementParameter="psw" />
+</page>

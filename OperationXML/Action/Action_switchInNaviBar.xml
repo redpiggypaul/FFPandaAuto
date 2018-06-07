@@ -1,0 +1,20 @@
+<page name="switchInNaviBar">
+    <element OperationName="AccountSettingLogout" Step="1" PageName="Account" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="AccountSettingLogout" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="SignOutBtn" elementType="btn" elementParameter="" />
+    <element OperationName="AccountSettingLogout" Step="3" PageName="NaviConfirmWin" OperationType="toOtherPage" elementName="YESBtn" elementType="btn" elementParameter="" />
+    <element OperationName="back2Profile" Step="1" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="back2Profile" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="ProfileBtn" elementType="btn" elementParameter="" />
+    <element OperationName="homeLogout" Step="1" PageName="Home" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="homeLogout" Step="2" PageName="NaviBar" OperationType="" elementName="SignOutBtn" elementType="btn" elementParameter="" />
+    <element OperationName="homeLogout" Step="3" PageName="NaviConfirmWin" OperationType="" elementName="YESBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2AccountSetting" Step="2" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2AccountSetting" Step="3" PageName="NaviBar" OperationType="toOtherPage" elementName="AccountSetBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Home" Step="1" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Home" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="ProfileBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Profile" Step="1" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Profile" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="ProfileBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2SearchRole" Step="1" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2SearchRole" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="SearchRoleBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Invite" Step="1" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="switch2Invite" Step="2" PageName="NaviBar" OperationType="toOtherPage" elementName="InviteBtn" elementType="btn" elementParameter="" />
+</page>

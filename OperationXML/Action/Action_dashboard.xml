@@ -1,0 +1,4 @@
+<page name="dashboard">
+    <element OperationName="checkRoleTrack" Step="1" PageName="Home" OperationType="" elementName="interestBtn" elementType="checkcontent_postfix" elementParameter="" />
+    <element OperationName="checkRoleMatch" Step="1" PageName="Home" OperationType="" elementName="roleMatchDesc" elementType="checkcontent" elementParameter="" />
+</page>

@@ -1,0 +1,10 @@
+<page name="bSearchResultWin">
+	<element name="message_old" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="emptyTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="empty_title" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn_old" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="Search4Role" triggerWindow="" showMode="ready" />
+	<element name="alertTitle_old" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="alertTitle" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="emptyDesc" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="empty_description" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="empty_description" NextPage="Search4Role" triggerWindow="" showMode="ready" />
+	<element name="message" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="empty_title" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="alertTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="empty_title" NextPage="" triggerWindow="" showMode="ready" />
+</page>

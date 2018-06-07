@@ -1,0 +1,20 @@
+<page name="bAddEntry">
+	<element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="dp_entry_data" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="additionalInformation" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_additional_info" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="amount" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_amount" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="city" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_city" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Add Entry"  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="description" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_description" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="type" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="sp_entry_expense_type" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="miles" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_total_miles" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="total" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_entry_total" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="vendor" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_vender" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="removeBtn" parentElementName="" waitTime="0" textContent="Remove This Entry"  defaultValue="" type="id" value="btn_remove" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="NaviBar" triggerWindow="" showMode="ready" />
+	<element name="dropdown_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.CheckedTextView[:REXitem:]" NextPage="" triggerWindow="" showMode="ready_degree" />
+	<element name="receipt" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="sp_entry_receipt" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="from" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_from" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="to" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_to" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="state" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_entry_state" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="id" value="search_text_view" NextPage="ProjectAddExpense" triggerWindow="" showMode="ready" />
+</page>

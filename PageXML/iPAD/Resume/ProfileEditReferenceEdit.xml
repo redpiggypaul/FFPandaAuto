@@ -1,0 +1,11 @@
+<page name="ProfileEditReferenceEdit">
+	<element name="phoneNumber" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., 555-555-5555" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[5]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Reference"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Back"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="refName" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., John Horn" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="company" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., AIG" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="position" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., Senior Manager" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="email" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., j.horn@aig.com" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+</page>

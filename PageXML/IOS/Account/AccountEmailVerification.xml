@@ -1,0 +1,7 @@
+<page name="AccountEmailVerification">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Email Verification"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Sign In"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="newMailAddress" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAStaticText[3]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="notice_p1" parentElementName="" waitTime="0" textContent="Don’t see the email?"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAStaticText[5]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="notice_p2" parentElementName="" waitTime="0" textContent="Check your spam folder or resend after 5 minutes."  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAStaticText[6]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

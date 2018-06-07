@@ -1,0 +1,20 @@
+<page name="login">
+    <element OperationName="registPWC" Step="5" PageName="Regist" OperationType="" elementName="service" elementType="dropdownlist" elementParameter="" />
+    <element OperationName="registPWC" Step="4" PageName="Regist" OperationType="" elementName="date" elementType="calendar" elementParameter="" />
+    <element OperationName="registtest" Step="3" PageName="Regist" OperationType="" elementName="service" elementType="dropdownlist_input" elementParameter="" />
+    <element OperationName="login" Step="3" PageName="Login" OperationType="" elementName="loginBtn" elementType="btn" elementParameter="" />
+    <element OperationName="registtest" Step="2" PageName="Regist" OperationType="" elementName="alumniBtn" elementType="btn" elementParameter="" />
+    <element OperationName="login" Step="2" PageName="Login" OperationType="" elementName="pwdField" elementType="textfield" elementParameter="" />
+    <element OperationName="login" Step="1" PageName="Login" OperationType="" elementName="uidField" elementType="textfield" elementParameter="" />
+    <element OperationName="regist" Step="4" PageName="Regist" OperationType="" elementName="mail" elementType="textfield" elementParameter="" />
+    <element OperationName="regist" Step="5" PageName="Regist" OperationType="" elementName="psw" elementType="textfield" elementParameter="" />
+    <element OperationName="regist" Step="6" PageName="Regist" OperationType="" elementName="conpsw" elementType="textfield" elementParameter="" />
+    <element OperationName="regist" Step="7" PageName="Regist" OperationType="" elementName="joinBtn" elementType="btn" elementParameter="" />
+    <element OperationName="regist" Step="1" PageName="Login" OperationType="" elementName="loginus" elementType="btn" elementParameter="" />
+    <element OperationName="regist" Step="2" PageName="Regist" OperationType="" elementName="firstName" elementType="textfield" elementParameter="" />
+    <element OperationName="regist" Step="3" PageName="Regist" OperationType="" elementName="lastName" elementType="textfield" elementParameter="" />
+    <element OperationName="registtest" Step="1" PageName="Login" OperationType="" elementName="loginus" elementType="btn" elementParameter="" />
+    <element OperationName="registPWC" Step="3" PageName="Regist" OperationType="" elementName="managerLastName" elementType="textfield" elementParameter="" />
+    <element OperationName="registPWC" Step="2" PageName="Regist" OperationType="" elementName="managerFirstName" elementType="textfield" elementParameter="" />
+    <element OperationName="registPWC" Step="1" PageName="Regist" OperationType="" elementName="alumniBtn" elementType="btn" elementParameter="" />
+</page>

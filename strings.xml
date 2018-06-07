@@ -1,0 +1,1115 @@
+<resources>
+    <string name="app_name">Talent Exchange_Beta</string>
+    <string name="base_activity_name">Talent Exchange</string>
+    <string name="open_roles">Open Roles</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="contractor_dashboard">Contractor Dashboard</string>
+    <string name="app_title">Talent Exchange</string>
+    <string name="app_signin_title">Sign in to discover new opportunities!</string>
+    <string name="linkedin_signin_btn_text">Sign In with LinkedIn</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="or">OR</string>
+    <string name="navbar_action_text">d</string>
+    <string name="action_settings">Logout</string>
+    <string name="accessibility_overflow">menu items</string>
+    <string name="app_signup_title">Sign up to discover new opportunities!</string>
+    <string name="linkedin_signup_text">Sign Up with LinkedIn</string>
+    <string name="app_or_text">or</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="signin_text">Sign In</string>
+    <string name="forgot_passsword">Forgot Password?</string>
+    <string name="app_signin_again_title">Welcome back, Joan!</string>
+    <string name="app_signin_again_view">Sign in to view what\'s new!</string>
+    <string name="app_signin_again_hint">Not Joan Spencer?</string>
+    <string name="edit_profile_username">Joan Spencer</string>
+    <string name="edit_profile_location">GREATER BOSTON, MA AREA</string>
+    <string name="edit_profile_join_date">Financial Services</string>
+    <string name="contractor_welcome_title">Welcome</string>
+    <string name="contractor_welcome_username">Joan !</string>
+    <string name="contractor_welcome_info">This is your personal dashboard for the Talent Exchange. It\'s your portal to finding anything you need for your next freelance gig with PwC.</string>
+    <string name="contractor_welcome_preference_info">Before We start matching you to jobs, you\'ll need to complete your profile.</string>
+    <string name="set_role_preference"></string>
+    <string name="contractor_activity_title">ACTIVITY</string>
+    <string name="contractor_activty_desc">You currently have no project activity. You will see updates here regarding roles you are engaged in.</string>
+    <string name="contractor_activty_preference_setting">Set Notification Preferences</string>
+    <string name="contractor_roles_title">ROLE MATCHES</string>
+    <string name="contractor_roles_job_title">Anti-Money Laundering Analyst</string>
+    <string name="contractor_roles_job_area">Financial Services</string>
+    <string name="contractor_roles_score">Financial Services</string>
+    <string name="contractor_status_title">YOUR Talent Exchange STATUS</string>
+    <string name="contractor_status_desc">Your Talent Exchange status is a measure of your participation in the platform.It will not change whether or not \nyou\'ll be placed on a project.Set your role preferences now!</string>
+    <string name="contractor_status_subhead">NO STATUS YET</string>
+    <string name="contractor_status_info">Get to Bronze status by filling out your financial and travel preferences.</string>
+    <string name="contractor_recmd_title">RESOURCES</string>
+    <string name="contractor_recmd_op">Training Opportunity</string>
+    <string name="congratulations_you_have">Congratulations! You have been invited to the pricing event</string>
+    <!-- modified by zjp-->
+    <string name="contractor_recmd_art1">Linkedln Article</string>
+    <string name="contractor_recmd_art2">Linkedln Article</string>
+    <string name="open_roles_title">43 Roles, Filtered by:</string>
+    <string name="single_roles_title">Anti-Money Laundering Analyst</string>
+    <string name="single_roles_title1">Bank Secrecy Analyst</string>
+    <string name="single_roles_title2">Sr. Due-Diligence Analyst</string>
+    <string name="title_activity_roles_detail">Roles Detail</string>
+    <string name="rolesdetail_title">Anti-Money Laundering Analyst</string>
+    <string name="single_role_score">100%</string>
+    <string name="pricing_event_commit_price_prompt_msg">You may not raise this rate during the pricing event</string>
+    <string name="pricing_event_update_info_prompt_msg">You may not upload message to EM</string>
+    <string name="pricing_event_dialog_info_title_info">Confirm upload message</string>
+    <string name="single_role_score_text">Fit Score</string>
+    <string name="rolesdetail_title_desc">Financial Service \n100% Fit Score</string>
+    <string name="rolesdetail_title_desc_content">Start date: August 10, 2015\nEnd date: September 23, 2015\nDuration: 6 weeks, onsite full time\nWorksite: Bethesda, MD</string>
+    <string name="rolesdetail_projectdetail_title">Project Details</string>
+    <string name="rolesdetail_projectdetail_content_1">This project seeks an experienced anti-money
+        laundering analyst with previous work history in
+        government, international business, and commerce.
+        It is a six week engagement on-site in Bethesda. This
+        analyst will pair with a team of six other analysts to
+        work in coordination.Additional details include work history in government,
+        international business, and commerce. It is a six
+        week engagement on-site in Bethesda. This analyst
+        will pair with a team of six other analysts to work in
+        coordination.
+        </string>
+    <string name="rolesdetail_projectdetail_content_2">d</string>
+    <string name="withdraw_decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dos </string>
+    <string name="rolesdetail_requiredskill_title">Required Skills</string>
+    <string name="rolesdetail_requiredskill_subhead">93% matched</string>
+    <string name="rolesdetail_requiredskill_content_1">• Loss auditing practice\n• Style 2 process flow\n• International business modeling\n</string>
+    <string name="rolesdetail_requiredskill_content_2">view full list</string>
+    <string name="rolesdetail_requiredcert_title">Required Certifications</string>
+    <string name="rolesdetail_requiredcert_subhead">96% matched</string>
+    <string name="rolesdetail_requiredcert_content_1">• Level 3 financial certification\n• Advanced CPA endorsement\n• Federal records clearance level II\n</string>
+    <string name="rolesdetail_requiredcert_content_2">view full list</string>
+    <string name="rolesdetail_project_btn_1">Refer a Colleague</string>
+    <string name="rolesclosed_project_btn_1">Pricing Event</string>
+    <string name="rolesclosed_project_btn_2">Role Details</string>
+    <string name="rolesdetail_project_btn_2">Consider me</string>
+    <string name="rolesdetail_project_bottom">Contact Engagement Manager</string>
+    <string name="rolesdetail_process_title">Process Overview</string>
+    <string name="rolesdetail_similar_roles_title">Similar Roles</string>
+    <string name="rolesdetail_process_content_1">Invitations for opened roles are sent out.</string>
+    <string name="rolesdetail_process_subhead_review">Review</string>
+    <string name="rolesdetail_process_subhead_invite">Invite</string>
+    <string name="rolesdetail_process_subhead_pricing_event">Pricing Event</string>
+    <string name="rolesdetail_process_subhead_decision">Decision</string>
+    <string name="rolesdetail_process_subhead_closed">Closed</string>
+    <string name="loading">loading...</string>
+    <string name="loading_profile">loading linked in profile...</string>
+    <string name="li_token_pref">com.pwc.talentexchange.linkedin.token</string>
+    <string name="li_token_secret_pref">com.pwc.talentexchange.linkedin.tokenSecret</string>
+    <string name="register_password_error">Invalid password</string>
+    <string name="register_email_error">Invalid email</string>
+    <string name="register_firstname_error">Invalid firstname</string>
+    <string name="register_lastname_error">Invalid lastname</string>
+
+    <string name="maxrate_larger_than_minrate">Please adjust the numbers so that the diffrence between max rate and min rate does not exceed $100.</string>
+    <string name="minrate_larger_than_maxrate">Your min rate sholud be lower than max rate.</string>
+    <string name="phone_format_length">Correct number format is: xxx-xxx-xxxx.</string>
+    <string name="active_event_pricing_event_title">You have been invited to participate in a Pricing Event</string>
+    <string name="active_event_pricing_event_content">The pricing event for <i>Anti-Money Laundering Analyst</i> will start soon. Join the pricing event and get started!</string>
+    <string name="active_event_invitation_btn">Respond to Pricing Event Invitation</string>
+    <string name="requested_text">Requested</string>
+    <string name="invited_text">Invited</string>
+    <string name="pending_text">Pending</string>
+    <string name="active_event_listview_btn">View All 9 Requested Roles</string>
+    <string name="active_event_recommended_roles_title">Recommended roles</string>
+    <string name="active_event_activity_desc">Lorem ipsum dolor sit amet, at vis feruis consectetur adipiscing elum dolor siferri deseruisse amet.</string>
+    <string name="contractor_active_event">Contractor active event</string>
+    <string name="linkedin_import_profile">LinkedIn import Profile</string>
+    <string name="edit_education">Edit Education</string>
+    <string name="linkedin_impt_location">GREATER BOSTON, MA AREA</string>
+    <string name="linkedin_impt_join_date">Joined July 2015</string>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="profile_finaces">FINANCES</string>
+    <string name="profile_bill_rate">Bill Rate</string>
+    <string name="profile_location_travel">LOCATION &amp; TRAVEL</string>
+    <string name="profile_current_location">Your Current Location</string>
+    <string name="profile_travel_preferences">Travel Preference</string>
+    <string name="profile_addition_comments">Additional Comments</string>
+    <string name="profile_availability_contact">AVAILABILITY &amp; CONTACT</string>
+    <string name="profile_date_available">Date Available</string>
+    <string name="profile_contact_preferences">Contact Preferences</string>
+    <string name="profile_add_another">Add Another</string>
+    <string name="pro_tips_1">Be sure that you have met all 1099 requirement.</string>
+    <string name="pro_tips_2">Your bill rate will only be used to recommend projects to you.Your final bill rate will be determined on a per-project basis</string>
+    <string name="pro_tips_3">Select all that apply</string>
+    <string name="pro_sel_1">No Preference</string>
+    <string name="pro_sel_2">Hour</string>
+    <string name="pro_sel_3">I am OK with overtime.</string>
+    <string name="pro_sel_4">Cit,State</string>
+    <string name="pro_sel_5">September 10,2015</string>
+    <string name="pro_chk_1">Willing to travel locally</string>
+    <string name="pro_chk_2">Willing to relocate temporarily</string>
+    <string name="pro_chk_3">Willing to relocate permanently</string>
+    <string name="pro_chk_4">Prefer not to travel outside of location</string>
+    <string name="pro_hint_1">Example:"I can only travel Monday through Thursday" or "No international travel."</string>
+    <string name="pro_hint_2">Primary Email</string>
+    <string name="pro_hint_3">Telephone</string>
+    <string name="pro_hint_4">Skype</string>
+    <string name="pro_hint_5">Add Another</string>
+    <string name="pro_hint_6">Complete Background Check</string>
+    <string name="pro_hint_7">Complete Form</string>
+    <string name="pro_tv_1">$</string>
+    <string name="pro_tv_2">1,000</string>
+    <string name="pro_tv_3">USD per</string>
+
+    <string name="toolbar_text_done">Done</string>
+
+
+    <string name="senior_anti_money_Laundering">Senior Anti-Money Laundering Analyst</string>
+    <string name="well_fargo_bank">Wells Fargo Bank ·</string>
+    <string name="working_time">Oct 2008—Present</string>
+    <string name="user_name">Joan Spencer</string>
+    <string name="new_member">new member</string>
+    <string name="preferences">Preferences</string>
+    <string name="resume">Resume</string>
+    <string name="preview_summary">SUMMARY</string>
+    <string name="pre_check">Role Readiness</string>
+    <string name="import_your_resume">IMPORT YOUR RESUME</string>
+    <string name="background_check">Background Investigation</string>
+    <string name="work_arrangement">Work Arrangement</string>
+    <string name="ethics_compliance">Ethics &amp; Compliance Training</string>
+    <string name="compliance">Compliance</string>
+    <string name="edit_profile_resume_article">To complete this step, just upload a file or copy and paste the content.</string>
+    <string name="edit_profile_precheck_article">Please complete this questionnaire. It will help our Service Provider, MBO Partners, determine your tax classification and work arrangement. They will then reach out directly to confirm the results.</string>
+    <string name="edit_profile_precheck_article1">Be on the lookout for an email from Sterling Infosystems,PwC’s screening vendor, with instructions to complete a background check. You are responsible for completing this in a timely fashion. Background check results are valid for one year.</string>
+    <string name="edit_profile_precheck_article2">You will receive a request via email to complete your compliance confirmation. This form must be completed on a per project basis and will not take longer than 30 minutes to complete.</string>
+    <string name="edit_profile_precheck_article3">You will receive two emails from the Ethics and Compliance Office. The first includes the link for the training, and the second includes your username and password to access the training. The training must be completed within 30 days of startingwork. Once completed, this training is valid for one year.</string>
+    <string name="background_precheck_in_progress1">"Thank you for electing to complete PwC's Talent Exchange pre-check process! While undergoing pre-checking does not guarantee you a role, it may put you in a preferential position when being considered for one, particularly for roles that have an urgent start date."</string>
+    <string name="background_precheck_in_progress2">"You will soon receive an email from Sterling Infosystems, PwC's screening vendor, with instructions for completing a background check. You must complete the screening before you can start work on a Talent Exchange role. Background checks are valid for one year."</string>
+    <string name="background_precheck_in_progress3">Begin by clicking here to complete a brief</string>
+    <string name="background_precheck_in_progress4">to help us better align you with roles that fit your preferences.</string>
+    <string name="next_steps">Next Steps</string>
+    <string name="background_screening">Background Screening</string>
+    <string name="background_precheck_successful">Your background check is complete! It will expire on</string>
+
+    <string name="edit_profile_ethics_article">Your Ethics and Compliance training is complete.Congratulations,
+        you\'ll never have to review it!
+          </string>
+    <string name="edit_profile_independence_article">Independence and Compliance is a simple form that takes less than
+        10 minutes.Similar to the background check,it expires in a year so be sure to check back and make sure you\'re
+        up to date !
+          </string>
+
+    <string name="import_from_linkedin">Import From LinkedIn</string>
+    <string name="import_document">Import Document</string>
+    <string name="import_linkedin_info">Import LinkedIn Info</string>
+    <string name="linkedin_import_content_1">Here\'s what we found in your LinkedIn profile.
+            Import it now and get your Talent Exchange
+            profile off to a great start.</string>
+    <string name="linkedin_import_content_2">Importing your profile info helps us find you the
+            best PwC roles. If you choose not to import now,you
+            can always import later from your profile page.</string>
+    <string name="roles_filtered_by">43 Roles Filtered By:</string>
+    <string name="recommended">Recommended</string>
+    <string name="favorites">Favorites</string>
+    <string name="all_roles">All Roles</string>
+    <string name="financial_service">Financial Service</string>
+    <string name="linkedin_impt_txt_4">Financial Intelligence Unit responsible for special look back
+            project on identified foreign Moneygram agents and
+            customers for a twelve month period as well as ongoing
+            international suspicious activity referred from the regional
+            offices during the company\'s transition to a different AML.</string>
+    <string name="test">test</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="subtitle">subtitle</string>
+    <string name="input_all_info">Please input all info!</string>
+
+
+    <string name="ok">OK</string>
+    <string name="sign_up_successful">sign up successful ! We have sent a validation email to your email address!Please check your email and validate from there within 24 hours.</string>
+    <string name="confirm_to_logout">Confirm to LOGOUT ?</string>
+    <string name="sure_to_update_email">Are you sure you want to update this email? It will update the email you use to login to the application.</string>
+    <string name="sure_to_logout">Are you sure to logout ?</string>
+    <string name="confirm_to_signout">Confirm to Sign Out</string>
+    <string name="sure_to_signout">Are you sure you want to sign out?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="error">Error</string>
+    <string name="name_type_error">Please use only letter characters.</string>
+    <string name="password_len_type_error">You password must be between 8 and 16 characters in length.</string>
+    <string name="password_type_error">Your password should contain at least one lowercase letter, one uppercase letter, one numeric digit or one special character.</string>
+    <string name="empty_username_error">Email address is required.</string>
+    <string name="empty_password_error">Password is required.</string>
+    <string name="empty_firstName_error">Your first name is required.</string>
+    <string name="empty_lastName_error">Your last name is required.</string>
+    <string name="start_date_time_error">Start date must be in the past.</string>
+    <string name="end_date_time_error">End date must be in the past.</string>
+    <string name="date_time_error">Date must be in the past.</string>
+    <string name="start_date_empty_error">From date cannot be empty.</string>
+    <string name="startDate_later_endDate">End date should be after start date.</string>
+    <string name="date_error">This is not a valid date.</string>
+    <string name="empty_error">The Email address and Password is required.</string>
+    <string name="input_error">Your user name or password is incorrect.</string>
+    <string name="preference_contact">CONTACT</string>
+    <string name="preference_travel">TRAVEL</string>
+    <string name="bill_rate">BILL RATE</string>
+    <string name="preference_whether_to_travle">Eg :I prefer to stay in my local area</string>
+    <string name="per_hour">Per Hour $</string>
+    <string name="login">Logging in ...</string>
+
+    <string name="SendEmailErrorMessage">Unexpected Error Occurs. Please Contact Administractor for help.</string>
+    <string name="role_detail_withdraw_request">Withdraw Request</string>
+    <string name="role_detail_undo">You are interested in this role</string>
+    <string name="te_create_expense">Create Expense</string>
+    <string name="te_save_change">Save Changes</string>
+    <string name="te_close">Close</string>
+    <string name="te_cancel">Cancel</string>
+    <string name="te_submit">Submit for Approval</string>
+    <string name="te_expense">Expenses</string>
+    <string name="te_entry">Entry</string>
+    <string name="te_attachment">Attachment</string>
+    <string name="te_total_hours">Total Hours</string>
+
+    <string name="te_save">Save</string>
+    <string name="te_edit">Edit</string>
+    <string name="te_pick_time_title">Pick Time</string>
+    <string name="te_view_history_content">ViewHistory</string>
+    <string name="te_anti">Anti-money Launchering Analyst</string>
+    <string name="te_timesheet_label">TIMESHEET</string>
+    <string name="te_timesheet_commets_label">COMMENTS</string>
+    <string name="te_timesheet_history">View History</string>
+    <string name="te_timesheet_approval">Submit for Approval</string>
+
+    <string name="te_timesheet_location_label">Location</string>
+    <string name="te_timesheet_hours">HOURS</string>
+    <string name="te_timesheet_total">Total</string>
+    <string name="te_timesheet_add">Add</string>
+    <string name="te_timesheet_copy">Copy</string>
+    <string name="te_timesheet_declined">Declined</string>
+    <string name="te_timesheet_approved">Approved</string>
+    <string name="te_timesheet_submitted">Submitted</string>
+    <string name="te_timesheet_wbs_recent">WBS Codes</string>
+    <string name="te_timesheet_approval_content">By submitting this timesheet, I affirm that the project WBS codes, locations, and hours contained within my timesheet are complete and accurate to the best of my knowledge. I understand that any additional updates or edits will need to be completed by calling the Talent Exchange support team at +1 (877) 792-6010.</string>
+    <string name="te_timesheet_canel_content">Are you sure you want to leave this page without saving changes?</string>
+    <string name="te_timesheet_delete_content">Are you sure you want to remove this project from your timesheet?</string>
+    <string name="te_timesheet_delete_success">Delete Successfully</string>
+    <string name="te_timesheet_submit">Submit</string>
+    <string name="te_timesheet_add_wbs">Create Timesheet</string>
+    <string name="te_timesheet_search_wbs">Search WBS Code</string>
+    <string name="te_timesheet_search_wbs_empty">No result</string>
+    <string name="te_timesheet_empty_label">You currently have no timesheets. Add a WBS code to input your hours.</string>
+    <string name="te_timesheet_wbs_empty">WBS Code is required</string>
+    <string name="te_timesheet_location_empty">Location is required</string>
+    <string name="te_timesheet_timsheet_empty">Timsheet data is required</string>
+    <string name="te_timesheet_commment_hint">Please provide your comment</string>
+    <string name="te_search_location">Search Location</string>
+
+    <string name="pricing_event_tab_name">Pricing Event</string>
+    <string name="role_detail_tab_name">Role detail</string>
+    <string name="content_empty">Content can\'t empty</string>
+
+    <string name="image_close">Close</string>
+    <string name="sd_not_enough">SD Card is not enough</string>
+    <string name="te_view_history_item_content">Expense sheet from 14 SEP to 20 SEP,2015 for Project 90010026 has been changed.</string>
+    <string name="ds_phar">Pharmaceuticals &#038; Biotechnology</string>
+    <string name="time_spense">Time and Expenses</string>
+    <string name="pricing_event_desc_project">This six week on-site engagement in Bethesda seeks an experienced anti-money laundering analyst with previous work history in government, international business, and commerce.</string>
+    <string name="pricing_event_desc_current_rate">This is the current range of rates other Talent Exchange contractors have offered:</string>
+    <string name="pricing_event_desc_your_rate">Set your rate for this role. This is the rate you will be paid if you are selected.</string>
+    <string name="pricing_event_select_rate_hint">Please note: you may enter a lower rate later if you wish,but you may not raise your rate during the pricing event.</string>
+    <string name="pricing_event_stand_out_desc">Provide a bit of context on why you feel you \'re the right fit for this role. You can update it at any time during the pricing event so take your time and let us know why you fit with the PwC family.</string>
+    <string name="pricing_event_withdraw_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dos</string>
+    <string name="pricing_event_date_range">Once the pricing event has begun, you will submit a rate. You can update your rate as many times as you would like during the pricing event as long as you always update with a lower rate. You will be held to this rate should you be selected by the hiring manager.</string>
+    <string name="pricing_event_you_will_be">You will be held to your final rate should you be selected by an engagement manager.</string>
+
+    <string name="role_decision_event_desc">This event is complete and the engagement manager is in the process of making a decision.</string>
+    <string name="role_decision_desc_project">This six week on-site engagement in Bethesda seeks an experienced anti-money laundering analyst with previous work history in government, international business, and commerce.</string>
+    <string name="role_decision_desc_current_rate">This is the current range of rates other Talent Exchange contractors have offered:</string>
+    <string name="role_decision_stand_out_desc">Provide a bit of context on why you feel you\'re the right fit for this role. You can update it at any time during the pricing event so take your time and let us know why you fit with the PwC family.</string>
+    <string name="role_decision_withdraw_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dos</string>
+
+    <string name="role_decision_offer_event_desc">This event is complete and the engagement manager is in the process of making a decision.</string>
+    <string name="role_decision_offer_desc_project">This six week on-site engagement in Bethesda seeks an experienced anti-money laundering analyst with previous work history in government, international business, and commerce.</string>
+    <string name="role_decision_offer_stand_out_desc">Your Differentiator
+I have 25 years of experience in the airplane industry and have worked in teams of over 100 people and feel i would be the best fit because I live just around the corner from the work location.</string>
+    <string name="role_decision_offer_withdraw_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dos</string>
+
+    <string name="onboarding_complete_event_desc">This event is complete and the engagement manager is in the process of making a decision.</string>
+    <string name="onboarding_complete_desc_project">This six week on-site engagement in Bethesda seeks an experienced anti-money laundering analyst with previous work history in government, international business, and commerce.</string>
+    <string name="onboarding_complete_stand_out_desc">Your Differentiator
+I have 25 years of experience in the airplane industry and have worked in teams of over 100 people and feel i would be the best fit because I live just around the corner from the work location.</string>
+    <string name="onboarding_complete_withdraw_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dos</string>
+
+    <string name="title_activity_head_photo_crop">HeadPhoto</string>
+    <string name="dashboard_toolbar_title">Talent Exchange</string>
+    <string name="account_not_activated">Your account is not activated. Because you have not activated your account by clicking the link sent to your mail or your activation link has expired.</string>
+    <string name="preferred_rate_description">"Provide your average rate. This can help us find roles that better match your average rate. Your final billing rate will be determined on a per-project basis."</string>
+    <string name="travel_preference_description">"Let us know how much or little you are willing to travel."</string>
+    <string name="additional_comments_description">"Any comments about your travel preference that we should know?"</string>
+    <string name="travel_destinations_title">"Are there particular cities, outside of where you live, that you would be interested in? This won't change your eligibility of any projects."</string>
+    <string name="travel_preference_rate">"How much of the typical work week are you willing to travel for a project?"</string>
+
+    <string name="role_filter">Role Filter</string>
+    <string name="role_filter_apply">Apply</string>
+    <string name="role_filter_clear_all">Clear All</string>
+    <string name="role_filter_location_edit">10025 or New York,NY</string>
+
+
+    <string name="load_error">Load failed , click retry please.</string>
+    <string name="no_phone_hint">No phone number provided</string>
+    <string name="confirm_navigation"></string>
+    <string name="leave_page">Are you sure you want to leave this page without saving changes?</string>
+    <string name="net_work_error">Oops! Something went wrong. Please try again.</string>
+    <string name="authentication_failed">Authentication failed,please login again!</string>
+    <string name="error_title">Error</string>
+
+    <string name="help_email">talentexchange@us.pwc.com</string>
+    <string name="give_us_feedback">Provide Your Feedback</string>
+
+
+    <string name="no_google_play_service">Talent Exchange won\'t receive notification without Google Play services, which are missing from your phone.</string>
+    <string name="email_format">Not Valid Email.</string>
+    <string name="phone_format">Correct number format is: xxx-xxx-xxxx</string>
+    <string name="offerdetails_dear">test</string>
+    <string name="offerdetails_remember">Please remember, you must be legally authorized to work in the US to accept this role. MBO partners, our service provider, will assist in determining the appropriate worker classification.</string>
+    <string name="offerdetails_toolbar_title">Offer Details</string>
+    <string name="offeraccepted_toolbar_title">Offer Accepted</string>
+    <string name="offerDeclined_toolbar_title">Offer Declined</string>
+    <string name="data_save_success">Data saved success !</string>
+    <string name="data_save_error">Data saved error !</string>
+    <string name="is_delete_account">Are you sure you want to delete your Talent Exchange account?</string>
+    <string name="delete_account_content">Deleting your account will erase all data, including your profile information, preferences and saved roles. You will need to register again and set up a new profile if you choose to come back.</string>
+    <string name="service_congratulation">Congratulations, you have received an offer!</string>
+    <string name="replace_congratulations">Congratulations !</string>
+    <string name="publish_description">The role is published, and we are identifying talent.</string>
+    <string name="decision_description">We are identifying talent, and are in the process of making a decision.</string>
+    <string name="expenses_amount_max_value">Your expense amount exceeds the allowed limit. Please adjust the amount or contact your engagement manager to submit.</string>
+    <string name="not_delete_account_reason_title">Your request to remove your account from Talent \nExchange cannot occur because of one of the following reasons:</string>
+    <string name="not_delete_account_reasons">You received or accepted an offer to an engagement .\nYou are on - boarded to a role and have not been off - boarded. \nPlease ensure you are removed from any active roles.</string>
+    <string name="resume_remove_language">Remove this Language ?</string>
+
+
+    <!-- ========================== Activity ========================== -->
+
+    <!-- Welcome Activity start -->
+    <string name="version_info">Version </string>
+    <!-- Welcome Activity end -->
+
+    <!-- Login Activity start -->
+    <!-- Login Activity end -->
+
+    <!-- Preview Activity start -->
+    <string name="import_preview_article">"Here’s what your resume looks like. Feel free to edit as needed now, and you can change any of these details later."</string>
+    <string name="import_to_profile">Save to Profile</string>
+    <string name="not_import">Discard</string>
+    <string name="document">Documents</string>
+    <string name="resume_import">Resume Import</string>
+    <string name="import_successfully">Import Successfully!</string>
+    <string name="import_error">Import error!</string>
+    <string name="unable_to_save_record">Unable to save record!</string>
+    <!-- Preview Activity end -->
+
+    <!-- PricePicker Activity start -->
+    <!-- PricePicker Activity end -->
+
+    <!-- PrivacyPolicy Activity start -->
+    <string name="privacy_statement">Privacy Statement</string>
+    <string name="privacy_policy1">INTRODUCTION</string>
+    <string name="privacy_policy2">DATA COLLECTION</string>
+    <string name="privacy_policy3">USE OF PERSONAL INFORMATION</string>
+    <string name="privacy_policy4">COOKIES AND LOG FILES</string>
+    <string name="privacy_policy5">THIRD PARTIES</string>
+    <string name="privacy_policy6">ACCESS</string>
+    <string name="privacy_policy7">RETENTION</string>
+    <string name="privacy_policy8">CHILDREN</string>
+    <string name="privacy_policy9">SECURITY</string>
+    <string name="privacy_policy10">MODIFICATIONS</string>
+    <string name="privacy_policy_content1">PwC is committed to protecting your personal information. This statement explains how we treat information that we collect about you as an individual through Talent Exchange. By using Talent Exchange, you agree to the terms of this statement. This privacy statement may be amended from time to time. Any substantial changes will be communicated to users.\n\n\'PwC\', \'we\' and \'us\' refer to PricewaterhouseCoopers LLP (PwC US), the US member firm of the PricewaterhouseCoopers (PwC) global network of member firms. Each PricewaterhouseCoopers member firm is a separate legal entity. For further details, please see www.pwc.com/structure.</string>
+    <string name="privacy_policy_content2">As part of the user registration process for Talent Exchange, we collect personal information about you, including your name, telephone number(s), and email address(es).\n\nYou can also complete your profile on Talent Exchange with a range of additional types of information about yourself, including your education and professional credentials, your experience and technical skills, your desired types of project work, and your geographical location preferences. PwC may collect this information directly from you through Talent Exchange or through other sources, including email and telephone. It is up to you how much of this additional information you want to provide to PwC. Lastly, you can update these preferences anytime under their Account settings/Communication Settings within the application.\n\nIf you provide sensitive personal information to PwC through Talent Exchange or other sources, you do so voluntarily and PwC accepts your consent for us to collect, store and use your sensitive personal information in the same ways as other personal information described in this statement.\n\nIf you believe Talent Exchange has collected excessive information, we encourage you to contact us at TalentExchange@us.pwc.com to raise any concerns.</string>
+    <string name="privacy_policy_content3">The primary purposes for which PwC collects your information on Talent Exchange and for which PwC may use it are:</string>
+    <string name="privacy_policy_content4">Cookies may be used on some pages of Talent Exchange. \"Cookies\" are small text files placed on your hard drive that assist us in providing a more customized website experience. For example, a cookie can be used to store registration information so that you do not need to re-enter it on subsequent visits to the site. It is PwC\'s policy to use cookies to make navigation of our websites easier for visitors and to facilitate efficient registration procedures. Site statistics are compiled by third parties and therefore your IP address will be passed to third parties for statistical reporting only.\n\nIf you are concerned about cookies, most browsers permit individuals to decline cookies. In most cases a visitor may refuse a cookie and still fully navigate our website, however, other functionality in the site may be impaired. After termination of the visit to our site, you can always delete the cookie from your system if you wish.\n\nIn order to properly manage our website, we may anonymously log information on our operational systems, and identify categories of visitors by items, such as domains and browser types. These statistics are reported in the aggregate to our webmasters. This is to ensure that our website presents the best web experience for visitors and is an effective information resource.\n\nFurther information about cookies used on Talent Exchange is available http://www.pwc.com/us/en/site-information.html</string>
+    <string name="privacy_policy_content5">Personal information collected by PwC may be transferred or disclosed to third party contractors, subcontractors, subsidiaries and/or other PwC firms for the purposes for which you have submitted the information and for the administration of our site and/or other internal, administrative purposes. Personal information may also be transferred to third party service providers of identity management, website hosting and management, data analysis, data back-up, security and storage services. As a result, your personal information may also be transferred outside the country where you are located. By submitting personal information through this site, you are providing explicit consent to the transfer of such information for the fulfilment of your voluntary requests or otherwise as set out in the \'Use of personal information\' section.\n\nIt\'s PwC\'s policy to disclose information to third parties under the following circumstances:\n• As required by applicable law, statue, rule, &#160;&#160;regulation or professional standard, or through &#160;&#160;subpoena, search warrant or other legal process.\n• For regulatory compliance purposes.\n• When explicitly requested by a user.\n• Or otherwise as set out in this statement.</string>
+    <string name="privacy_policy_content6">PwC is committed to providing reasonable practical access to users to allow them the opportunity to identify and correct the accuracy of identifying information previously submitted to PwC. When personal information is retained, PwC assumes responsibility for keeping an accurate record of the information once a user has submitted and verified the data. PwC does not assume responsibility for verifying the ongoing accuracy of the content of personal information. When practically possible, if PwC is informed that any personal information collected through Talent Exchange is no longer accurate, PwC will make appropriate corrections based on the updated information that you provide.\n\nIf you would like to exercise your rights under applicable law to obtain details of personal information PwC holds about you, or to correct that information, please contact us at TalentExchange@us.pwc.com. You can also contact us at TalentExchange@us.pwc.com if you have a complaint about PwC\'s handling of your personal information.\n\nYou may deactivate your account at any time by making a request to TalentExchange@us.pwc.com.</string>
+    <string name="privacy_policy_content7">PwC will retain your personal information for as long as is required for any of the purposes described above, or longer if required by applicable law or regulation.</string>
+    <string name="privacy_policy_content8">PwC understands the importance of protecting children\'s privacy especially in an online environment. This site is not intentionally designed for or directed at children under the age of 13 years. It is PwC\'s policy never to knowingly collect or maintain personally identifiable information about children under the age of 13.</string>
+    <string name="privacy_policy_content9">PwC has put in place appropriate technical and organizational security measures to protect your personal information from loss, misuse or destruction, including unauthorized, accidental or unlawful disclosure or processing of your personal information. Only authorized personnel are provided access to personal information and these employees have agreed to maintain the confidentiality of this information.</string>
+    <string name="privacy_policy_content10">PwC may update this statement at any time by publishing an updated version here. You can access the most current version of this privacy statement at any time on this site.</string>
+    <!-- PrivacyPolicy Activity end -->
+
+    <!-- ResetPwd Activity start -->
+    <string name="reset_passwd_title">Reset Password</string>
+    <!-- ResetPwd Activity end -->
+
+    <!-- ResetPwdResentEmail Activity start -->
+    <string name="email_resent_failed">Email has resent failed.</string>
+    <!-- ResetPwdResentEmail Activity end -->
+
+    <!-- SendMail Activity start -->
+    <string name="share_role_title">Share Role via Email</string>
+    <string name="refer_others_title">Refer others for this role</string>
+    <string name="who_to_share_str">"Who would you like to send this role to?"</string>
+    <string name="who_to_refer_str">"Who would you like to refer?"</string>
+    <string name="edit_email">Please edit the email.</string>
+    <string name="invalid_email_address">Invalid email address.</string>
+    <string name="email_to_title">To</string>
+    <string name="email_to_edit">user1@email.com; user2@email.com</string>
+    <string name="email_from_title">From</string>
+    <string name="email_from_edit">user_name@email.com</string>
+    <string name="email_subject">Subject</string>
+    <string name="email_subject_content">It just got easier to fill your pipline with interesting work</string>
+    <string name="email_message">Message</string>
+    <string name="email_message_content">Refer to storyboard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</string>
+    <!-- SendMail Activity end -->
+
+    <!-- SignUpEmailVerification Activity start -->
+    <string name="SendEmailSuccess">Registration email sending success</string>
+    <string name="SendEmailFailed">Registration email sending failed</string>
+    <!-- SignUpEmailVerification Activity end -->
+
+    <!-- SignUpWebView Activity start -->
+    <!-- SignUpWebView Activity end -->
+
+    <!-- ViewCurrentPhoto Activity start -->
+    <!-- ViewCurrentPhoto Activity end -->
+
+    <!-- TermsCondition Activity start -->
+    <string name="terms_condition">Terms and Conditions</string>
+    <string name="terms_condition1">ACCEPTANCE</string>
+    <string name="terms_condition2">GENERAL ELIGIBILITY</string>
+    <string name="terms_condition3">PUBLIC AREAS AND ACCEPTABLE USE</string>
+    <string name="terms_condition4">WHO MAY USE TALENT EXCHANGE</string>
+    <string name="terms_condition5">PASSWORDS, SECURITY, AND ACCOUNTS</string>
+    <string name="terms_condition6">CHANGE AND ACCESS TO TALENT EXCHANGE</string>
+    <string name="terms_condition7">AWARDING THE WORK</string>
+    <string name="terms_condition8">COPYRIGHT, TRADEMARK, AND INTELLECTUAL PROPERTY</string>
+    <string name="terms_condition9">COMPLIANCE WITH LAWS</string>
+    <string name="terms_condition10">INDEMNIFICATION</string>
+    <string name="terms_condition11">DISCLAIMERS AND ASSUMPTIONS OF RISK</string>
+    <string name="terms_condition12">LIMIT OF LIABILITY</string>
+    <string name="terms_condition13">LINKS TO OTHER WEBSITES</string>
+    <string name="terms_condition14">TERM AND TERMINATION</string>
+    <string name="terms_condition15">GENERAL</string>
+    <string name="terms_condition_content1">Welcome to PwC\'s Talent Exchange (the \"Exchange\"). Talent Exchange is provided by PricewaterhouseCoopers LLP (\"PwC,\" \"we\" or \"us\"), the US member firm of the PricewaterhouseCoopers network of firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details. If you do not agree to these Terms and Conditions, please do not use the PwC Talent Exchange and exit now.\n\nWe may revise these Terms of Use at any time without prior notice by updating this page and such revisions will be effective upon posting to this page. Please check this page periodically for any changes. If PwC makes substantial material changes to the Terms and Conditions, we will ask that you acknowledge and accept the new terms and conditions in order to continue using Talent Exchange. Your continued use of Talent Exchange following the posting of any revisions to these Terms of Use will mean you accept those changes. We reserve the right to alter, suspend or discontinue any aspect of Talent Exchange, including your access to it. Unless explicitly stated, any new features will be subject to these Terms of Use.</string>
+    <string name="terms_condition_content2">Talent Exchange is not intended for use by children under the age of 18. You must be at least 18 years old and have reached the age of majority in your jurisdiction of primary residence and citizenship to participate in Talent Exchange.\n\nYou may not access or use Talent Exchange if you are a citizen or national of any country that is subject to U.S. export restrictions (currently including, but not necessarily limited to, Iran, Syria, Cuba, North Korea, Libya, and Sudan). Also, you may not access or use Talent Exchange from any such country. You may not use Talent Exchange if you do not have legal authorization to work in the United States. If any applicable law, rule or regulation prohibits your access of Talent Exchange, you may not access or use Talent Exchange.\n\nIf you have any questions regarding these Terms of Use, contact us at TalentExchange@us.pwc.com.</string>
+    <string name="terms_condition_content3">Talent Exchange may contain profiles, email systems, blogs, message boards, applications, job postings, chat areas, groups, forums, independent talent communities and/or other message or communication facilities (\"Public Areas\") that allow users to communicate with other users. You may only use such community areas to send and receive messages and material that are relevant and proper to the applicable purposes.\n\nWithout limitation, while using the Service, you may not:\n• Defame, abuse, harass, stalk, threaten or otherwise &#160;&#160;violate the legal rights (such as, but not limited to, &#160;&#160;rights of privacy and publicity) of others, including &#160;&#160;PwC staff.\n• Publish, post, upload, distribute or disseminate any &#160;&#160;profane, defamatory, infringing, obscene or &#160;&#160;unlawful topic, name, material or information.\n• Use Talent Exchange for any wrongful purpose, &#160;&#160;including, but not limited to violation of local, state, &#160;&#160;national, or international law.\n• Upload files that contain software or other material &#160;&#160;that violates the intellectual property rights (or &#160;&#160;rights of privacy or publicity) of any third party.\n• Upload files that contain viruses, Trojan horses, &#160;&#160;corrupted files, or any other similar software that &#160;&#160;may damage or interfere with the operation of &#160;&#160;another\'s computer.\n• Post or upload any content to which you have not &#160;&#160;obtained any necessary rights or permissions to &#160;&#160;use accordingly.\n• Advertise or offer to sell any goods or services for &#160;&#160;any commercial purpose through Talent Exchange &#160;&#160;which are not relevant to the services offered &#160;&#160;through Talent Exchange.\n• Impersonate another person or a User or allow any &#160;&#160;other person or entity to use your identification to &#160;&#160;post or view comments.\n• Participate in matching events in a manner that &#160;&#160;could be interpreted as \"spamming\" to PwC. &#160;&#160;Spamming is strictly prohibited.\n• Download any file posted by another User that a &#160;&#160;User knows, or reasonably should know, cannot be &#160;&#160;legally distributed through the Service.\n• Restrict or inhibit any other User from using and &#160;&#160;enjoying the Public Areas of Talent Exchange.\n• Imply or state that any statements you make are &#160;&#160;endorsed by PwC, without the prior written consent &#160;&#160;of PwC.\n• Use a robot, spider, manual and/or automatic &#160;&#160;processes or devices to data-mine, data-crawl, &#160;&#160;scrape or index the Service in any manner.\n• Hack or interfere with the Service, its servers or any &#160;&#160;connected networks.\n• Adapt, alter, license, sublicense or translate Talent &#160;&#160;Exchange for your own personal or commercial &#160;&#160;use.\n• Remove or alter, visually or otherwise, any &#160;&#160;copyrights, trademarks or proprietary marks and &#160;&#160;rights owned by PwC.\n• Upload content that is offensive and/or harmful, &#160;&#160;including, but not limited to, content that advocates, &#160;&#160;endorses, condones or promotes racism, bigotry, &#160;&#160;hatred or physical harm of any kind against any &#160;&#160;individual or group of individuals.\n• Upload content that provides materials or access to &#160;&#160;materials that exploit people under the age of 18 in &#160;&#160;an abusive, violent or sexual manner.\n• Use Talent Exchange to solicit for any other &#160;&#160;business, website or service, or otherwise contact &#160;&#160;Users for employment, contracting or any purpose &#160;&#160;not related to use of Talent Exchange as set forth &#160;&#160;herein.\n• Use Talent Exchange to collect usernames and &#160;&#160;email addresses of Users by electronic or other &#160;&#160;means.\n• Register under different usernames or identities, &#160;&#160;after your account has been suspended or &#160;&#160;terminated.\n\nYou understand that all submissions made to Public Areas will be visible to all other Talent Exchange members and that you will be publicly identified by your name or login identification when communicating in Public Areas, and PwC will not be responsible for the action of any Users with respect to any information or materials posted in Public Areas.</string>
+    <string name="terms_condition_content4">You may only use Talent Exchange if you are at least 18 years of age. In order to access certain features of Talent Exchange, including, without limitation, the price setting event functions, profile editing, and viewing opportunities.\n\nYou may not access or use Talent Exchange if you are a citizen or national of any country that is subject to U.S. export restrictions (currently including, but not necessarily limited to, Iran, Syria, Cuba, North Korea, Libya, and Sudan). Also, you may not access or use Talent Exchange from any such country. You may not use Talent Exchange if you do not have legal authorization to work in the United States. If any applicable law, rule or regulation prohibits your access of Talent Exchange, you may not access or use Talent Exchange.\n\nIf you do not qualify under the foregoing eligibility requirements, you cannot use Talent Exchange. In the event that you are a person who does not meet the eligibility criteria set out above but nevertheless registers and uses Talent Exchange, as a non-eligible party you will still be bound to all the terms and conditions of this Agreement and shall have all the obligations, responsibilities and liabilities as would an eligible entity or person that is a party to this Agreement. PwC reserves the right to remove any user at any time at own discretion.</string>
+    <string name="terms_condition_content5">You will need to set up an account in order to use some of the features of Talent Exchange. You may not use a third party\'s account without PwC\'s permission. When you are setting up your account, you must give accurate and complete information. This means that you cannot set up an account using a name or contact information that does not apply to you, and you must provide accurate and current information on all registration forms that are part of Talent Exchange and update us promptly after any information you have previously provided changes. You may only set up one account. You have complete responsibility for your account and everything that happens on your account. This means you need to be careful with your password. If you find out that someone is using your account without your permission, you must let us know immediately. If you become aware of a breach of security with respect to your username or password, you must immediately notify PwC Talent Exchange team by emailing TalentExchange@us.pwc.com.\n\nYou may not transfer your account to someone else. We are not liable for any damages or losses caused by someone using your account without your permission or by your failure to provide and maintain accurate and current information. However, if we (or anyone else) suffer any damage due to the unauthorized use of your account, or because of your failure to provide and maintain accurate information, you may be liable. PwC reserves the right, acting in its sole discretion, to accept, reject or cancel registrations for this Talent Exchange. PwC may revoke your Registered User status at any time.</string>
+    <string name="terms_condition_content6">You understand and agree that no representation or warranty is made with respect to the functionality or availability of Talent Exchange, and that all or any portion(s) of Talent Exchange may for a variety of reasons be unavailable to you for use either temporarily or permanently without notice. PwC reserves the right in its sole discretion, without notice, to suspend your access to parts of Talent Exchange or to change the content, presentation, performance, or functionality of Talent Exchange. PwC reserves the right to monitor, edit and remove any content available on Talent Exchange, but does not have the obligation to do so.\n\nTalent Exchange is provided \"as is,\" without any warranty, and your use of Talent Exchange is at your own risk. You agree that PwC, its licensors and suppliers will not have any liability due to your inability to access Talent Exchange, any portion thereof or any related data or information, and will not have any liability in connection with the loss or destruction of any such data or information.</string>
+    <string name="terms_condition_content7">PwC will award the work at its sole discretion. Although cost will be considered in selecting who we award the work to, it is only one factor in our decision making, and we reserve the right to select or reject any submission in our sole discretion. The person who is awarded the work will be notified via Talent Exchange and must then complete PwC\'s independent talent onboarding process, including worker classification, compliance, and background checks. In the event of problems with that process, PwC reserves the right to revoke the award and select a different participant or service provider. Anyone not awarded the work will be notified via email.</string>
+    <string name="terms_condition_content8">Except as otherwise indicated, Talent Exchange and its entire content (including, but not limited to, the text, photographs, information, graphics, images, sound, and animation) are owned by PwC or its licensors and are protected by domestic and international copyright, trademark, patent, and other intellectual property laws. All copyrightable text and graphics, the selection, arrangement, and presentation of all materials (including information in the public domain), and the overall design of Talent Exchange are PwC\'s. All rights reserved. We hereby give you permission to download and print materials from our Talent Exchange for the sole purposes of viewing, reading, and retaining for reference the materials for your personal, internal and non-commercial use without the right for you to distribute any of the same further. Any other copying, distribution, retransmission, or modification of information or materials on Talent Exchange, whether in electronic or other form, without our express prior written permission is strictly prohibited. You further agree that you will not disassemble, decompile, reverse engineer or otherwise modify the material on Talent Exchange. Any unauthorized or prohibited use may subject the offender to civil liability and criminal prosecution under applicable laws. All trademarks, service marks, and trade names are proprietary to PwC or other respective owners that have granted us the right and license to use their marks.\n\nYou agree to take reasonable security precautions to maintain the confidentiality of Talent Exchange and all information contained in or accessed via Talent Exchange, and you may not share any of the same with any third party.\n\nWe respect the intellectual property of others, and we ask you to do the same. We may, in appropriate circumstances and at our sole discretion, terminate the access of users who infringe the copyright rights of others. If you believe that your work has been copied and is accessible at our Talent Exchange in a way that constitutes copyright infringement, or that our Talent Exchange contains links or other references to another online location that contains material or activity that infringes your copyright rights, you may notify us by providing our copyright agent the information required by the U.S. Online Copyright Infringement Liability Limitation Act of the U.S. Digital Millennium Copyright Act, 17 U.S.C. 512. If you believe that you or someone else has violated the above, please contact PwC immediately at TalentExchange@us.pwc.com. Repeat infringers will be blocked from accessing Talent Exchange. You understand that we own all photographs uploaded by you and we may copyright material containing such photographs. All right, title and interest in and to Talent Exchange, including without limitation all related information and technology, shall remain with PwC and/or its licensors, and you shall have no rights in or to the same. You acknowledge such ownership and intellectual property rights and will not take any action to jeopardize, limit or interfere in any manner with PwC \' or its licensors\' ownership of or rights with respect to the same.</string>
+    <string name="terms_condition_content9">You will comply with all applicable domestic and foreign laws, rules and regulations in connection with your use of Talent Exchange.</string>
+    <string name="terms_condition_content10">To the maximum extent permitted by applicable law, you agree to defend (at the indemnified party\'s option), indemnify and hold PwC and its respective partners, principals, employees, officers, directors, agents, affiliates, business associates, licensors, third party providers of service and subcontractors and insurers harmless from and against any and all losses, damages, liabilities, costs (including reasonable attorneys\' fees) and expenses in connection with any claim arising out of or in connection with any content or information posted or transmitted by you using Talent Exchange or that otherwise arise out of your use of Talent Exchange or that of any other third party who is given or gains access to Talent Exchange due to your action or inaction. At any time, PwC has the right to forego the indemnification and assume the defense of any claim. Notwithstanding the foregoing, it is not the intent of the parties to affect the rights of PwC\'s insurers to assume the defense or settlement of any claim against PwC for which insurance coverage is sought under any PwC policy.</string>
+    <string name="terms_condition_content11">Talent Exchange and all information provided to you hereunder are provided "as is", "as available", and to the maximum extent permitted by applicable law, PwC and its respective officers, directors, partners, principals, personnel, affiliates, business associates, licensors, third party providers of services and subcontractors (collectively and inclusive of PwC, the "PwC Parties") disclaim all warranties with respect to the same, express, implied and statutory, including without limitations any implied warranties of merchantability, fitness for a particular purpose, accuracy, completeness, non-infringement, non-interference, error-free service and uninterrupted service. This agreement is not an offer of any financial, tax, accounting, legal or other professional services or goods.</string>
+    <string name="terms_condition_content12">To the maximum extent permitted by applicable law, the PwC Parties shall not be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation damages for lost profits or revenues, goodwill, work stoppage, security breaches, viruses, computer failure or malfunction, use, data or other intangible losses or commercial damages, even if any such parties are advised of the possibility of such losses, arising under or in connection with this agreement, Talent Exchange, the use or inability to use the same, or any other subject matter hereof. In addition, to the maximum extent permitted by applicable law, the PwC Parties shall not be liable for any loss or damage suffered by you which arises out of or in connection with any information or materials obtained or submitted by you via or in connection with Talent Exchange. To the maximum extent permitted by applicable law, in no event will the aggregate liability of the PwC Parties under this agreement or in connection with its subject matter exceed five thousand U.S. Dollars ($5,000). Other PwC firms and their respective partners, principals, and employees, licensors and third party provider of services and subcontractors (collectively, the \"beneficiaries\") have no liability or obligations arising out of the agreement. You agree to bring any claim arising from the use of Talent Exchange against PwC and not against the beneficiaries. While PwC is entering into the agreement on its own behalf, this section is for the benefit of the beneficiaries and is relied on by each beneficiary. PwC accepts the benefits on their behalf.</string>
+    <string name="terms_condition_content13">To the extent Talent Exchange contains links to other websites and outside services and resources, we do not control the availability and content of those websites, services or resources, nor do we necessarily review or endorse materials available at or through such other websites. Viewing other websites or utilizing outside services and resources is done at your own risk and such websites or services may be governed by separate terms and conditions and privacy policies that you should review. PwC shall not be liable for any loss or damage caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such site or resource.</string>
+    <string name="terms_condition_content14">Either you or PwC may terminate this Agreement, with or without cause, at any time. All terms and conditions of this Agreement that are intended by their nature to survive termination of this Agreement shall survive termination and remain in full force, including but not limited to the terms and conditions concerning any disclaimers, intellectual property rights, duties of confidentiality, limitations of liability, duties of indemnification and provisions regarding resolution of differences. Upon termination of this Agreement for any reason, you must cease all use of Talent Exchange.</string>
+    <string name="terms_condition_content15">This Agreement will be governed by and construed in accordance with applicable U.S. federal law and the laws of the State of New York, without regard to conflict-of-laws principles. Each party irrevocably consents to the exclusive jurisdiction and venue of the United States Federal and New York State courts located in and serving the City of New York in connection with any dispute or claim arising under this Agreement. Each party waives any right that it may have to assert that such forum is not convenient. Each party agrees not to demand a trial by jury in any action, proceeding or counterclaim arising out of or relating to Talent Exchange. The 1980 UN Convention on Contracts for International Sale of Goods will not apply to this Agreement.\n\nIn the event of any conflict between this Agreement and any procedures or requirements set out in Talent Exchange, the provisions of this Agreement will prevail. If any provision of this Agreement is held to be invalid, void or illegal, it will be severed from this Agreement and will not affect, impair or invalidate any other provision, and it will be replaced by a provision which comes closest to such severed provision in language and intent without being invalid, void or illegal.\n\nPwC may amend this Agreement at any time by providing a copy of the amended terms and conditions to you in any format, including electronically via Talent Exchange, which you must then accept or reject. If you reject such amended terms and conditions, this Agreement shall terminate automatically. This Agreement may not be otherwise amended. You may not assign, transfer, or change any rights or obligations under this Agreement without the prior written consent of PwC. PwC may assign this Agreement in whole or in part without your consent.\n\nNo right under this Agreement or breach hereof may be waived except in writing signed by the parties hereto. The failure of either party to require performance of any provision of this Agreement will not be construed as a waiver of such party\'s rights to insist on performance of such provision or any other hprovision at some other time.</string>
+    <!-- TermsCondition Activity end -->
+
+    <!-- SignUp Activity start -->
+    <string name="info">Info</string>
+    <string name="not_implemented">Not Implemented !</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="sign_in">Sign In</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <!-- SignUp Activity end -->
+
+    <!-- ========================== Activity ========================== -->
+
+    <!-- ========================== Fragment ========================== -->
+
+    <!-- NavigationDrawerFragment start -->
+    <!-- NavigationDrawerFragment end -->
+
+    <!-- AccountDeleteReasonFragment start -->
+    <string name="account_successfully_delete">ACCOUNT SUCCESSFULLY DELETED</string>
+    <string name="account_been_deleted">Your profile has been deleted and will no longer be visible on the Talent Exchange.</string>
+    <string name="account_delete_know">REASON FOR DELETE?</string>
+    <string name="prefer_other_platforms">I prefer other platforms</string>
+    <string name="prefer_none">None</string>
+    <string name="account_delete_other">Other</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="account_delete_sure">Are you sure not to submit your reasons ?</string>
+    <string name="reason_must_be_specified">Reason must be specified</string>
+    <string name="account_delete_feedback">Thank you for your feedback and for being a member of the Talent Exchange. We look forward to seeing you again soon on our marketplace.</string>
+    <!-- AccountDeleteReasonFragment end -->
+
+    <!-- AdditionalFilterFragment start -->
+    <!-- AdditionalFilterFragment end -->
+
+    <!-- AllActivitiesFragment start -->
+    <!-- AllActivitiesFragment end -->
+
+    <!-- NotificationFragment start -->
+    <string name="your_currently">You currently have no project activities. You will see updates here regarding roles you are engaged in.</string>
+    <string name="all_notifications">All Notifications</string>
+
+    <!-- NotificationFragment end -->
+
+    <!-- ContractorDashboardFragment start -->
+    <string name="in_pricing_event">In Pricing Event</string>
+    <string name="pricingevent">Pricing Event</string>
+    <string name="pending_decisions">Pending Decisions</string>
+    <string name="show_interest">Show Interest</string>
+    <!-- ContractorDashboard end -->
+
+    <!-- EditAffiliationFragment start -->
+    <string name="affiliation_remove_dialog">Are you sure you want to remove this Affiliation ?</string>
+    <string name="affiliation_success">Your affiliation set information has been saved.</string>
+    <string name="affiliation_failure">Your affiliation set information has not been saved.</string>
+    <string name="affiliation_error">Cannot save your affiliation set information.</string>
+    <string name="affiliation_name">Name</string>
+    <string name="affiliation_name_hint">e.g., Academy of Political and Social Science</string>
+    <string name="affiliation_position">POSITION</string>
+    <string name="affiliation_position_hint">e.g., Academy of Political and Social Science</string>
+    <string name="affiliation_start_date">Start Date</string>
+    <string name="affiliation_end_date">End Date</string>
+    <string name="affiliation_remove_button">Remove Affiliation Or Association</string>
+    <!-- EditAffiliationFragment end -->
+
+    <!-- EditAwardFragment start -->
+    <string name="award_service_success">Your award set information has been saved.</string>
+    <string name="award_service_failure">Your award set information has not been saved.</string>
+    <string name="award_service_error">Cannot save your award set information.</string>
+    <string name="award_remove_dialog">Are you sure you want to remove this award or achievement?</string>
+    <string name="award_title">Title</string>
+    <string name="award_title_hint">e.g., Top 30 Exec under 30</string>
+    <string name="award_issuer">Issuer</string>
+    <string name="award_issuer_hint">e.g., Forbes</string>
+    <string name="award_remove_button">Remove Award</string>
+    <!-- EditAwardFragment end -->
+
+    <!-- EditCertificationFragment start -->
+    <string name="certification_service_success">Your certification set information has been saved.</string>
+    <string name="certification_service_failure">Your certification set information has not been saved.</string>
+    <string name="certification_service_error">Cannot save your certification set information.</string>
+    <string name="certification_remove_dialog">Are you sure you want to remove this certification?</string>
+    <string name="certification_name">Name</string>
+    <string name="certification_name_hint">e.g., Accredited Management Accountant</string>
+    <string name="certification_number_hint">e.g., A1858A-WA-001</string>
+    <string name="certification_remove_button">Remove Certification</string>
+    <!-- EditCertificationFragment end -->
+
+    <!-- EditEducationFragment start -->
+    <string name="about_description"></string>
+    <string name="fragment_drawer_rights_info">© 2016 PwC. All rights reserved. PwC refers to the US member firm or one of its subsidiaries or affiliates, and may sometimes refer to the PwC network. Each member firm is a separate legal entity. Please see www.pwc.com/structure for further details. We are proud to be an Affirmative Action and Equal Opportunity Employer.Talent Exchange is a trademark of PwC.</string>
+    <string name="pro_edit_edu_school">School</string>
+    <string name="pro_edit_edu_degree">Degree</string>
+    <string name="pro_edit_edu_location">City</string>
+    <string name="pro_edit_edu_ID">Number/ID</string>
+    <string name="pro_edit_edu_star_date">Start Date</string>
+    <string name="pro_edit_edu_end_date">End Date</string>
+    <string name="pro_edit_edu_remove">Remove Education</string>
+    <string name="pro_edit_edu_school_hint">University of Chicago</string>
+    <string name="pro_edit_edu_degree_hint">MBA</string>
+    <string name="pro_edit_edu_location_hint">e.g., Chicago</string>
+    <string name="pro_edit_edu_present">Present</string>
+    <string name="date">DATE</string>
+    <string name="sp_default">Please select</string>
+    <string name="edu_date_save_success">Your work education information has been saved.</string>
+    <string name="edu_date_save_failure">Your work education information has not been saved.</string>
+    <string name="edu_date_save_error">Cannot save your education set information.</string>
+    <string name="edu_remove">Are you sure you want to remove this school?</string>
+
+    <!-- EditEducationFragment end -->
+
+    <!-- EditExperienceFragment start -->
+    <string name="edit_exp_company">Company</string>
+    <string name="edit_exp_company_hint_1">e.g., Chase Bank</string>
+    <string name="edit_exp_location_hint">e.g., Chicago, IL</string>
+    <string name="edit_exp_position">TITLE</string>
+    <string name="edit_exp_start_date">START DATE</string>
+    <string name="edit_exp_end_date">END DATE</string>
+    <string name="edit_exp_location">LOCATION</string>
+    <string name="edit_exp_discription">DESCRIPTION</string>
+    <string name="edit_exp_present">Present</string>
+    <string name="edit_exp_remove">Remove Experience</string>
+    <string name="edit_exp_remove_certification">Remove This Certification</string>
+    <string name="edit_exp_remove_school">Remove This Education</string>
+    <string name="edit_exp_company_hint">Such as Wells-Fargo Bank</string>
+    <string name="edit_exp_position_hint">e.g., Anti-Money Laundering Analyst</string>
+    <string name="edit_exp_discription_hint">Please input your experience</string>
+    <string name="exp_date_save_success">Your work experience information has been saved.</string>
+    <string name="exp_date_save_failure">Your work experience information has not been saved.</string>
+    <string name="exp_date_save_error">Cannot save your experience set information.</string>
+    <string name="exp_remove">Are you sure you want to remove this experience?</string>
+
+
+    <!-- EditExperienceFragment end -->
+
+    <!-- EditLicenseFragment start -->
+    <string name="license_service_success">Your license set information has been saved.</string>
+    <string name="license_service_failure">Your license set information has not been saved.</string>
+    <string name="license_service_error">Cannot save your license set information.</string>
+    <string name="license_remove_dialog">Are you sure you want to remove this license?</string>
+    <string name="license_name">Name</string>
+    <string name="license_name_hint">e.g., CPA</string>
+    <string name="license_number_hint">e.g., 18593935393</string>
+    <string name="license_expiration_date">Expiration Date</string>
+    <string name="license_remove_button">Remove License</string>
+    <!-- EditLicenseFragment end -->
+
+    <!-- EditMilitaryServiceFragment start -->
+    <string name="military_service">Military Services</string>
+    <string name="military_service_success">Your military service set information has been saved.</string>
+    <string name="military_service_failure">Your military service set information has not been saved.</string>
+    <string name="military_service_error">Cannot save your military service set information.</string>
+    <string name="military_head">Have you served in the military capacity?</string>
+    <string name="military_delete">Are you sure you want to remove this Military Service?</string>
+    <string name="military_branch_title">Branch</string>
+    <string name="military_start_date">Start Date</string>
+    <string name="military_end_date">End Date</string>
+    <string name="military_present">Present</string>
+    <string name="military_rank">Rank</string>
+    <string name="military_rank_hint">e.g, Captain</string>
+    <string name="military_button_delete">Remove Military Service</string>
+    <string name="military_date_hint">mm/yyyy</string>
+    <string name="military_leave_page">Are you sure you want to leave this page without saving changes?</string>
+    <!-- EditMilitaryServiceFragment end -->
+
+    <!-- EditPatentFragment start -->
+    <string name="patent_name">Name</string>
+    <string name="patent_name_hint">e.g.,AML Cloud Processing</string>
+    <string name="patent_number">Patent Number</string>
+    <string name="patent_number_hint">e.g.,12/509,278</string>
+    <string name="patent_date">Expiration Date</string>
+    <string name="patent_remove">Remove Patent</string>
+    <string name="patent_remove_dialog">Are you sure you want to remove this patent ?</string>
+    <string name="patent_data_save">Your patent set information has been saved.</string>
+    <string name="patent_data_no_save">Your patent set information has not been saved.</string>
+    <string name="patent_can_not_save">Cannot save your patent set information.</string>
+    <!-- EditPatentFragment end -->
+
+    <!-- EditPublicationFragment start -->
+    <string name="publication_service_success">Your publication set information has been saved.</string>
+    <string name="publication_service_failure">Your publication set information has not been saved.</string>
+    <string name="publication_service_error">Cannot save your publication set information.</string>
+    <string name="publication_remove">Are you sure you want to remove this publication ?</string>
+    <string name="publication_title_hint">e.g., Rethinking M&amp;A valuation assumptions</string>
+    <string name="publication_title">Title</string>
+    <string name="publication_name">Publication Name</string>
+    <string name="publication_name_hint">e.g., Forbes</string>
+    <string name="publication_url">URL</string>
+    <string name="publication_url_hint">e.g., forbes.com/stories/M&amp;A.html</string>
+    <string name="publication_description">Description</string>
+    <string name="publication_remove_button">Remove Publication</string>
+    <!-- EditPublicationFragment end -->
+
+    <!-- EditReferenceFragment start -->
+    <string name="profile_resume_remove_reference">Are you sure you want to remove this reference ?</string>
+    <string name="notification_toolbar_title">Notification</string>
+    <string name="reference_success">Your reference set information has been saved.</string>
+    <string name="reference_failure">Your reference set information has not been saved.</string>
+    <string name="reference_error">Cannot save your reference set information.</string>
+    <string name="reference_name">Reference Name</string>
+    <string name="reference_name_hint">e.g., John Horn</string>
+    <string name="reference_company">Company</string>
+    <string name="reference_company_hint">e.g., AIG</string>
+    <string name="reference_position">Position</string>
+    <string name="reference_position_hint">e.g. Senior Manager</string>
+    <string name="reference_email">Email</string>
+    <string name="reference_email_hint">e.g., j.horn@aig.com</string>
+    <string name="reference_phone_number">Phone Number</string>
+    <string name="reference_phone_number_hint">e.g., 555-555-5555</string>
+    <string name="reference_remove_button">Remove Reference</string>
+    <!-- EditReferenceFragment end -->
+
+    <!-- FeedbackFragment start -->
+    <string name="less_than_100_characters">Please include no more than 1000 characters</string>
+    <string name="require_comments">Comments is required. Please provide some comments.</string>
+    <string name="feedback_service_success">Your feedback have been saved.</string>
+    <string name="provide_feedback">Provide Your Feedback</string>
+    <string name="provide_feedback_hint">Please input your comments</string>
+    <string name="feedback_submit_button">Submit</string>
+    <!-- FeedbackFragment end -->
+
+    <!-- InvitePeopleFragment start -->
+    <string name="invite_edit_hint">Who would you like to invite?(Email)</string>
+    <string name="invite_people_title">INVITE OTHERS TO TALENT EXCHANGE</string>
+    <string name="invite_people_1">PwC\'s </string>
+    <string name="invite_people_2">Talent Exchange </string>
+    <string name="invite_people_3">is a first-of-its kind marketplace that connects independent talent
+        with exciting opportunities at PwC.</string>
+    <string name="invite_people_4"> With the Talent Exchange you will have the opportunity to work on high-profile projects and
+        interesting challenges for leading brands, get direct access to PwC teams and have greater transparency into proposed project pipelines,
+        time and even market pricing.</string>
+    <string name="invite_people_send_invitation">Invite Others</string>
+    <string name="invite_people_email_sent">Email sent</string>
+    <string name="invite_people_fail_email">Failed to send</string>
+    <!-- InvitePeopleFragment end -->
+
+    <!-- ManageRolesFragment start -->
+    <!-- ManageRolesFragment end -->
+
+    <!-- ManageRoleTabExpressedInterestFragment start -->
+    <!-- ManageRoleTabExpressedInterestFragment end -->
+
+    <!-- ManageRoleTabInPricingEventFragment start -->
+    <!-- ManageRoleTabInPricingEventFragment end -->
+
+    <!-- ManageRoleTabPendingDecisionFragment start -->
+    <!-- ManageRoleTabPendingDecisionFragment end -->
+
+    <!-- NavigationDrawerFragment start -->
+    <!-- NavigationDrawerFragment end -->
+
+    <!-- OfferAcceptedFragment start -->
+    <!-- OfferAcceptedFragment end -->
+
+    <!-- OfferDeclinedFragment start -->
+    <string name="you_have_declined_the_role">YOU HAVE DECLINED THE ROLE</string>
+    <string name="reason_for_decline">Reason for decline?</string>
+    <!-- OfferDeclinedFragment end -->
+
+    <!-- OfferDetailsFragment start -->
+    <string name="accept_the_role">Are you sure you want to accept this role?</string>
+    <string name="decline_the_role">Are you sure you want to decline this role?</string>
+    <string name="offer_accept_failed">Offer Accept Failed.</string>
+    <string name="offer_decline_failed">Offer Decline Failed.</string>
+    <!-- OfferDetailsFragment end -->
+
+    <!-- OtherPlatformSelectFragment start -->
+    <string name="other_platforms">Other Platforms</string>
+    <!-- OtherPlatformSelectFragment end -->
+
+    <!-- PricingEventContainerFragment start -->
+    <string name="excuse_yourself_from_this_role">Excuse yourself from this role</string>
+    <string name="refer_other">Refer others</string>
+    <string name="event_details">Event Details</string>
+    <!-- PricingEventContainerFragment end -->
+
+    <!-- PricingEventDecisionFragment start -->
+    <string name="now_that_the_pricing">Now that the pricing event is complete, expedite your on-boarding process by getting pre-checked. It is not mandatory, but it will help you on-board to roles much more quickly.</string>
+
+    <string name="final_submit_rate">Final Submitted Rate</string>
+    <string name="differentiator">DIFFERENTIATOR</string>
+    <!-- PricingEventDecisionFragment end -->
+
+    <!-- PricingEventDecisionOfferFragment start -->
+    <string name="will_you_confirm_to_withdraw">Will you confirm to withdraw ?</string>
+    <string name="you_may_not_lose_this_role">you may not lose this role</string>
+    <string name="role_status">ROLE STATUS</string>
+    <string name="pricing_event">PRICING EVENT</string>
+    <string name="all_open_roles_have_been">All open roles have been filled and the search has ended.</string>
+    <!-- PricingEventDecisionOfferFragment end -->
+
+    <!-- PricingEventFragment start -->
+    <string name="choose_your_rate">Choose your Rate</string>
+    <string name="submit_your_rate">1.SUBMIT YOUR RATE</string>
+    <string name="please_provide_your_rate">Please provide your rate.</string>
+    <string name="this_rate_can_be_lowered">This rate can be lowered at any time during the pricing event.</string>
+    <string name="current_range_of_submitted">Current Range of Submitted Rates</string>
+    <string name="your_current_rate">Your Current Rate</string>
+    <string name="charaacters_left">Characters Left</string>
+    <string name="update">Update</string>
+    <string name="stand_out_of_from_the_crowd">2.STAND OUT FROM THE CROWD</string>
+    <string name="optional">Optional</string>
+    <string name="anything_else_you_would">Anything Else You Would Like to Add?</string>
+    <string name="are_there_any_additional_skills">Are there any additional skills, experience or training related to this role that you would like us to know about before we make our decision?</string>
+    <string name="this_can_be_edited">This can be edited, updated, changed or removed as many times as you would like while the pricing event is still open.</string>
+    <string name="type_your_differentiator_here">Type your differentiator here</string>
+    <string name="update_profile">3.UPDATE PROFILE</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="be_sure_your_resume_has">Be sure your resume has your most up-to-date information.</string>
+
+    <string name="update_work_experience">Update Work Experience</string>
+    <string name="required_skills">Required Skills</string>
+    <string name="this_role_requires_the_following">This role requires the following skills:</string>
+    <string name="update_skills">Update Skills</string>
+    <string name="do_you_have_any_new">Do you have any new certifications, licenses, awards or publications you feel align with this role? Update your additional strengths so we are aware of them while making our final decisions.</string>
+    <string name="update_other_information">Update Other Information</string>
+    <string name="other_information">Other Information</string>
+    <!-- PricingEventFragment end -->
+
+    <!-- PricingEventRoleClosedFragment start -->
+    <string name="n_a">N/A</string>
+    <!-- PricingEventRoleClosedFragment end -->
+
+    <!-- PricingEventTabRoleDetailFragment start -->
+    <!-- PricingEventTabRoleDetailFragment end -->
+
+    <!-- PricingEventWillBegin start -->
+    <string name="once_the_pricing_event_begins">Once the pricing event begins, you will be able to submit a rate. This rate can be lowered at any time during the pricing event. You will be held to your final rate should you be selected by an engagement manager.</string>
+    <string name="this_pricing_event_is_not_start_yet">This pricing event is not started yet</string>
+    <!-- PricingEventWillBegin end -->
+
+
+    <!-- ProfileFragment start -->
+    <string name="profile_head_availability">Availability</string>
+    <string name="profile_head_pre_check">Pre-Check</string>
+    <string name="profile_resume_how_is_done">How it’s done</string>
+    <string name="profile_resume_title">Title</string>
+    <string name="profile_resume_title_hint">e.g., Senior AML Analyst</string>
+    <string name="profile_resume_summary">SUMMARY</string>
+    <string name="pro_edit_cet_certification">CERTIFICATIONS</string>
+    <string name="pro_edit_cer_certification_hint">Accrefited Anti-Money Laundering Analyst</string>
+    <string name="experience">WORK EXPERIENCE</string>
+    <string name="certification">CERTIFICATIONS &amp; LICENSES</string>
+    <string name="patents">PATENTS</string>
+    <string name="affiliations_or_associations">PROFESSIONAL AFFILIATIONS</string>
+    <string name="security_clearance">Security Clearances</string>
+    <string name="Languages">LANGUAGES</string>
+    <string name="reference">REFERENCE</string>
+    <string name="licenses">LICENSES</string>
+    <string name="publication">PUBLICATIONS</string>
+    <string name="awards">AWARDS OR ACHIEVEMENTS</string>
+    <string name="skills">SKILLS</string>
+    <string name="education">EDUCATION</string>
+    <string name="search_city">Search City</string>
+    <string name="search_skill">Search Skill</string>
+    <string name="search_language">Search Language</string>
+    <string name="search_certification">Search certification</string>
+    <string name="profile_resume_security_clearance">SECURITY CLEARANCES</string>
+    <string name="profile_resume_security_tip">Let us know if you have any security clearance.</string>
+
+    <string name="availability_for_work">availability for work</string>
+    <string name="contact_methods">contact methods</string>
+    <string name="tax_preference">Tax Preference</string>
+    <string name="average_rate">Rate</string>
+    <string name="working_hours">Working Reference</string>
+    <string name="expected_working_hour">Expected Working Hours (per week)</string>
+    <string name="preference_location">Location</string>
+    <string name="travel_preferences">Travel Amount</string>
+    <string name="travel_destinations">Travel Info</string>
+    <string name="contact_method_description">"Please let us know a few ways to contact you. The more you provide the more options we'll have to communicate smoothly during roles."</string>
+    <string name="contact_email">Email</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_skype">Skype</string>
+    <string name="contact_google_hangout">Google Hangout</string>
+    <string name="contact_weChat">WeChat</string>
+    <string name="contact_whatsApp">WhatsApp</string>
+    <string name="contact_city">City</string>
+    <string name="contact_state">State</string>
+    <string name="contact_zipCode">ZipCode</string>
+
+    <string name="preferred_rate">"e.g., 75"</string>
+    <string name="add_destination">"City,State or ZipCode"</string>
+    <string name="location_city">"e.g., Atlanta"</string>
+    <string name="location_zip">"e.g., 44847"</string>
+    <string name="preference_phone">"e.g., 555-555-5555"</string>
+    <string name="preference_email">Email Address</string>
+    <string name="preference_mobile">"e.g., 555-555-5555"</string>
+    <string name="preference_google">"e.g., yourname@gmail.com"</string>
+    <string name="preference_wechat">"e.g., russ_tax_professional"</string>
+    <string name="preference_whatsapp">"e.g., 555-555-5555"</string>
+    <string name="preference_skype">"e.g., ryan_2525"</string>
+
+    <string name="alternate_contact_methods">"Additional Contact Methods"</string>
+    <string name="additional_contact_methods">These are additional contact methods which are not required to complete your preferences.</string>
+    <string name="tax_preference_description">"Provide your tax preference so we can match you to roles with the appropriate worker classification."</string>
+    <string name="average_rate_usd">"Average Bill Rate (USD Per Hour)"</string>
+    <string name="rate_range_usd">"Rate Range (USD Per Hour)"</string>
+    <string name="overtime_preference_description">"Are you willing to work more than a standard 40 hour work week?"</string>
+    <string name="preference_overtime">Overtime Preference</string>
+    <string name="i_am_willing_to_overtime">I am willing to work more than a standard 40 hour work week.</string>
+    <string name="i_am_not_willing_to_overtime">I am not willing to work more than a standard 40 hour work week.</string>
+
+    <string name="clear_profile_success">Clear resume successfully</string>
+    <string name="clear_profile_failed">Clear resume failed</string>
+    <!-- ProfileFragment end -->
+
+    <!-- ProfileSearchLanguageFragment start -->
+    <!-- ProfileSearchLanguageFragment end -->
+
+    <!-- ProfileSearchSkillFragment start -->
+    <!-- ProfileSearchSkillFragment end -->
+
+    <!-- RetainedFragment start -->
+    <!-- RetainedFragment end -->
+
+    <!-- RoleDetailsFragment start -->
+    <string name="role">ROLE</string>
+    <string name="i_am_interested_in_this_role">I’m interested in this role</string>
+    <string name="undo"> Undo</string>
+    <string name="contract_details">CONTRACT DETAILS</string>
+    <string name="timeframe">Timeframe</string>
+    <string name="duration">Duration</string>
+    <string name="end_date">End Date (Expected)</string>
+    <string name="rate_range">Rate Range</string>
+    <string name="billing_type">Billing Type</string>
+    <string name="preliminary_billing_classification">Preliminary Billing Classification</string>
+    <string name="location_and_travel">Location and Travel</string>
+    <string name="location">Location</string>
+    <string name="travel_requirements">Travel Requirements</string>
+    <string name="role_details">ROLE DETAILS</string>
+    <string name="role_summary">Role Summary</string>
+    <string name="role_description">Role Description</string>
+    <string name="role_requeirements">ROLE REQUIREMENTS</string>
+    <string name="years_of_experience">Years of Experience</string>
+    <string name="similar_role">SIMILAR ROLES</string>
+    <string name="billing_information">Billing Information</string>
+
+    <string name="thanks_interest_message">Thanks for your interest in this role.</string>
+    <string name="no_longer_interested">No longer interested? </string>
+    <string name="just_let_us_know">Just let us know.</string>
+
+    <string name="confirm_interest">Confirm Interest</string>
+    <string name="reason">REASON</string>
+    <string name="interest_message">When you tell us you\'re interested in a role,we\'ll notify the Engagement Manager and send them a link to your Talent Exchange profile. If they think you may be a good fit, you\'ll be notified by email.</string>
+    <string name="interest_edit_hint">Send a brief note to introduce yourself. Please do not include questions as they will not be answered.</string>
+    <string name="your_message">Your Message</string>
+    <string name="confirm">Confirm</string>
+    <string name="characters_left">200 Characters Left</string>
+
+    <string name="withdraw_interest">Withdraw Interest</string>
+    <string name="no_interest_message">Changed your mind? No problem. We\'ve love to know why you\'re no longer interested.</string>
+    <string name="date_will_be">My next available date will be:</string>
+    <string name="date_format_hint">DD/MM/YYYY</string>
+    <string name="others">Others:</string>
+    <string name="other_hint">Type your comments here</string>
+    <string name="hope_role_message">We hope you find another role soon!</string>
+
+    <!-- RoleDetailsFragment end -->
+
+    <!-- RoleFilterFragment start -->
+    <!-- RoleFilterFragment end -->
+
+    <!-- RoleFilterMultiSelectFragment start -->
+    <!-- RoleFilterMultiSelectFragment end -->
+
+    <!-- SearchCityFragment start -->
+    <!-- SearchCityFragment end -->
+
+    <!-- SettingCommunicationFragment start -->
+    <!-- SettingCommunicationFragment end -->
+
+    <!-- SettingCommunicationTypeFragment start -->
+    <string name="setting_type_email">Email</string>
+    <string name="setting_type_notification">Push Notification</string>
+    <!-- SettingCommunicationTypeFragment end -->
+
+    <!-- SettingFragment start -->
+    <!-- SettingFragment end -->
+
+    <!-- SettingGeneralFragment start -->
+    <string name="old_password_hint">Old Password</string>
+    <string name="empty_oldPwd_error">The old password is required.</string>
+    <string name="empty_newPwd_error">The new password is required.</string>
+    <string name="empty_conformPwd_error">This is a required check.</string>
+    <string name="confirm_password">Please confirm password.</string>
+    <string name="password_match">Passwords must match.</string>
+    <string name="newPwd_differ_oldPwd">New password must be different from old password.</string>
+    <string name="setting_service_success">Your general settings have been saved.</string>
+    <string name="setting_first_name">First Name</string>
+    <string name="setting_last_name">Last Name</string>
+    <string name="setting_email">Email</string>
+    <string name="setting_email_hint">Email (this will update your login email)</string>
+    <string name="setting_password">Password</string>
+    <string name="setting_password_text">12345678</string>
+    <string name="setting_new_password_hint">New Password</string>
+    <string name="setting_confirm_password_hint">Confirm Password</string>
+    <string name="setting_delete_account_button">Delete My Account</string>
+    <!-- SettingGeneralFragment end -->
+
+    <!-- TEEditExpenseFragment start -->
+    <string name="te_expense_approval_content">By submitting this expense, I affirm that the expense amounts, project WBS codes, locations, and other details are complete and accurate to the best of my knowledge. I understand that any additional updates or edits will need to be completed by calling the Talent Exchange support team at +1 (877) 792-6010.</string>
+
+    <!-- TEEditExpenseFragment end -->
+
+    <!-- TEExpenseEditEntryFragment start -->
+    <string name="departure_earlier_return_date">Departure date should be earlier than the return date</string>
+    <!-- TEExpenseEditEntryFragment end -->
+
+    <!-- TEExpenseFragment start -->
+    <string name="empty_expense">Your expense list is empty. Create an expense sheet to apply for reimbursement.</string>
+    <string name="create_expense">Create Expense</string>
+    <string name="te_timesheet_wbs_code_label">WBS Code</string>
+    <string name="te_timesheet_wbs_code_hint">Tap here to select WBS code</string>
+    <string name="te_timesheet_location_hint">Tap here to select location</string>
+    <string name="te_purpose">Purpose</string>
+    <string name="te_task">Task</string>
+    <string name="te_view_history">View History</string>
+    <string name="te_expense_total">Total $0.00</string>
+    <string name="te_submit_approval">Submit for Approval</string>
+    <string name="te_remove_expense">Remove This Expense</string>
+
+    <string name="te_entry_date">Date</string>
+    <string name="te_entry_expense_type">Expense Type</string>
+    <string name="te_entry_description">Description</string>
+    <string name="te_entry_amount">Amount</string>
+    <string name="te_entry_vender">Vendor</string>
+    <string name="te_entry_receipt">Receipt</string>
+    <string name="te_entry_from">From</string>
+    <string name="te_entry_to">To</string>
+    <string name="te_entry_total_miles">Total Miles</string>
+    <string name="te_entry_city">City</string>
+    <string name="te_entry_state">State</string>
+    <string name="te_entry_check_in_date">Check-in Date</string>
+    <string name="te_entry_room_rate">Room Rate</string>
+    <string name="te_entry_nights">Nights</string>
+    <string name="te_entry_per_diem_rate">Per Diem Rate</string>
+    <string name="te_entry_departure_date">Departure Date</string>
+    <string name="te_entry_return_date">Return Date</string>
+    <string name="te_entry_ticket">Ticket</string>
+    <string name="te_entry_additional_info">Additional Information</string>
+    <string name="te_entry_money_type">$</string>
+    <string name="te_entry_attachment">Attachment</string>
+    <string name="te_entry_remove">Remove This Entry</string>
+
+    <!-- TEExpenseFragment end -->
+
+    <!-- TEExpenseHistoryFragment start -->
+    <!-- TEExpenseHistoryFragment end -->
+
+    <!-- TESearchLocationFragment start -->
+    <!-- TESearchLocationFragment end -->
+
+    <!-- TESearchWBSCodeFragment start -->
+    <!-- TESearchWBSCodeFragment end -->
+
+    <!-- TETimesheetsFragment start -->
+    <!-- TETimesheetsFragment end -->
+
+    <!-- TExpensePreviewDialogFragment start -->
+    <!-- TExpensePreviewDialogFragment end -->
+
+    <!-- TimeAndExpenseFragment start -->
+    <!-- TimeAndExpenseFragment end -->
+
+    <!-- ========================== Fragment  ========================== -->
+
+    <!-- ========================== Common ========================== -->
+
+    <!-- ToolBar start -->
+    <!-- ToolBar end -->
+
+    <string name="generic_server_down">Oops! Something went wrong. Please try again.</string>
+    <string name="no_internet">Oops! Something went wrong. Please try again.</string>
+    <string name="generic_error">Oops! Something went wrong. Please try again.</string>
+    <string name="signin_name_error">Invalid email address.</string>
+
+    <!-- ========================== Common ========================== -->
+
+    <!-- ========================== HttpTool ========================== -->
+
+    <!-- ErrorInfoUtil start -->
+    <!-- ErrorInfoUtil end -->
+
+    <!-- ========================== HttpTool ========================== -->
+
+    <!-- ========================== Widgets ========================== -->
+
+    <!-- PullToRefreshLayout start -->
+    <!-- PullToRefreshLayout end -->
+
+    <!-- ========================== Widgets ========================== -->
+
+    <!-- ========================== Utils ========================== -->
+
+ <!-- DateUtils start -->
+    <!-- DateUtils end -->
+    <!-- MapFragment start -->
+    <string name="map_title">Map</string>
+
+    <!-- MapFragment end -->
+
+
+
+    <string name="storage_not_available">Sorry, your SD Card is not available.</string>
+    <!-- ========================== Utils ========================== -->
+
+    <string name="facebook_app_id">1213659478644673</string>
+</resources>

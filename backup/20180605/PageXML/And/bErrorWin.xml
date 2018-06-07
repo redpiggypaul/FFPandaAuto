@@ -1,0 +1,5 @@
+<page name="bErrorWin">
+	<element name="errorTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="errorMessage" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="Account" triggerWindow="" showMode="ready" />
+</page>

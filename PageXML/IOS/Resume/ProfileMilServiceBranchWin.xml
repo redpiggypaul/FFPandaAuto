@@ -1,0 +1,7 @@
+<page name="ProfileMilServiceBranchWin">
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="ProfileEditAward" triggerWindow="" showMode="ready" />
+	<element name="overview_branch" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPicker[1]/UIAPickerWheel[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="branchRoll" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPicker[1]/UIAPickerWheel[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="pickerDoneBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[2]" NextPage="ProfileEditAward" triggerWindow="" showMode="ready" />
+	<element name="OKBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[2]" NextPage="ProfileEditAward" triggerWindow="" showMode="ready" />
+</page>

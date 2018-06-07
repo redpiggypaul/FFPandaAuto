@@ -1,0 +1,5 @@
+<page name="NaviConfirmWin">
+	<element name="YESBtn" parentElementName="" waitTime="0" textContent="OK"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="noBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[1]/UIAButton[1]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="yesBtn" parentElementName="" waitTime="0" textContent="Are you sure you want to sign out?"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAAlert[1]/UIAScrollView[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

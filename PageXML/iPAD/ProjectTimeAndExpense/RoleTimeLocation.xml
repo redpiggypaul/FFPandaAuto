@@ -1,0 +1,6 @@
+<page name="RoleTimeLocation">
+	<element name="itemByID" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="location_description" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="searchField" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Search Location"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Back"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="TimeAndExpense" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,7 @@
+<page name="bloginPage">
+	<element name="loginus" parentElementName="" waitTime="0" textContent="Not a member yet? Join us"  defaultValue="" type="id" value="signup_register" NextPage="Regist" triggerWindow="" showMode="ready" />
+	<element name="uidField" parentElementName="" waitTime="0" textContent=""  defaultValue="Email Address" type="id" value="signin_email" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="loginBtn" parentElementName="" waitTime="0" textContent="Sign In"  defaultValue="" type="id" value="signin_btn" NextPage="Home" triggerWindow="" showMode="ready" />
+	<element name="pwdField" parentElementName="" waitTime="0" textContent=""  defaultValue="Password" type="id" value="signin_password" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="signin_again_header" NextPage="" triggerWindow="" showMode="ready" />
+</page>

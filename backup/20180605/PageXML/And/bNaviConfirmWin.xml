@@ -1,0 +1,6 @@
+<page name="bNaviConfirmWin">
+	<element name="confirmMessage" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="confirmTitle" parentElementName="" waitTime="0" textContent="Are you sure you want to delete your Talent Exchange account?"  defaultValue="" type="id" value="alertTitle" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="noBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button2" NextPage="Account" triggerWindow="" showMode="ready" />
+	<element name="yesBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="button1" NextPage="" triggerWindow="AccDelErrorWin" showMode="ready" />
+</page>

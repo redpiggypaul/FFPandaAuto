@@ -1,0 +1,4 @@
+<page name="bDeleteAccCompleteWin">
+	<element name="completeMessage" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="message" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="okBtn" parentElementName="" waitTime="0" textContent="OK"  defaultValue="" type="id" value="button1" NextPage="" triggerWindow="" showMode="ready" />
+</page>

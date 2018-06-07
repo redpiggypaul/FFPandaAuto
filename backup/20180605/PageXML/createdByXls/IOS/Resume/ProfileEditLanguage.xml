@@ -1,0 +1,8 @@
+<page name="ProfileEditLanguage">
+	<element name="itemByID" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="classname" value="UIATableCell" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="searchContent_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIASearchBar[1]/UIASearchBar[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="searchField" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., English" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIASearchBar[1]/UIASearchBar[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="doneBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="search_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[:REXitem:]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

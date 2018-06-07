@@ -1,0 +1,28 @@
+<page name="Preference">
+    <element OperationName="editPreferencecOnly_Location" Step="1" PageName="Profile" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location" Step="2" PageName="ProfileEdit" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location" Step="3" PageName="PreferenceEdit" OperationType="" elementName="city" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location" Step="4" PageName="PreferenceSearchCity" OperationType="" elementName="searchField" elementType="search" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location" Step="5" PageName="PreferenceEdit" OperationType="" elementName="zipCode" elementType="textfield_input" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location" Step="6" PageName="PreferenceEdit" OperationType="" elementName="state" elementType="dropdownlist_input" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location_Check" Step="1" PageName="Profile" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location_Check" Step="2" PageName="ProfileEdit" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location_Check" Step="3" PageName="PreferenceEdit" OperationType="" elementName="city" elementType="checkcontent" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location_Check" Step="4" PageName="PreferenceEdit" OperationType="" elementName="zipCode" elementType="checkcontent" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Location_Check" Step="5" PageName="PreferenceEdit" OperationType="" elementName="stateView" elementType="checkcontent" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Overtime" Step="1" PageName="Profile" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Overtime" Step="2" PageName="ProfileEdit" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Overtime" Step="3" PageName="PreferenceEdit" OperationType="" elementName="overtime" elementType="dropdownlist_input" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Overtime_Check" Step="1" PageName="Profile" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_Overtime_Check" Step="2" PageName="PreferenceView" OperationType="" elementName="overTimeView" elementType="checkcontent" elementParameter="" />
+    <element OperationName="editPreferencecOnly_TravelAmount" Step="1" PageName="Profile" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_TravelAmount" Step="2" PageName="ProfileEdit" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_TravelAmount" Step="3" PageName="PreferenceEdit" OperationType="" elementName="TravelAmount" elementType="dropdownlist_input" elementParameter="" />
+    <element OperationName="editPreferencecOnly_TravelAmount_Check" Step="1" PageName="Profile" OperationType="" elementName="preferBtn" elementType="btn" elementParameter="" />
+    <element OperationName="editPreferencecOnly_TravelAmount_Check" Step="3" PageName="PreferenceView" OperationType="" elementName="TravelAmountView" elementType="checkcontent" elementParameter="" />
+    <element OperationName="preference_profileSaveback2Profile" Step="1" PageName="PreferenceEdit" OperationType="" elementName="saveBtn" elementType="btn" elementParameter="" />
+    <element OperationName="preference_profileSaveback2Profile" Step="2" PageName="Profile" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="preference_profileSaveback2Profile" Step="3" PageName="NaviBar" OperationType="" elementName="DashBoardBtn" elementType="btn" elementParameter="" />
+    <element OperationName="preference_profileSaveback2Profile" Step="4" PageName="Home" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="preference_profileSaveback2Profile" Step="5" PageName="NaviBar" OperationType="" elementName="ProfileBtn" elementType="btn" elementParameter="" />
+</page>

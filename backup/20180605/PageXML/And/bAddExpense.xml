@@ -1,0 +1,11 @@
+<page name="bAddExpense">
+	<element name="submitBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="btn_save" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="code" parentElementName="" waitTime="0" textContent=""  defaultValue="Tap here to select WBS code" type="id" value="tv_wbs_code_description" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="task" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_location" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="purpose" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_purpose" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="NaviBar" triggerWindow="" showMode="ready" />
+	<element name="addBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="img_right" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="search_text_view" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="deleteBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="btn_delete" NextPage="" triggerWindow="" showMode="ready" />
+</page>

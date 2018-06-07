@@ -1,0 +1,14 @@
+<page name="homePage">
+	<element name="offboarding_title" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="offboarding_title" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="InPricingEventText" parentElementName="" waitTime="0" textContent="In Pricing Event"  defaultValue="" type="classname" value="UIAStaticText" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="InPricingEvent" parentElementName="" waitTime="0" textContent="In Pricing Event"  defaultValue="" type="classname" value="UIATableCell" NextPage="RoleTracking" triggerWindow="" showMode="ready" />
+	<element name="onprojectTEBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="single_role_first_line" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="closePrefer" parentElementName="" waitTime="0" textContent="white close icon"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="onproject" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="role_card_rolename" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Dashboard"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="onProjectTimeExpensesBtn" parentElementName="" waitTime="0" textContent="Time &amp; Expenses"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[2]/UIATableCell[1]/UIAButton[2]" NextPage="TimeAndExpense" triggerWindow="" showMode="ready" />
+	<element name="offBoardingTimeExpensesBtn" parentElementName="" waitTime="0" textContent="Time &amp; Expenses"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATableView[2]/UIATableCell[1]/UIAButton[2]" NextPage="TimeAndExpense" triggerWindow="" showMode="ready" />
+	<element name="onproject_title" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="onproject_title" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="NaviBarBtn" parentElementName="" waitTime="0" textContent="dashboard menu icon"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="NaviBar" triggerWindow="" showMode="ready" />
+	<element name="onprojectBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="single_role_first_line" NextPage="" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,6 @@
+<page name="loginPage">
+	<element name="uidField" parentElementName="" waitTime="0" textContent=""  defaultValue="Email Address" type="classname" value="UIATextField" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="loginBtn" parentElementName="" waitTime="0" textContent="Sign In"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="Home" triggerWindow="" showMode="ready" />
+	<element name="pwdField" parentElementName="" waitTime="0" textContent=""  defaultValue="Password" type="classname" value="UIASecureTextField" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="signin_again_header" NextPage="" triggerWindow="" showMode="ready" />
+</page>

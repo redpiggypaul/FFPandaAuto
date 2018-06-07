@@ -1,0 +1,12 @@
+<page name="bViewExpense">
+	<element name="codeDesc" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_wbs_code_description" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="code" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_wbs_code_expense" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="task" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_location" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="submitBtn" parentElementName="" waitTime="0" textContent="Submit for Approval"  defaultValue="" type="id" value="btn_save" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="purpose" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="et_purpose" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="removeBtn" parentElementName="" waitTime="0" textContent="Remove This Expense"  defaultValue="" type="id" value="btn_delete" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Expenses"  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.TextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]/android.widget.ImageButton[1]" NextPage="NaviBar" triggerWindow="" showMode="ready" />
+	<element name="entryAmount" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="txt_edit_profile_title_2" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="entryTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="txt_edit_profile_title_1" NextPage="" triggerWindow="" showMode="ready" />
+</page>

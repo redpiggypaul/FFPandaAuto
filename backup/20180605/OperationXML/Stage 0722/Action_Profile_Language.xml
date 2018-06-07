@@ -1,0 +1,13 @@
+<page name="Profile_Language">
+    <element OperationName="language_profileSaveback2Profile" Step="4" PageName="Home" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="language_profileSaveback2Profile" Step="3" PageName="NaviBar" OperationType="" elementName="DashBoardBtn" elementType="btn" elementParameter="" />
+    <element OperationName="addLanguageOnly_Check" Step="2" PageName="ProfileEdit" OperationType="" elementName="languages_recordContent" elementType="checkcontent" elementParameter="" />
+    <element OperationName="language_profileSaveback2Profile" Step="2" PageName="Profile" OperationType="toOtherPage" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="addLanguageOnly_Check" Step="1" PageName="Profile" OperationType="toOtherPage" elementName="editBtn" elementType="btn" elementParameter="" />
+    <element OperationName="language_profileSaveback2Profile" Step="1" PageName="ProfileEdit" OperationType="" elementName="saveBtn" elementType="btn" elementParameter="" />
+    <element OperationName="addLanguageAdditional" Step="1" PageName="ProfileEdit" OperationType="" elementName="languages" elementType="btn" elementParameter="" />
+    <element OperationName="addLanguageOnly" Step="1" PageName="ProfileEdit" OperationType="" elementName="languages" elementType="btn" elementParameter="" />
+    <element OperationName="addLanguageAdditional" Step="2" PageName="ProfileEditLanguage" OperationType="" elementName="searchField" elementType="search" elementParameter="" />
+    <element OperationName="addLanguageOnly" Step="2" PageName="ProfileEditLanguage" OperationType="" elementName="searchField" elementType="search" elementParameter="" />
+    <element OperationName="language_profileSaveback2Profile" Step="5" PageName="NaviBar" OperationType="toOtherPage" elementName="ProfileBtn" elementType="btn" elementParameter="" />
+</page>

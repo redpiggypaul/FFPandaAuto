@@ -1,0 +1,15 @@
+<page name="history">
+    <element OperationName="viewHistory" Step="1" PageName="Profile" OperationType="" elementName="historyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="viewHistory" Step="2" PageName="YourHistory" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+    <element OperationName="viewHistory" Step="3" PageName="HistoryFilter" OperationType="" elementName="multi_item" elementType="multiList_input" elementParameter="" />
+    <element OperationName="viewHistory" Step="4" PageName="HistoryFilter" OperationType="" elementName="startdate" elementType="calendar_date" elementParameter="" />
+    <element OperationName="viewHistory" Step="5" PageName="HistoryFilter" OperationType="" elementName="enddate" elementType="calendar_date" elementParameter="" />
+    <element OperationName="viewHistory" Step="6" PageName="HistoryFilter" OperationType="" elementName="ApplyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="viewHistory_nodate" Step="1" PageName="Profile" OperationType="" elementName="historyBtn" elementType="btn" elementParameter="" />
+    <element OperationName="viewHistory_nodate" Step="2" PageName="YourHistory" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+    <element OperationName="viewHistory_nodate" Step="3" PageName="HistoryFilter" OperationType="" elementName="multi_item" elementType="multiList_input" elementParameter="" />
+    <element OperationName="viewHistory_nodate" Step="6" PageName="HistoryFilter" OperationType="" elementName="ApplyBtn" elementType="btn" elementParameter="" />
+
+    <element OperationName="viewHistory_roleCheck" Step="1" PageName="HistoryFilter" OperationType="" elementName="roleTitle" elementType="boxsearch_titleContent" elementParameter="" />
+    <element OperationName="viewHistory_roleCheck" Step="2" PageName="YourHistory" OperationType="" elementName="FilterBtn" elementType="btn" elementParameter="" />
+</page>

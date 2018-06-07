@@ -1,0 +1,8 @@
+<page name="pageSample">
+    <element name="uidField" waitTime="2" type="id" value="signin_email" NextPage="" showMode="ready"/>
+    <element name="pwdField" waitTime="2" type="id" value="signin_password" NextPage="" showMode="ready"/>
+    <element name="loginBtn" waitTime="2" type="id" value="signin_btn" NextPage="homePage" showMode="ready"/>
+    <element name="loadingc" waitTime="2" type="id" value="iv_loading_center" NextPage="" showMode="loading"/>
+    <element name="loadingo" waitTime="2" type="id" value="iv_loading_outer" NextPage="" showMode="loading"/>
+    <element name="loadingi" waitTime="2" type="id" value="iv_loading_inner" NextPage="" showMode="loading"/>
+</page>

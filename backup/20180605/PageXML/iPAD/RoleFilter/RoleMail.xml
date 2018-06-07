@@ -1,0 +1,10 @@
+<page name="RoleMail">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Share Role via Email"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="toAddress" parentElementName="" waitTime="0" textContent=""  defaultValue="user1@email.com; user2@email.com" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="roleTitle" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[5]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="sendBtn" parentElementName="" waitTime="0" textContent="Send Email"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="mailContent" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIATextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="subject" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="fromAddr" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

@@ -1,0 +1,16 @@
+<page name="AddExpense">
+	<element name="code" parentElementName="" waitTime="0" textContent=""  defaultValue="Tap here to select WBS code" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[1]" NextPage="ExpenseTimeCode" triggerWindow="" showMode="ready" />
+	<element name="codeCheck" parentElementName="" waitTime="0" textContent=""  defaultValue="Tap here to select WBS code" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[1]" NextPage="ExpenseTimeCode" triggerWindow="" showMode="ready" />
+	<element name="task" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[3]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="taskCheck" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[4]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="purpose" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="purposeCheck" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[1]/UIATextField[5]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Time and Expenses"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="addEntryBtn" parentElementName="" waitTime="0" textContent="New Entry"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[2]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="entryAmount" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableCell[2]/UIATextField[7]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="totalAmount" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[3]/UIATableGroup[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+
+	<element name="itemByID" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAPopover[1]/UIATableView[1]/UIATableCell[:REXitem:]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

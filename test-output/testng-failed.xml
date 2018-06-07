@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [REXAUTO4AND]">
+  <parameter name="port" value="4723"/>
+  <listeners>
+    <listener class-name="utility.TestngListeners"/>
+  </listeners>
+  <test name="20160617(failed)">
+    <parameter name="port" value="4723"/>
+    <classes>
+      <class name="REXSH.REXAUTO.AppTestEditProfileEducation">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- REXSH.REXAUTO.AppTestEditProfileEducation -->
+      <class name="REXSH.REXAUTO.AppTestAccount">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- REXSH.REXAUTO.AppTestAccount -->
+      <class name="REXSH.REXAUTO.AppTestSearchRole">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="searchRoleLocationName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- REXSH.REXAUTO.AppTestSearchRole -->
+      <class name="REXSH.REXAUTO.AppTestOnProjectTimeAndExpense">
+        <methods>
+          <include name="addTime" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- REXSH.REXAUTO.AppTestOnProjectTimeAndExpense -->
+    </classes>
+  </test> <!-- 20160617(failed) -->
+</suite> <!-- Failed suite [REXAUTO4AND] -->

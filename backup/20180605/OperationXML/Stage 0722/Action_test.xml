@@ -1,0 +1,5 @@
+<page name="test">
+    <element OperationName="test" Step="3" PageName="Home" OperationType="" elementName="NaviBarBtn" elementType="btn" elementParameter="" />
+    <element OperationName="test" Step="2" PageName="Home" OperationType="" elementName="InPricingEvent" elementType="btn" elementParameter="" />
+    <element OperationName="test" Step="1" PageName="Home" OperationType="" elementName="closePrefer" elementType="btn" elementParameter="" />
+</page>

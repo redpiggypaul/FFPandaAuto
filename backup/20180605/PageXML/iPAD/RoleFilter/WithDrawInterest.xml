@@ -1,0 +1,12 @@
+<page name="WithDrawInterest">
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Withdraw Interest"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="RoleFilter" triggerWindow="" showMode="ready" />
+    <element name="reason" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="reasonView" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="reason_picker" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="classname" value="UIAPickerWheel" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="withdrawBtn" parentElementName="" waitTime="0" textContent="Withdraw"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[2]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="pickerCancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="pickerDoneBtn" parentElementName="" waitTime="0" textContent="Done"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="comments" parentElementName="" waitTime="0" textContent=""  defaultValue="Type your comments here" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIATextView[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="MM/DD/YY" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

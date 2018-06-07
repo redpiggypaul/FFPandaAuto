@@ -1,0 +1,9 @@
+<page name="HistoryFilter">
+	<element name="ApplyBtn" parentElementName="" waitTime="0" textContent="Apply"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="" triggerWindow="HistorySearchErrorWin" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Filter"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="CancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="startdate" parentElementName="" waitTime="0" textContent="MM/DD/YYYY"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="enddate" parentElementName="" waitTime="0" textContent="MM/DD/YYYY"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="multi_item" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[:REXitem:]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+    <element name="ClearBtn" parentElementName="" waitTime="0" textContent="Clear All"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

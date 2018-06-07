@@ -1,0 +1,6 @@
+<page name="bRateSetting">
+	<element name="unitCell" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="pv_price_picker_price_unit" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="DoneBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_price_picker_ctl_done" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="clearBtn" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="id" value="tv_price_picker_ctl_clear" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="valueRange" parentElementName="" waitTime="0" textContent=""  defaultValue="" type="xpath" value="//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.view.View[1]" NextPage="" triggerWindow="" showMode="ready" />
+</page>

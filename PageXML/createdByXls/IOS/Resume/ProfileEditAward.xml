@@ -1,0 +1,10 @@
+<page name="ProfileEditAward">
+	<element name="date" parentElementName="" waitTime="0" textContent=""  defaultValue="mm/dd/yyyy" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[3]/UIAButton[1]" NextPage="ProfileAwardDateWin" triggerWindow="" showMode="ready" />
+	<element name="cancelBtn" parentElementName="" waitTime="0" textContent="Cancel"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[1]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="removeBtn" parentElementName="" waitTime="0" textContent="Remove"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAButton[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="PageTitle" parentElementName="" waitTime="0" textContent="Award Or Achievement"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="backBtn" parentElementName="" waitTime="0" textContent="Back"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[2]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+	<element name="title" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., Top 30 Exec under 30" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[1]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="issuer" parentElementName="" waitTime="0" textContent=""  defaultValue="e.g., Forbes" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[2]/UIATextField[1]" NextPage="" triggerWindow="" showMode="ready" />
+	<element name="saveBtn" parentElementName="" waitTime="0" textContent="Save"  defaultValue="" type="xpath" value="//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]" NextPage="ProfileEdit" triggerWindow="" showMode="ready" />
+</page>

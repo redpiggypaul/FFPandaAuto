@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REXAUTO4REX" verbose="5">
+    <listeners>
+        <listener class-name="utility.TestngListeners"/>
+    </listeners>
+    <test name="2016-09-28 03:52:56" preserve-order="true">
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="REXSH.REXAUTO.BasicAccount">
+            </class>
+            <class name="REXSH.REXAUTO.BasicEditProfileAward">
+            </class>
+        </classes>
+    </test>
+</suite>

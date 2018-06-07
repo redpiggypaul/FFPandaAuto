@@ -1,0 +1,3 @@
+<page name="PageTemplate">
+	<element name="theEleName" parentElementName="theParEleName" waitTime="theWTime" textContent="theTextContent"  defaultValue="theDValue" type="theType" value="theLocator" NextPage="theNPage" triggerWindow="theTWin" showMode="theMode" />
+</page>

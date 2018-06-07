@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REXAUTO4AND" verbose="5">
+    <listeners>
+        <listener class-name="utility.TestngListeners"/>
+    </listeners>
+    <test name="20160628" preserve-order="true">
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="REXSH.REXAUTO.AppTestAccount">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileAward">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileEducation">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileLanguage">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileMilitary">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfilePatent">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileProAffiliation">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfilePublication">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileSkill">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileCertificationANDlicense">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileReference">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileTitleNew">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileSummaryNew">
+            </class>
+            <class name="REXSH.REXAUTO.AppTestEditProfileWorkExp">
+            </class>
+        </classes>
+    </test>
+</suite>
