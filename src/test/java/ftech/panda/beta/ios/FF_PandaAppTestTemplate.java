@@ -49,12 +49,12 @@ public class FF_PandaAppTestTemplate {
     }
 
 
-    public ArrayList<StringBuilder> stringList2SBArrlist(String[] input) {
-        ArrayList<StringBuilder> result = new ArrayList<StringBuilder>();
+    public ArrayList<String> stringList2SBArrlist(String[] input) {
+        ArrayList<String> result = new ArrayList<String>();
         try {
             result.clear();
             for (int i = 0; i < input.length; i++) {
-                result.add(new StringBuilder(input[i]));
+                result.add(new String(input[i]));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -518,8 +518,8 @@ public class FF_PandaAppTestTemplate {
     }
 
 
-    public static ArrayList<StringBuilder> preapareActionParameterList(String[] a, String[] b) {
-        ArrayList<StringBuilder> result = new ArrayList<StringBuilder>();
+    public static ArrayList<String> preapareActionParameterList(String[] a, String[] b) {
+        ArrayList<String> result = new ArrayList<String>();
         try {
             result.clear();
             String[] target = new String[a.length + b.length];
@@ -527,7 +527,7 @@ public class FF_PandaAppTestTemplate {
             System.arraycopy(b, 0, target, a.length, b.length);
             for (int ind = 0; ind < target.length; ind++) {
                 System.out.println("%%%%%%%%%%%%%%%%%%%" + target[ind]);
-                result.add(new StringBuilder(target[ind]));
+                result.add(new String(target[ind]));
             }
         } catch (Exception e) {
             e.printStackTrace();

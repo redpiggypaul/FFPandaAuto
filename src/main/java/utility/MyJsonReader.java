@@ -166,9 +166,9 @@ public class MyJsonReader {
     }
 
 
-    public static HashMap<StringBuilder, elementEntity> readJSON_4_WebElement_NEW(String fileName) throws Exception {
+    public static HashMap<String, elementEntity> readJSON_4_WebElement_NEW(String fileName) throws Exception {
         // long startTime = System.currentTimeMillis();
-        HashMap<StringBuilder, elementEntity> elementsMap = new HashMap<StringBuilder, elementEntity>();
+        HashMap<String, elementEntity> elementsMap = new HashMap<String, elementEntity>();
         elementsMap.clear();
         int lineN = 1;
         // 创建json解析器
@@ -201,7 +201,7 @@ public class MyJsonReader {
                         StringBuilder strHM = new StringBuilder(elementLine.get("strHandleMode").getAsString());
                         elementEntity eLocator;
                         eLocator = new elementEntity(name, value, type, showMode, dValue, text, tWin, strHM);
-                        elementsMap.put(name, eLocator);
+                        elementsMap.put(name.toString(), eLocator);
                     } catch (Exception e) {
                         throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                     }
@@ -264,9 +264,9 @@ public class MyJsonReader {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> readJSON_4_dValue_NEW(String fileName) throws Exception {
+    public static HashMap<String, StringBuilder> readJSON_4_dValue_NEW(String fileName) throws Exception {
         // long startTime = System.currentTimeMillis();
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+        HashMap<String, StringBuilder> elementsMap = new HashMap<String, StringBuilder>();
         elementsMap.clear();
         int lineN = 1;
         // 创建json解析器
@@ -289,7 +289,7 @@ public class MyJsonReader {
                         //     Element elementObj = (Element) it.next();
                         StringBuilder name = new StringBuilder(elementLine.get("name").getAsString());
                         StringBuilder dValue = new StringBuilder(elementLine.get("defaultValue").getAsString());
-                        elementsMap.put(name, dValue);
+                        elementsMap.put(name.toString(), dValue);
                     } catch (Exception e) {
                         throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                     }
@@ -557,7 +557,7 @@ public class MyJsonReader {
         pw.close();
     }
 
-    public static void createJSON_PageElement(TreeMap<StringBuilder, FFPandaElementEntity> extEleMap, StringBuilder fileName, StringBuilder pathName) throws IOException {
+    public static void createJSON_PageElement(TreeMap<String, FFPandaElementEntity> extEleMap, StringBuilder fileName, StringBuilder pathName) throws IOException {
         if (fileName.toString().endsWith(".json")) {
         } else if (fileName.toString().contains(".")) {
             fileName = new StringBuilder(fileName.substring(0, fileName.lastIndexOf(".")) + ".json");

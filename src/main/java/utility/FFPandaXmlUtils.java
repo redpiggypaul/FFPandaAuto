@@ -27,12 +27,12 @@ public class FFPandaXmlUtils {
         theLogger = l;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readXMLDocumentAll
-            (StringBuilder fileNameXML, Object osType) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readXMLDocumentAll
+            (String fileNameXML, Object osType) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         try {
-            //System.out.println("in XmlUtils readXMLDoucmentAll(StringBuilder fileNameXML, Object osType ) *** ");
+            //System.out.println("in XmlUtils readXMLDoucmentAll(String fileNameXML, Object osType ) *** ");
             //System.out.println("Chcek the file " + fileNameXML);
             File file = new File(System.getProperty("user.dir") + fileNameXML);
             if (!file.exists()) {
@@ -109,7 +109,7 @@ public class FFPandaXmlUtils {
     }
 
     public static void readActionXMLDoc4Set
-            (StringBuilder fileNameXML, Object osType) throws Exception {
+            (String fileNameXML, Object osType) throws Exception {
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
         if (!file.exists()) {
@@ -160,10 +160,10 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readXMLDocumentNeg
-            (StringBuilder fileNameXML, Object osType) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
-        HashMap<StringBuilder, FFPandaElementEntity> tMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readXMLDocumentNeg
+            (String fileNameXML, Object osType) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
+        HashMap<String, FFPandaElementEntity> tMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         tMap.clear();
         try {
@@ -180,7 +180,7 @@ public class FFPandaXmlUtils {
                 //System.out.println(modeValue);
                 if (!(modeValue.equalsIgnoreCase("ready") || modeValue.toLowerCase().contains("ready"))) {
                     //System.out.println(logSpace4thisPage + "put!!!");
-                    elementsMap.put((StringBuilder) eleEntry.getKey(), (FFPandaElementEntity) eleEntry.getValue());
+                    elementsMap.put((String) eleEntry.getKey(), (FFPandaElementEntity) eleEntry.getValue());
                 }
             }
         } catch (XMLException e) {
@@ -214,10 +214,10 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readXMLDocument
-            (StringBuilder fileNameXML, Object osType) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
-        HashMap<StringBuilder, FFPandaElementEntity> tMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readXMLDocument
+            (String fileNameXML, Object osType) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
+        HashMap<String, FFPandaElementEntity> tMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         tMap.clear();
         //System.out.println(logSpace4thisPage + "S XmlU java");
@@ -231,11 +231,11 @@ public class FFPandaXmlUtils {
                 //System.out.println(logSpace4thisPage + "Start loop the Map in readXMLDocument");
                 Map.Entry eleEntry = (Map.Entry) it.next();
                 FFPandaElementEntity newTobj = (FFPandaElementEntity) eleEntry.getValue();
-                StringBuilder modeValue = newTobj.getShowMode();
+                String modeValue = newTobj.getShowMode().toString();
                 //System.out.println(logSpace4thisPage + modeValue);
                 if ((modeValue.toString().equalsIgnoreCase("ready") || modeValue.toString().toLowerCase().contains("ready"))) {
                     //System.out.println("put!!!");
-                    elementsMap.put((StringBuilder) eleEntry.getKey(), (FFPandaElementEntity) eleEntry.getValue());
+                    elementsMap.put((String) eleEntry.getKey(), (FFPandaElementEntity) eleEntry.getValue());
                 }
             }
         } catch (XMLException e) {
@@ -247,9 +247,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, operationItem> readXMLDocument4Ope
+    public static HashMap<String, operationItem> readXMLDocument4Ope
             (StringBuilder fileNameXML, Object osType) throws Exception {
-        HashMap<StringBuilder, operationItem> elementsMap = new HashMap<StringBuilder, operationItem>();
+        HashMap<String, operationItem> elementsMap = new HashMap<String, operationItem>();
         HashMap<String, operationItem> tMap = new HashMap<String, operationItem>();
         elementsMap.clear();
         tMap.clear();
@@ -267,7 +267,7 @@ public class FFPandaXmlUtils {
                 //System.out.println(logSpace4thisPage + modeValue);
                 if ((modeValue.equalsIgnoreCase("ready") || modeValue.toLowerCase().contains("ready"))) {
                     //System.out.println(logSpace4thisPage + "put!!!");
-                    elementsMap.put((StringBuilder) eleEntry.getKey(), (operationItem) eleEntry.getValue());
+                    elementsMap.put((String) eleEntry.getKey(), (operationItem) eleEntry.getValue());
                 }
             }
         } catch (XMLException e) {
@@ -279,9 +279,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findRouteList(StringBuilder fileNameXML, Object osType) throws Exception {
-        //    HashMap<StringBuilder, String> elementsMap = new HashMap<StringBuilder, String>();
-        HashMap<StringBuilder, StringBuilder> tMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findRouteList(String fileNameXML, Object osType) throws Exception {
+        //    HashMap<String, String> elementsMap = new HashMap<String, String>();
+        HashMap<String, String> tMap = new HashMap<String, String>();
         tMap.clear();
         //   tMap.clear();
 
@@ -306,9 +306,9 @@ public class FFPandaXmlUtils {
 
     /*
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDocument
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDocument
             (String path, String pageName, String para1, String tPageName) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + path);
@@ -371,15 +371,15 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 */
-    public static HashMap<StringBuilder, FFPandaElementEntity> readIOSXMLDocument4X
-    (StringBuilder fileNameXML) throws Exception {
+    public static HashMap<String, FFPandaElementEntity> readIOSXMLDocument4X
+    (String fileNameXML) throws Exception {
         //System.out.println(logSpace4thisPage + "readIOSXMLDocument4X NOT ready !!!");
         return null;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readIOSXMLDocument4Base
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readIOSXMLDocument4Base
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -407,7 +407,7 @@ public class FFPandaXmlUtils {
                             StringBuilder tWin = new StringBuilder(elementObj.attributeValue("triggerWindow"));
                             FFPandaElementEntity eLocator;
                             eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                            elementsMap.put(eName, eLocator);
+                            elementsMap.put(eName.toString(), eLocator);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                         }
@@ -427,9 +427,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDocument4X
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDocument4X
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         //System.out.println(logSpace4thisPage + "Check the userdir in readANDXMLDocN " + System.getProperty("user.dir"));
@@ -461,7 +461,7 @@ public class FFPandaXmlUtils {
 
                             if ((showMode.toString().equalsIgnoreCase("ready") || showMode.toString().toLowerCase().contains("ready"))) {
                                 eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                                elementsMap.put(eName, eLocator);
+                                elementsMap.put(eName.toString(), eLocator);
                             }
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -482,9 +482,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDocument4Base
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDocument4Base
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -512,7 +512,7 @@ public class FFPandaXmlUtils {
                             StringBuilder tWin = new StringBuilder(elementObj.attributeValue("triggerWindow"));
                             FFPandaElementEntity eLocator;
                             eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                            elementsMap.put(eName, eLocator);
+                            elementsMap.put(eName.toString(), eLocator);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                         }
@@ -531,9 +531,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDoc4loading
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDoc4loading
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -564,7 +564,7 @@ public class FFPandaXmlUtils {
 
                             if ((showMode.toString().equalsIgnoreCase("load"))) {
                                 eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                                elementsMap.put(eName, eLocator);
+                                elementsMap.put(eName.toString(), eLocator);
                             }
 
                         } catch (Exception e) {
@@ -585,9 +585,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDoc4Mode
-            (StringBuilder fileNameXML, StringBuilder mode) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDoc4Mode
+            (String fileNameXML, String mode) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -617,7 +617,7 @@ public class FFPandaXmlUtils {
 
                             if ((showMode.toString().equalsIgnoreCase(mode.toString()))) {
                                 eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                                elementsMap.put(eName, eLocator);
+                                elementsMap.put(eName.toString(), eLocator);
                             }
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -638,9 +638,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readANDXMLDocumentN
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readANDXMLDocumentN
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -670,7 +670,7 @@ public class FFPandaXmlUtils {
                             FFPandaElementEntity eLocator;
                             if ((showMode.toString().equalsIgnoreCase("ready") || showMode.toString().toLowerCase().contains("ready"))) {
                                 eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                                elementsMap.put(eName, eLocator);
+                                elementsMap.put(eName.toString(), eLocator);
                             }
 
                         } catch (Exception e) {
@@ -691,9 +691,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readIOSXMLDocumentN
-            (StringBuilder fileNameXML) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readIOSXMLDocumentN
+            (String fileNameXML) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileNameXML);
@@ -722,7 +722,7 @@ public class FFPandaXmlUtils {
                             FFPandaElementEntity eLocator;
                             if ((showMode.toString().equalsIgnoreCase("ready") || showMode.toString().toLowerCase().contains("ready"))) {
                                 eLocator = new FFPandaElementEntity(pName, eName, locatorType, locatorStr, dValue, text, tWin, showMode, nextPage);
-                                elementsMap.put(eName, eLocator);
+                                elementsMap.put(eName.toString(), eLocator);
                             }
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -743,9 +743,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findANDRouteList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findANDRouteList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -762,8 +762,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder name = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder nextPage =  new StringBuilder(elementObj.attributeValue("nextPage"));
+                            String name = new String(elementObj.attributeValue("elementName"));
+                            String nextPage =  new String(elementObj.attributeValue("nextPage"));
                             elementsMap.put(name, nextPage);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -784,9 +784,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, StringBuilder> findIOSRouteList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findIOSRouteList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -812,8 +812,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder name = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder nextPage = new StringBuilder(elementObj.attributeValue("nextPage"));
+                            String name = new String(elementObj.attributeValue("elementName"));
+                            String nextPage = new String(elementObj.attributeValue("nextPage"));
                             //System.out.println(logSpace4thisPage + "### " + name);
                             //System.out.println(logSpace4thisPage + "### " + nextPage);
                             elementsMap.put(name, nextPage);
@@ -836,9 +836,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findIOSDefaultValueList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findIOSDefaultValueList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -859,8 +859,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder name = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder defaultValue = new StringBuilder(elementObj.attributeValue("defaultValue"));
+                            String name = new String(elementObj.attributeValue("elementName"));
+                            String defaultValue = new String(elementObj.attributeValue("defaultValue"));
                             //System.out.println(logSpace4thisPage + "### " + name);
                             //System.out.println(logSpace4thisPage + "### " + defaultValue);
                             elementsMap.put(name, defaultValue);
@@ -883,9 +883,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findIOSWindowList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findIOSWindowList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -902,8 +902,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder eName = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder tWin = new StringBuilder(elementObj.attributeValue("triggerWindow"));
+                            String eName = new String(elementObj.attributeValue("elementName"));
+                            String tWin = new String(elementObj.attributeValue("triggerWindow"));
 
                             if (!tWin.equals("")) {
                                 elementsMap.put(eName, tWin);
@@ -926,9 +926,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, StringBuilder> findANDTextContentList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findANDTextContentList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -945,8 +945,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder eName = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder text = new StringBuilder(elementObj.attributeValue("textContent"));
+                            String eName = new String(elementObj.attributeValue("elementName"));
+                            String text = new String(elementObj.attributeValue("textContent"));
                             elementsMap.put(eName, text);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -968,9 +968,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findIOSTextContentList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findIOSTextContentList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -988,8 +988,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder eName = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder text = new StringBuilder(elementObj.attributeValue("textContent"));
+                            String eName = new String(elementObj.attributeValue("elementName"));
+                            String text = new String(elementObj.attributeValue("textContent"));
                             elementsMap.put(eName, text);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -1011,9 +1011,9 @@ public class FFPandaXmlUtils {
     }
 
 
-    public static HashMap<StringBuilder, StringBuilder> findANDDefaultValueList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findANDDefaultValueList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -1031,8 +1031,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder eName = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder text = new StringBuilder(elementObj.attributeValue("defaultValue"));
+                            String eName = new String(elementObj.attributeValue("elementName"));
+                            String text = new String(elementObj.attributeValue("defaultValue"));
                             elementsMap.put(eName, text);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -1053,9 +1053,9 @@ public class FFPandaXmlUtils {
         return elementsMap;
     }
 
-    public static HashMap<StringBuilder, StringBuilder> findANDWindowList
-            (StringBuilder fileName) throws Exception {
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+    public static HashMap<String, String> findANDWindowList
+            (String fileName) throws Exception {
+        HashMap<String, String> elementsMap = new HashMap<String, String>();
         elementsMap.clear();
         int lineN = 1;
         File file = new File(System.getProperty("user.dir") + fileName);
@@ -1073,8 +1073,8 @@ public class FFPandaXmlUtils {
                         lineN++;
                         try {
                             Element elementObj = (Element) it.next();
-                            StringBuilder eName = new StringBuilder(elementObj.attributeValue("elementName"));
-                            StringBuilder tWIN = new StringBuilder(elementObj.attributeValue("triggerWindow"));
+                            String eName = new String(elementObj.attributeValue("elementName"));
+                            String tWIN = new String(elementObj.attributeValue("triggerWindow"));
                             if (!tWIN.toString().equals("")) {
                                 elementsMap.put(eName, tWIN);
                             }
@@ -1111,7 +1111,7 @@ public class FFPandaXmlUtils {
 
 
             long gstartTime = System.currentTimeMillis();
-            readANDXMLDocument4Base(new StringBuilder("/src/main/java/utility/" + "test.xml"));
+            readANDXMLDocument4Base(new String("/src/main/java/utility/" + "test.xml"));
 
             System.out.println(System.currentTimeMillis() - gstartTime + " ms");
 

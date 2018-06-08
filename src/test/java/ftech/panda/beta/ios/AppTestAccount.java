@@ -45,13 +45,13 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
     String[] TestStepList_change_LastName = new String[]{"login", "switch2AccountSetting", "changeLastName", "changeLastName_Check"};
     String[] TestStepList_change_Email = new String[]{"login", "switch2AccountSetting", "changeEmail", "changeEmail_Check"};
 
-    ArrayList<StringBuilder> TestStepList_Account_PSW_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> TestStepList_Account_del_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> iosTestStepList_Account_PSW_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> iosTestStepList_Account_del_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> TestStepList_change_FirstName_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> TestStepList_change_LastName_List = new ArrayList<StringBuilder>();
-    ArrayList<StringBuilder> TestStepList_change_Email_List = new ArrayList<StringBuilder>();
+    ArrayList<String> TestStepList_Account_PSW_List = new ArrayList<String>();
+    ArrayList<String> TestStepList_Account_del_List = new ArrayList<String>();
+    ArrayList<String> iosTestStepList_Account_PSW_List = new ArrayList<String>();
+    ArrayList<String> iosTestStepList_Account_del_List = new ArrayList<String>();
+    ArrayList<String> TestStepList_change_FirstName_List = new ArrayList<String>();
+    ArrayList<String> TestStepList_change_LastName_List = new ArrayList<String>();
+    ArrayList<String> TestStepList_change_Email_List = new ArrayList<String>();
 
     public AppTestAccount() throws FileNotFoundException {
 
@@ -115,8 +115,8 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
                 preRoleName = extPara[extPara.length - 1];
             }
         }
-        ArrayList<StringBuilder> extParaList = super.stringList2SBArrlist(extPara);
-        ArrayList<StringBuilder> para4Action = preapareActionParameterList(new String[]{theUserPara, thePSW}, extPara);  // for action
+        ArrayList<String> extParaList = super.stringList2SBArrlist(extPara);
+        ArrayList<String> para4Action = preapareActionParameterList(new String[]{theUserPara, thePSW}, extPara);  // for action
         StringBuilder cMethodPath = new StringBuilder(XLSReportData.getcPath() + File.separator + nameOfMethod + "_" + preRoleName + "_" + time.replaceAll(":", "_")); // for screen
         list4result.add(nameOfMethod + "#" + time + "#" + preRoleName + "#" + targetResultType + "#" + "JustStart" + "#" + "waiting4result");
         try {

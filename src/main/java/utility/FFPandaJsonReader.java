@@ -21,8 +21,8 @@ public class FFPandaJsonReader {
 
     public static void main(String[] args) {
         try {
-            HashMap<StringBuilder, StringBuilder> result1 = readJSON4defaultValue("\\\\PageXML\\\\bAccount.json");
-            HashMap<StringBuilder, FFPandaElementEntity> result2 = readJSON4FFPandaPageElement("\\\\PageXML\\\\bAccount.json");
+            HashMap<String, StringBuilder> result1 = readJSON4defaultValue("\\\\PageXML\\\\bAccount.json");
+            HashMap<String, FFPandaElementEntity> result2 = readJSON4FFPandaPageElement("\\\\PageXML\\\\bAccount.json");
             System.out.println("");
         } catch (Exception e) {
             e.printStackTrace();
@@ -69,9 +69,9 @@ public class FFPandaJsonReader {
         pw.close();
     }
 
-    public static HashMap<StringBuilder, StringBuilder> readJSON4defaultValue(String fileName) throws Exception {
+    public static HashMap<String, StringBuilder> readJSON4defaultValue(String fileName) throws Exception {
         // long startTime = System.currentTimeMillis();
-        HashMap<StringBuilder, StringBuilder> elementsMap = new HashMap<StringBuilder, StringBuilder>();
+        HashMap<String, StringBuilder> elementsMap = new HashMap<String, StringBuilder>();
         elementsMap.clear();
         int lineN = 1;
         // 创建json解析器
@@ -89,7 +89,7 @@ public class FFPandaJsonReader {
                         JsonObject elementLine = jsonElement.getAsJsonObject();
                         StringBuilder name = new StringBuilder(elementLine.get("elementName").getAsString());
                         StringBuilder dValue = new StringBuilder(elementLine.get("defaultValue").getAsString());
-                        elementsMap.put(name, dValue);
+                        elementsMap.put(name.toString(), dValue);
                     } catch (Exception e) {
                         throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                     }
@@ -106,8 +106,8 @@ public class FFPandaJsonReader {
         }
     }
 
-    public static HashMap<StringBuilder, FFPandaElementEntity> readJSON4FFPandaPageElement(String fileName) throws Exception {
-        HashMap<StringBuilder, FFPandaElementEntity> elementsMap = new HashMap<StringBuilder, FFPandaElementEntity>();
+    public static HashMap<String, FFPandaElementEntity> readJSON4FFPandaPageElement(String fileName) throws Exception {
+        HashMap<String, FFPandaElementEntity> elementsMap = new HashMap<String, FFPandaElementEntity>();
         elementsMap.clear();
         int lineN = 1;
         // 创建json解析器
@@ -134,7 +134,7 @@ public class FFPandaJsonReader {
                         StringBuilder nPage = new StringBuilder(elementLine.get("nextPage").getAsString());
                         FFPandaElementEntity eLocator;
                         eLocator = new FFPandaElementEntity(pageName, eleName, locType, locStr, dValue, text, tWin, sMode, nPage);
-                        elementsMap.put(eleName, eLocator);
+                        elementsMap.put(eleName.toString(), eLocator);
                     } catch (Exception e) {
                         throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
                     }

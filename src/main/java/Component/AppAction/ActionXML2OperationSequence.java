@@ -10,7 +10,7 @@ import static utility.XmlUtils.readActionXMLDocument;
 
 public class ActionXML2OperationSequence {
 
-    public static HashMap<String, operationItem> getOperationSeq(ArrayList<StringBuilder> inActionSeq, StringBuilder path4Action) throws Exception {
+    public static HashMap<String, operationItem> getOperationSeq(ArrayList<String> inActionSeq, StringBuilder path4Action) throws Exception {
         HashMap<String, operationItem> temp = new HashMap<String, operationItem>();
         HashMap<String, operationItem> result = new HashMap<String, operationItem>();
         //按照给定的文件顺序读取文件,并且把 all 文件的内容全部读出去
@@ -43,7 +43,7 @@ public class ActionXML2OperationSequence {
         }
     }
 
-    public static List<StringBuilder> getActionXMLIOS(ArrayList<StringBuilder> actionName) throws XMLException {
+    public static List<StringBuilder> getActionXMLIOS(ArrayList<String> actionName) throws XMLException {
         List<StringBuilder> result = new ArrayList<StringBuilder>();
         try {
             Map<StringBuilder, StringBuilder> testCaseScenario = action2PageOperationXML.action2PageOperationIOS;
@@ -68,8 +68,8 @@ public class ActionXML2OperationSequence {
 
 
     public static void main(String args[]) {
-        ArrayList<StringBuilder> list4ction = new ArrayList<StringBuilder>();
-        list4ction.add(new StringBuilder("ios_action_key"));
+        ArrayList<String> list4ction = new ArrayList<String>();
+        list4ction.add(new String("ios_action_key"));
         try {
             HashMap<String, operationItem> result = getOperationSeq(list4ction, new StringBuilder( "\\OperationXML\\Action\\"));
             System.out.println(result);
