@@ -1,23 +1,26 @@
 package utility.readProperity;
 
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-public class SingleTonReadProperity implements Serializable {
+public class SingleTonReadMailConfigProperity implements Serializable {
     private static StringBuilder filePathAndName = new StringBuilder(System.getProperty("user.dir") + "\\src\\FFenvConfig\\report_config.properties");
 
     //initailzed during class loading
-    private static final SingleTonReadProperity INSTANCE = new SingleTonReadProperity();
+    private static final SingleTonReadMailConfigProperity INSTANCE = new SingleTonReadMailConfigProperity();
 
     //to prevent creating another instance of Singleton
-    private SingleTonReadProperity() {
+    private SingleTonReadMailConfigProperity() {
     }
 
 
-    public static SingleTonReadProperity getSingleton() {
+    public static SingleTonReadMailConfigProperity getSingleton() {
         return INSTANCE;
     }
 
@@ -77,7 +80,7 @@ public class SingleTonReadProperity implements Serializable {
         return result;
     }
 
-    public static SingleTonReadProperity getInstance() {
+    public static SingleTonReadMailConfigProperity getInstance() {
         return INSTANCE;
     }
 }
