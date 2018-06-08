@@ -1,6 +1,7 @@
 package utility;
 
-import REXSH.REXAUTO.LocalException.REXException;
+
+import LocalException.FFPandaException;
 
 import java.lang.reflect.Field;
 import java.text.DateFormat;
@@ -26,7 +27,7 @@ public class StringB {
     }
 
 
-    public static boolean assertTestResult(String testResult, String exceptedResult) throws REXException {
+    public static boolean assertTestResult(String testResult, String exceptedResult) throws FFPandaException {
         boolean result = true;
         testResult = testResult.toLowerCase();
         String sampleResult = testResult;
@@ -95,7 +96,7 @@ public class StringB {
             return result;
         } catch (Exception e) {
             result.append("Exception appear during element content compare");
-            throw new REXException("BaseAction : textContentCheck : " + e.getMessage());
+            throw new FFPandaException("BaseAction : textContentCheck : " + e.getMessage());
         }
     }
 

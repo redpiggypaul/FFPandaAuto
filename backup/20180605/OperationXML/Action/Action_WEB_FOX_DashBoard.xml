@@ -1,3 +1,0 @@
-<page name="WEB_FOX_DashBoard">
-    <element OperationName="switch2SearchRole" Step="1" PageName="DashBoard_WEBfox" OperationType="" elementName="roleBtn" elementType="btn" elementParameter="" />
-</page>

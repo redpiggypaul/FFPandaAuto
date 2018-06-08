@@ -1,7 +1,7 @@
 package Component.AppAction;
 
-import Component.Page.ANDPageContent;
 import Component.Page.Element.operationItem;
+import Component.Page.FFPandaIOSPageContent;
 import LocalException.FFPandaException;
 import LocalException.PageTitleException;
 import LocalException.XMLException;
@@ -37,7 +37,7 @@ public class TestExecutioner {
     private StringBuilder currentPage = null;
     private StringBuilder targetPagename = new StringBuilder("");
     //   private StringBuilder wholePageName = null;
-    public ANDPageContent pageContent = null;  // get content in xml file  XML 内容
+    public FFPandaIOSPageContent pageContent = null;  // get content in xml file  XML 内容
     HashMap<String, operationItem> contentMap = null;      //  map 4 name 2 ele att map   页面元素信息集合, 不是元素集合  名称,所有信息
 
     protected StringBuilder path4Page = new StringBuilder("\\PageXML\\");   //  file path 4 xml, "/PageXML/AND/" for And, "/PageXML/IOS/"; for IOS 页面文件路径

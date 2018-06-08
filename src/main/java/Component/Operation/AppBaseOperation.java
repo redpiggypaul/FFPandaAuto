@@ -3,7 +3,6 @@
  */
 package Component.Operation;
 
-import Component.Page.AppBasePageContent;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.WebDriver;

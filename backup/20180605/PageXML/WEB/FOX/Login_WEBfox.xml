@@ -1,5 +1,0 @@
-<page name="Login_WEBfox">
-	<element name="usr" parentElementName="" waitTime="0" textContent=""  defaultValue="Email Address" type="id" value="userName-header" NextPage="" triggerWindow="" showMode="ready" />
-	<element name="confirm" parentElementName="" waitTime="0" textContent="Sign In"  defaultValue="" type="xpath" value="//*[@id=&quot;nav-content&quot;]/rex-permission/div/div[1]/div[2]/div/a" NextPage="Home" triggerWindow="" showMode="ready" />
-	<element name="psw" parentElementName="" waitTime="0" textContent=""  defaultValue="Password" type="id" value="userPassword-header" NextPage="" triggerWindow="" showMode="ready" />
-</page>

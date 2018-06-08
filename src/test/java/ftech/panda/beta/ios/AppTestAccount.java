@@ -37,6 +37,8 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
     String accontFromXls = SingleTonReadProperity.getProValue(this.getClass().getSimpleName() + "_account").toString();
     String accontPSWFromXls = SingleTonReadProperity.getProValue(this.getClass().getSimpleName() + "_accountPSW").toString();
 
+    String[] TestStepList_Demo = new String[]{"Demo"};
+
     String[] TestStepList_Account_PSW = new String[]{"login", "switch2AccountSetting", "changePsw"};
     String[] TestStepList_Account_del = new String[]{"login", "switch2AccountSetting", "delAccount"};
     String[] iosTestStepList_Account_PSW = new String[]{"login", "switch2AccountSetting", "changePsw", "AccountSettingLogout"};
@@ -52,6 +54,7 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
     ArrayList<String> TestStepList_change_FirstName_List = new ArrayList<String>();
     ArrayList<String> TestStepList_change_LastName_List = new ArrayList<String>();
     ArrayList<String> TestStepList_change_Email_List = new ArrayList<String>();
+    ArrayList<String> TestStepList_Demo_List = new ArrayList<String>();
 
     public AppTestAccount() throws FileNotFoundException {
 
@@ -95,8 +98,8 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
         };
     }
 
-
-    @Test(dataProvider = "accountEmail")
+    @Test(dataProvider = "accountEmail",groups = {"Demo Test"})
+    @Parameters({"APPIUM_Driver_port"})
     public void iosTestStepList_Account_PSW(String theUserPara, String thePSW, String paraGroup, String targetResultType, StringBuilder expectResult) throws Exception {
         String nameOfMethod = Thread.currentThread().getStackTrace()[1].getMethodName();
         globalRowId4TC++;
@@ -124,7 +127,7 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
             //   if (TargetMobileData.getMobileOS().toString().equalsIgnoreCase("Android")) {
             //       theTCRunner.comOperationInAND((AndroidDriver) driver, this.TestStepList_change_Email, para4Action);   // 2nd para is the action sequence
             //    } else if (TargetMobileData.getMobileOS().toString().startsWith("ios")) {
-            theTCRunner.comOperationInIOS((IOSDriver) driver, this.iosTestStepList_Account_PSW_List, para4Action, TargetMobileData.getMobileOS());     // 2nd para is the action sequence
+            theTCRunner.comOperationInIOS((IOSDriver) driver, this.TestStepList_Demo_List, para4Action, TargetMobileData.getMobileOS());     // 2nd para is the action sequence
             //  }
             Thread.sleep(2000);
             System.out.println("Here is the result for this case : " + theTCRunner.getExeResult());
@@ -181,6 +184,7 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
         TestStepList_change_FirstName_List = super.stringList2SBArrlist(TestStepList_change_FirstName);
         TestStepList_change_LastName_List = super.stringList2SBArrlist(TestStepList_change_LastName);
         TestStepList_change_Email_List = super.stringList2SBArrlist(TestStepList_change_Email);
+        TestStepList_Demo_List = super.stringList2SBArrlist(TestStepList_Demo);
         StringBuilder cPath = XLSReportData.getcPath();
         File pfile = new File(cPath.append(this.getClass().getSimpleName()).append("_").append(time.replaceAll(":", "_")).toString());
         pfile.mkdir();
@@ -211,6 +215,51 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
         driver.closeApp();
         driver.quit();
     }
+
+    @Test(groups = {"API Test", "Fucntion Test"})
+    public void test01(){
+        System.out.println("API Testing and Function testing");
+    }
+
+    @Test(groups = {"API Test"})
+    public void test02(){
+        System.out.println("API Testing");
+    }
+
+    @Test(groups = {"Function Test"})
+    public void test03(){
+        System.out.println("Function testing");
+    }
+
+    @Test
+    public void test04(){
+        System.out.println("not in API and Function testing");
+    }
+
+    @Test(enabled=false,priority = 1,groups = {"API Test"})
+    public void test1(){
+        System.out.println("Hello");
+    }
+
+    @Test(priority = 1,groups = {"API Test"})
+    public void test2(){
+        System.out.println("TestNG");
+    }
+
+    @Test(dependsOnMethods={"test2"},groups = {"API Test"})
+    @Parameters({"Browser", "Server"})
+    public void test3(String browser, String server){
+        System.out.println("Hello");
+        System.out.println("这次启动浏览器是： "+browser+" 测试服务器地址是： "+server);
+    }
+
+    @Test(invocationCount = 5, invocationTimeOut = 5100,groups = {"API Test"})
+    public void loginTest() throws InterruptedException{
+
+        Thread.sleep(1000);
+        System.out.println("login test");
+    }
+
 }
 
 

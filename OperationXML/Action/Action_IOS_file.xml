@@ -2,4 +2,8 @@
     <element OperationName="ios_action_key" Step="1" PageName="Account" OperationType="" elementName="generalBtn" elementType="btn" elementParameter="" />
     <element OperationName="ios_action_key" Step="2" PageName="Account" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
     <element OperationName="ios_action_key" Step="3" PageName="Account" OperationType="" elementName="email" elementType="textfield_input" elementParameter="psw" />
+	<element OperationName="Demo" Step="1" PageName="Account" OperationType="" elementName="btn1" elementType="btn" elementParameter="" />
+	<element OperationName="Demo" Step="2" PageName="Account" OperationType="" elementName="textfiled2" elementType="text" elementParameter="" />
+	<element OperationName="Demo" Step="3" PageName="Account" OperationType="" elementName="textfiled3" elementType="textfield_input" elementParameter="" />
+	<element OperationName="Demo" Step="4" PageName="Account" OperationType="" elementName="text4" elementType="checkcontent" elementParameter="" />
 </page>
