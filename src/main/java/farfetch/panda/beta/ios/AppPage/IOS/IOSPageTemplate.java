@@ -69,6 +69,9 @@ public abstract class IOSPageTemplate {
     public IOSPageTemplate(StringBuilder theFile, StringBuilder p4l) throws Exception {
     }
 
+    protected IOSPageTemplate() {
+    }
+
     public String getConfWindName() {
         return null;
     }
@@ -1168,6 +1171,50 @@ public abstract class IOSPageTemplate {
     }
 
     public void textOperation(IOSDriver driver, StringBuilder eleName, StringBuilder para1,
+                              HashMap<StringBuilder, By> inMap) throws Exception {
+        String dValue = null;
+        IOSElement theResult = null;
+        final StringBuilder localPath = this.path4Log;
+        try {
+            System.out.println("Some on called me with : " + para1);
+            System.out.println("inMap size : " + inMap.size());
+            for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) { // &&theResult==null;
+                System.out.println("iterator : " + it == null);
+                System.out.println("inMap size : " + inMap.size());
+                final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                    System.out.println(eleName + " ::");
+                    IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                    theResult = xWait.until(new IOSExpectedCondition<IOSElement>() {
+                        public IOSElement apply(IOSDriver driver) {
+                            IOSElement temp = null;
+                            try {
+                                temp = (IOSElement) findElementWithSearch(driver, (By) tempContentEntry.getValue(),
+                                        Integer.parseInt(String.valueOf(timeOutInSeconds * 1000)), localPath);
+                            } catch (Exception e) {
+                                throw new TimeoutException(e.getMessage());
+                            }
+                            return temp;
+                        }
+                    });
+                    theResult.click();
+                    Thread.sleep(200);
+                    theResult.clear();
+                    Thread.sleep(200);
+                    theResult.setValue(para1.toString());
+                    try {
+                        driver.hideKeyboard("Done");
+                    } catch (Exception e) {
+                    }
+                }
+            }
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+
+
+    public void textOperation(IOSDriver driver, StringBuilder eleName, StringBuilder para1,
                               HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, StringBuilder> dValueMap) throws Exception {
         String dValue = null;
         IOSElement theResult = null;
@@ -1257,7 +1304,7 @@ public abstract class IOSPageTemplate {
 
     public StringBuilder textOperationSmartSaveInput(IOSDriver driver, StringBuilder eleName,
                                                      StringBuilder para1, HashMap<StringBuilder, By> inMap,
-                                                     HashMap<StringBuilder, StringBuilder> dValueMap,
+                                                     HashMap<StringBuilder, ArrayList<StringBuilder>> dValueMap,
                                                      final StringBuilder path) throws Exception {
         StringBuilder result = new StringBuilder();
         IOSElement theResult = null;
@@ -1274,7 +1321,7 @@ public abstract class IOSPageTemplate {
                     for (Iterator iter = dValueMap.entrySet().iterator(); iter.hasNext(); ) {
                         final Map.Entry tempValueEntry = (Map.Entry) iter.next();
                         if (tempValueEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
-                            final StringBuilder dValue = (StringBuilder) tempValueEntry.getValue();
+                            final ArrayList<StringBuilder> dValue = (ArrayList<StringBuilder>) tempValueEntry.getValue();
                             IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
                             theResult = xWait.until(new IOSExpectedCondition<IOSElement>() {
                                 public IOSElement apply(IOSDriver driver) {
@@ -1290,7 +1337,6 @@ public abstract class IOSPageTemplate {
                             break;
                         }
                     }
-
                     theResult.click();
                     Thread.sleep(200);
                     if (!eleName.toString().contains("phone")) {
@@ -2310,6 +2356,174 @@ public abstract class IOSPageTemplate {
                 return result;
             }
         }
+    }
+
+    public WebElement findFilteEleListWithSearch(IOSDriver driver, final By theKey, int timeValue, StringBuilder path, ArrayList<StringBuilder> tTextList) throws Exception {
+        List<WebElement> resultlist = null;
+        WebElement theEle = null;
+        int localTime = timeValue;
+        int step = 2;
+        int flag4timeout = 0;
+        int theDuration = TargetMobileData.getSingleElementSearchTimeDuration();
+        int theBtY = TargetMobileData.getDown4CurrentScreen();
+        boolean flag4end = false;
+        int index4lastEle = 0;
+        int lastEleNum = 0;
+        int currentEleNum = 0;
+        if (timeValue > 10000) {
+            localTime = theDuration;
+        } else {
+            localTime = 5400;
+        }
+        int lastY = 0;
+        for (; flag4end == false; ) {
+            resultlist = null;
+            lastEleNum = currentEleNum;
+            currentEleNum = 0;
+            for (; resultlist == null; ) {
+                try {
+                    IOSDriverWait wait4find = new IOSDriverWait(driver, localTime / ((step + 1) * 4) / 1000, path, false);
+                    resultlist = wait4find.until(new IOSExpectedCondition<List>() {
+                        public List<WebElement> apply(IOSDriver driver) {
+                            return driver.findElements(theKey);
+                        }
+                    });
+                    if (resultlist != null) {
+                        currentEleNum = resultlist.size();
+                        break;
+                    }
+                } catch (Exception e) {
+                    System.out.println("In the findElementWithSearch, saerching ");
+                    moveUPwithSyncTime(driver, localTime / ((step + 1) * 4) * step);
+                    Thread.sleep(localTime / ((step + 1) * 4));
+                    flag4timeout++;
+                }
+                if (flag4timeout > 6) {
+                    throw new Exception(" The element can't be find after 3 times screen move! ");
+                }
+            }
+            if (currentEleNum == 1) {   // if lastNum ==1 too, then check the text, if same / match target, maybe compare the P.y, then
+                WebElement theSingleEle = resultlist.get(0);
+                Point tempPero = theSingleEle.getLocation();
+                int tempX = tempPero.getX();
+                int tempY = tempPero.getY();
+                if ((tempY >= theBtY) || tempPero == null || (tempX == 0 && tempY == 0)) {
+                    if (lastY != 0) {
+                        if (Math.abs(lastY - tempY) < 50) { //should be the end
+                            //    if (theSingleEle.getText().equals(tText)) {  // if exact match
+                            if (tTextList.contains(theSingleEle.getText())) {
+                                theEle = theSingleEle;
+                                flag4end = true;
+                                break;
+                            }// else if (theSingleEle.getText().equalsIgnoreCase(tText.toString())) {  // try match
+                            else if (tTextList.contains(theSingleEle.getText().toLowerCase())) {
+                                System.out.println("The element text in this step is located by fuzzy match! ");
+                                theEle = theSingleEle;
+                                flag4end = true;
+                                break;
+                            } else {  // the only ele don;t match
+                                continue;
+                            }
+                        } else {  // continue until end
+                            lastY = tempY;
+                            moveUPs(driver);
+                        }
+                    } else {
+                        if (tempY != 0) { //should be the end
+                            //  if (theSingleEle.getText().equals(tText)) {  // if exact match
+                            if (tTextList.contains(theSingleEle.getText())) {
+                                theEle = theSingleEle;
+                                flag4end = true;
+                                break;
+                            }// else if (theSingleEle.getText().equalsIgnoreCase(tText.toString())) {  // try match
+                            else if (tTextList.contains(theSingleEle.getText().toLowerCase())) {
+
+                                System.out.println("The element text in this step is located by fuzzy match! ");
+                                theEle = theSingleEle;
+                                flag4end = true;
+                                break;
+                            } else {  // the only ele don;t match
+                                continue;
+                            }
+                        } else {  // continue until end
+                            lastY = tempY;
+                            moveUPs(driver);
+                        }
+                    }
+                } else {  // the only ele is in the suitable position
+                    // if (theSingleEle.getText().equals(tText)) {  //exact match
+                    if (tTextList.contains(theSingleEle.getText())) {
+                        theEle = theSingleEle;
+                        flag4end = true;
+                        break;
+                    }// else if (theSingleEle.getText().equalsIgnoreCase(tText.toString())) {
+                    else if (tTextList.contains(theSingleEle.getText().toLowerCase())) {
+                        System.out.println("The element text in this step is located by fuzzy match! ");
+                        theEle = theSingleEle;
+                        flag4end = true;
+                        break;
+                    } else {
+                        continue;
+                    }
+                }
+            } else {
+                if ((currentEleNum != 0 && lastEleNum == 0) || (lastEleNum != 0 && currentEleNum != 0)) {
+                    int flag4zero = 0;
+                    lastY = 0;
+                    for (int ind = index4lastEle; ind < resultlist.size(); ind++) {
+                        Point tempP = resultlist.get(ind).getLocation();
+                        System.out.println("ind " + ind + " : " + resultlist.get(ind).getText());
+                        if ((tempP.getY() >= theBtY) || tempP == null || (tempP.getY() == 0 && tempP.getX() == 0)) {
+                            if (tempP.getY() == 0 && tempP.getX() == 0) {
+                                if (flag4zero == 0) {
+                                    if (ind > 0) {
+                                        index4lastEle = ind - 1;
+                                    } else {
+                                        index4lastEle = 0;
+                                    }
+                                }
+                                flag4zero++;
+                            } else {
+                                if (ind > 0) {
+                                    index4lastEle = ind - 1;
+                                } else {
+                                    index4lastEle = 0;
+                                }
+                            }
+                            if (lastY != 0 && Math.abs(tempP.getY() - lastY) < 50) {
+                                flag4end = true;
+                                break;
+                            } else if ((flag4zero >= 2) || (tempP.getY() >= theBtY)) {
+                                lastY = tempP.getY();
+                                moveUPs(driver);
+                                if (index4lastEle != 0) {
+                                    ind = index4lastEle;
+                                }
+                            }
+
+                        } else {
+                            //    if (resultlist.get(ind).getText().equals(tText)) {
+                            if (tTextList.contains(resultlist.get(ind).getText())) {
+                                theEle = resultlist.get(ind);
+                                flag4end = true;
+                                break;
+                            } //else if (resultlist.get(ind).getText().equalsIgnoreCase(tText.toString())) {
+                            else if (tTextList.contains(resultlist.get(ind).getText().toLowerCase())) {
+                                System.out.println("The element text in this step is located by fuzzy match! ");
+                                theEle = resultlist.get(ind);
+                                flag4end = true;
+                                break;
+                            } else {
+                                continue;
+                            }
+                        }
+                    }
+                } else {
+                    throw new Exception("The current page element list is different from original page elemetn list");
+                }
+            }
+        }
+        return theEle;
     }
 
 
@@ -4637,7 +4851,38 @@ public abstract class IOSPageTemplate {
             }
         }
     }
-
+    public boolean confirmOperationStatic(IOSDriver driver, StringBuilder eleName, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, ArrayList<StringBuilder>> textMapList, StringBuilder extPath) throws Exception {
+        boolean result = false;
+        WebElement theResult = null;
+        final StringBuilder localPath = extPath;
+        try {
+            System.out.println("    +++ ~~~ In the FFPandaIOSPageTemplate :: confirmOperationStatic in " + this.getClass().getSimpleName() + " has been called ~~~ +++");
+            for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                    System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                    IOSDriverWait xWait = new IOSDriverWait(driver, 2, localPath, false);
+                    theResult = xWait.until(new IOSExpectedCondition<WebElement>() {
+                        public WebElement apply(IOSDriver driver) {
+                            return driver.findElement((By) tempContentEntry.getValue());
+                        }
+                    });
+                    System.out.println("For IOS , confirmOperationStatic : " + theResult.getText());
+                    if (!textMapList.get(eleName).contains(new StringBuilder("")) && textMapList.get(eleName).contains(new StringBuilder(theResult.getText()))) {
+                        result = true;
+                    } else if (textMapList.get(eleName).contains(new StringBuilder(""))) {
+                        result = true;
+                    } else {
+                        result = false;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            result = false;
+        } finally {
+            return result;
+        }
+    }
 
     public boolean confirmOperationStatic(IOSDriver driver, StringBuilder eleName, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, FFPandaElementEntity> eleMap, HashMap<StringBuilder, StringBuilder> textMap, StringBuilder extPath) throws Exception {
         boolean result = false;
@@ -4928,6 +5173,45 @@ public abstract class IOSPageTemplate {
         return result;
     }
 
+    public StringBuilder textOperationStaticWithValue(IOSDriver driver, StringBuilder eleName, StringBuilder para, HashMap<StringBuilder, By> inMap, StringBuilder extPath) throws Exception {
+        StringBuilder result = new StringBuilder();
+        IOSElement theResult = null;
+        final StringBuilder localPath = extPath;
+        try {
+            System.out.println("    +++ ~~~ In the FFPandaIOSPageTemplate :: textOperationStaticWithValue in " + this.getClass().getSimpleName() + " has been called ~~~ +++");
+            for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                    System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                    IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                    theResult = xWait.until(new IOSExpectedCondition<IOSElement>() {
+                        public IOSElement apply(IOSDriver driver) {
+                            return (IOSElement) driver.findElement((By) tempContentEntry.getValue());
+                        }
+                    });
+                    theResult.click();
+                    Thread.sleep(200);
+                    theResult.clear();
+                    Thread.sleep(200);
+                    theResult.setValue(para.toString());
+                    try {
+                        driver.hideKeyboard("Done");
+                    } catch (Exception e) {
+                    }
+                    Thread.sleep(500);
+                    result = new StringBuilder(theResult.getText());
+                    if (result.equals("") || result == null) {
+                        result = para;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(logSpace4thisPage + "In FFPandaIOSPageTemplate . textOperationStaticWithValue, Other Error appear : " + e.getCause());
+            throw e;
+        }
+
+        return result;
+    }
 
     public StringBuilder textOperationStaticWithValueSendKey(IOSDriver driver, StringBuilder eleName, StringBuilder para, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, StringBuilder> textMap, StringBuilder extPath) throws Exception {
         StringBuilder result = new StringBuilder();
@@ -9082,6 +9366,73 @@ public abstract class IOSPageTemplate {
         return true;
     }
 
+    public StringBuilder getElementContent(IOSDriver driver, StringBuilder
+            eleName, StringBuilder eleType, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, FFPandaElementEntity> eleMap) throws Exception {
+        WebElement theResult = null;
+        List<WebElement> eleList = new ArrayList<WebElement>();
+        StringBuilder result = new StringBuilder();
+        final StringBuilder localPath = this.path4Log;
+        Thread.sleep(1000);
+        try {
+            System.out.println("    +++ ~~~ In the FFPandaIOSPageTemplate :: getElementContent ~~~ +++");
+            if (eleType.toString().equalsIgnoreCase("xpath")) {
+                for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                    final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                    if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                        System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                        IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                        theResult = xWait.until(new IOSExpectedCondition<WebElement>() {
+                            public WebElement apply(IOSDriver driver) {
+                                WebElement temp = null;
+                                try {
+                                    temp = findElementWithSearch(driver, (By) tempContentEntry.getValue(), Integer.parseInt(String.valueOf(timeOutInSeconds * 1000)), localPath);
+                                } catch (Exception e) {
+                                    throw new TimeoutException(e.getMessage());
+                                }
+                                return temp;
+                            }
+                        });
+                        result = new StringBuilder(theResult.getText());
+                    }
+                }
+            } else if (eleType.toString().equalsIgnoreCase("classname")) {
+                for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                    final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                    if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                        System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                        IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                        eleList = xWait.until(new IOSExpectedCondition<List>() {
+                            public List<WebElement> apply(IOSDriver driver) {
+                                List<WebElement> temp = new ArrayList<WebElement>();
+                                try {
+                                    temp = findEleListWithSearch(driver, (By) tempContentEntry.getValue(), Integer.parseInt(String.valueOf(timeOutInSeconds * 1000)), localPath);
+                                } catch (Exception e) {
+                                    throw new TimeoutException(e.getMessage());
+                                }
+                                return temp;
+                            }
+                        });
+                        result = new StringBuilder(theResult.getText());
+                    }
+                }
+                for (int ind = 0; ind < eleList.size(); ind++) {
+                    result = new StringBuilder(result + "_:REX:_" + eleList.get(ind).getText());
+                }
+            } else {
+                throw new XMLException("Wrong type in XML for : " + eleName);
+            }
+
+        } catch (Exception e) {
+            System.out.println(logSpace4thisPage + "In  FFPandaIOSPageTemplate :: getElementContent , Other Error appear : " + e.getCause());
+            e.printStackTrace();
+        }
+        if (result == null || result.toString().equals("")) {
+            return new StringBuilder("emptyContent");
+        } else {
+            return result;
+        }
+    }
+
     //TODO
     public StringBuilder getElementContent(IOSDriver driver, StringBuilder
             eleName, StringBuilder eleType, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, FFPandaElementEntity> eleMap,
@@ -9152,6 +9503,74 @@ public abstract class IOSPageTemplate {
         }
     }
 
+    public StringBuilder getElementContentMultiLanguage(IOSDriver driver, StringBuilder
+            eleName, StringBuilder eleType, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, FFPandaElementEntity> eleMap,
+                                                        HashMap<StringBuilder, ArrayList<StringBuilder>> textMapWithList) throws
+            Exception {
+        WebElement theResult = null;
+        List<WebElement> eleList = new ArrayList<WebElement>();
+        StringBuilder result = new StringBuilder();
+        final StringBuilder localPath = this.path4Log;
+        Thread.sleep(1000);
+        try {
+            System.out.println("    +++ ~~~ In the FFPandaIOSPageTemplate :: getElementContent ~~~ +++");
+            if (eleType.toString().equalsIgnoreCase("xpath")) {
+                for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                    final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                    if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                        System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                        IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                        theResult = xWait.until(new IOSExpectedCondition<WebElement>() {
+                            public WebElement apply(IOSDriver driver) {
+                                WebElement temp = null;
+                                try {
+                                    temp = findElementWithSearch(driver, (By) tempContentEntry.getValue(), Integer.parseInt(String.valueOf(timeOutInSeconds * 1000)), localPath);
+                                } catch (Exception e) {
+                                    throw new TimeoutException(e.getMessage());
+                                }
+                                return temp;
+                            }
+                        });
+                        result = new StringBuilder(theResult.getText());
+                    }
+                }
+            } else if (eleType.toString().equalsIgnoreCase("classname")) {
+                for (Iterator it = inMap.entrySet().iterator(); it.hasNext() && theResult == null; ) {
+                    final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                    if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName.toString())) {
+                        System.out.println(eleName + " :?:" + tempContentEntry.getKey().toString());
+                        IOSDriverWait xWait = new IOSDriverWait(driver, timeOutInSeconds, localPath);
+                        eleList = xWait.until(new IOSExpectedCondition<List>() {
+                            public List<WebElement> apply(IOSDriver driver) {
+                                List<WebElement> temp = new ArrayList<WebElement>();
+                                try {
+                                    temp = findEleListWithSearch(driver, (By) tempContentEntry.getValue(), Integer.parseInt(String.valueOf(timeOutInSeconds * 1000)), localPath);
+                                } catch (Exception e) {
+                                    throw new TimeoutException(e.getMessage());
+                                }
+                                return temp;
+                            }
+                        });
+                        result = new StringBuilder(theResult.getText());
+                    }
+                }
+                for (int ind = 0; ind < eleList.size(); ind++) {
+                    result = new StringBuilder(result + "_:REX:_" + eleList.get(ind).getText());
+                }
+            } else {
+                throw new XMLException("Wrong type in XML for : " + eleName);
+            }
+
+        } catch (Exception e) {
+            System.out.println(logSpace4thisPage + "In  FFPandaIOSPageTemplate :: getElementContent , Other Error appear : " + e.getCause());
+            e.printStackTrace();
+        }
+        if (result == null || result.toString().equals("")) {
+            return new StringBuilder("emptyContent");
+        } else {
+            return result;
+        }
+    }
 
     public List<String> getElementContentList(IOSDriver driver, String
             eleName, HashMap<StringBuilder, By> inMap, HashMap<StringBuilder, FFPandaElementEntity> eleMap) throws

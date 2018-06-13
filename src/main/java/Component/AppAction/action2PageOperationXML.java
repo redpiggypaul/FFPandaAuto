@@ -369,7 +369,10 @@ public class action2PageOperationXML {
 
     public static Map<StringBuilder, StringBuilder> action2PageOperationIOS = new HashMap<StringBuilder, StringBuilder>() {
         {
+            put(new StringBuilder("Demo3"),        new StringBuilder("Action_IOS_file.xml"));
             put(new StringBuilder("Demo"),        new StringBuilder("Action_IOS_file.xml"));
+            put(new StringBuilder("DemoEND"),        new StringBuilder("Action_IOS_file2.xml"));
+            put(new StringBuilder("Demo2"),        new StringBuilder("Action_IOS_file.xml"));
             put(new StringBuilder("ios_action_key"),        new StringBuilder("Action_IOS_file.xml"));
             put(new StringBuilder("inviteByMail"),                         new StringBuilder(" Action_Account.xml"));
             put(new StringBuilder("inviteByMail_checkContent"),                          new StringBuilder("Action_Account.xml"));

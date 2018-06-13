@@ -42,7 +42,7 @@ public class IOSPage_Home extends IOSPageTemplate {
     private String storeValue4compare = "";
     private boolean pageMoveableCheckDisable = true;    // flag for check the page is moveable or not during test
     private boolean moveable = false;                   // flag for the page is moveable or not
-    private static String logSpace4thisPage = " --- IOSPageAccount --";
+    private static String logSpace4thisPage = " --- IOSPage_Home --";
 
     public String getConfWindName() {
         return this.confirmNoticeWind;
@@ -72,6 +72,10 @@ public class IOSPage_Home extends IOSPageTemplate {
         return this.content.eleWindowMap;
     }
 
+    public IOSPage_Home() throws Exception {
+        System.out.println("test");
+    }
+
     public IOSPage_Home(IOSDriver theD) throws Exception {
         super(theD);
         this.dr = theD;
@@ -99,7 +103,7 @@ public class IOSPage_Home extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(theD, tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(theD, this.eleContentMap);
-        loadingJudgement(theD, this.eleContentMap);
+     //   loadingJudgement(theD, this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);
@@ -118,7 +122,7 @@ public class IOSPage_Home extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(this.eleContentMap);
-        loadingJudgement(this.eleContentMap);
+    //    loadingJudgement(this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);
@@ -160,7 +164,7 @@ public class IOSPage_Home extends IOSPageTemplate {
         HashMap result = new HashMap<StringBuilder, By>();
         result.clear();
         By tempElement = null;
-        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in IOSPageAccount . getByMap(IOSDriver driver)   : " + driver.toString());
+        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in IOSPage_Home . getByMap(IOSDriver driver)   : " + driver.toString());
 
         for (Iterator it = this.eleContentMap.entrySet().iterator(); it.hasNext(); ) {
             try {
@@ -195,7 +199,7 @@ public class IOSPage_Home extends IOSPageTemplate {
         HashMap result = new HashMap<String, By>();
         result.clear();
         By tempElement = null;
-        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in IOSPageAccount . getByMap (IOSDriver driver, HashMap<String, FFPandaElementEntity> eleMap)  : " + driver.toString());
+        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in IOSPage_Home . getByMap (IOSDriver driver, HashMap<String, FFPandaElementEntity> eleMap)  : " + driver.toString());
 
         for (Iterator it = eleMap.entrySet().iterator(); it.hasNext(); ) {
             try {
@@ -230,7 +234,7 @@ public class IOSPage_Home extends IOSPageTemplate {
     }
 
     public StringBuilder btnOperationRoute(IOSDriver driver, StringBuilder eleName) throws Exception {
-        System.out.println("    +++ ~~~ The btnOperationRoute in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The btnOperationRoute in IOSPage_Home has been called ~~~ +++");
         return super.btnOperation(driver, eleName, this.byMap, this.eleContentMap, this.path4Log, this.content.getEleTextMap());
     }
 
@@ -239,22 +243,22 @@ public class IOSPage_Home extends IOSPageTemplate {
     }
 
     public void btnOperation(IOSDriver driver, StringBuilder eleName) throws Exception {
-        System.out.println("    +++ ~~~ The btnOperation in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The btnOperation in IOSPage_Home has been called ~~~ +++");
         super.btnOperation(driver, eleName, this.byMap, this.eleContentMap, this.content.getEleTextMap());
     }
 
     public void testOperation(IOSDriver driver, StringBuilder eleName) throws Exception {
-        System.out.println("    +++ ~~~ The btnOperation in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The btnOperation in IOSPage_Home has been called ~~~ +++");
         super.testOperation(driver, eleName);
     }
 
     public void textOperation(IOSDriver driver, StringBuilder eleName, StringBuilder para1) throws Exception {
-        System.out.println("    +++ ~~~ The textOperationn in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The textOperationn in IOSPage_Home has been called ~~~ +++");
         super.textOperation(driver, eleName, para1, this.byMap, this.content.getEleDValueMap());
     }
 
     public StringBuilder textOperationWithSaveInput(IOSDriver driver, StringBuilder eleName, StringBuilder para1) throws Exception {
-        System.out.println("    +++ ~~~ The textOperationWithSaveInput in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The textOperationWithSaveInput in IOSPage_Home has been called ~~~ +++");
         //super.textOperation(driver, eleName, para1, this.byMap, this.content.eleDefaultValueMap);
         boolean movecheckdisable = this.content.getFlag4MoveCheck();
         boolean moveable = this.content.getMoveable();
@@ -300,7 +304,7 @@ public class IOSPage_Home extends IOSPageTemplate {
     }
 
     public StringBuilder getElementContent(IOSDriver driver, StringBuilder eleName) throws Exception {
-        System.out.println("    +++ ~~~ The getElementContent in IOSPageAccount has been called ~~~ +++");
+        System.out.println("    +++ ~~~ The getElementContent in IOSPage_Home has been called ~~~ +++");
         boolean movecheckdisable = this.content.getFlag4MoveCheck();
         boolean moveable = this.content.getMoveable();
         boolean localMoveable = false;

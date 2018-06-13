@@ -24,8 +24,8 @@ public class ActionXML2OperationSequence {
                 actionlist = Arrays.asList(ary);
                 if (actionlist.size() != 0) {
                     int flag4length = 0;
-                    flag4length = actionlist.size();
-                    System.out.println("There are " + flag4length + " step(s) in the related XML file of sub action : " + actionXMLname.get(ind));
+                    flag4length = actionlist.size() + 1;
+                    System.out.println("There are " + actionlist.size() + " step(s) in the related XML file of sub action : " + actionXMLname.get(ind));
                 } else {
                     throw new XMLException("action list from XML contains empty content");
                 }

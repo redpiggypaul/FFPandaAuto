@@ -99,7 +99,7 @@ public class IOSPage_NaviBar extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(theD, tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(theD, this.eleContentMap);
-        loadingJudgement(theD, this.eleContentMap);
+   //     loadingJudgement(theD, this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);
@@ -118,7 +118,7 @@ public class IOSPage_NaviBar extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(this.eleContentMap);
-        loadingJudgement(this.eleContentMap);
+     //   loadingJudgement(this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);
@@ -231,7 +231,7 @@ public class IOSPage_NaviBar extends IOSPageTemplate {
 
     public StringBuilder btnOperationRoute(IOSDriver driver, StringBuilder eleName) throws Exception {
         System.out.println("    +++ ~~~ The btnOperationRoute in IOSPageAccount has been called ~~~ +++");
-        return super.btnOperation(driver, eleName, this.byMap, this.eleContentMap, this.path4Log, this.content.getEleTextMap());
+        return super.btnOperation(driver, eleName, this.byMap, this.eleContentMap, this.path4Log );
     }
 
     public HashMap<StringBuilder, FFPandaElementEntity> getEleConMap() {

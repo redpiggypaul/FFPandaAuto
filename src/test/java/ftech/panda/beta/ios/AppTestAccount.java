@@ -34,6 +34,8 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
     private TargetMobileData currentMobileInfo = new TargetMobileData();
     int globalRowId4TC = 0;
 
+    protected long startTime = Long.parseLong("0");
+
     String accontFromXls = SingleTonReadProperity.getProValue(this.getClass().getSimpleName() + "_account").toString();
     String accontPSWFromXls = SingleTonReadProperity.getProValue(this.getClass().getSimpleName() + "_accountPSW").toString();
 
@@ -123,7 +125,7 @@ public class AppTestAccount extends FF_PandaAppTestTemplate {
         StringBuilder cMethodPath = new StringBuilder(XLSReportData.getcPath() + File.separator + nameOfMethod + "_" + preRoleName + "_" + time.replaceAll(":", "_")); // for screen
         list4result.add(nameOfMethod + "#" + time + "#" + preRoleName + "#" + targetResultType + "#" + "JustStart" + "#" + "waiting4result");
         try {
-            TestExecutioner theTCRunner = new TestExecutioner(driver, null, 1, para4Action, extParaList, cMethodPath, expectResult);  // 2nd para is for os type, last para is the excepted result str
+            TestExecutioner theTCRunner = new TestExecutioner(driver, null, 1, para4Action, extParaList, cMethodPath, expectResult,this.startTime);  // 2nd para is for os type, last para is the excepted result str
             //   if (TargetMobileData.getMobileOS().toString().equalsIgnoreCase("Android")) {
             //       theTCRunner.comOperationInAND((AndroidDriver) driver, this.TestStepList_change_Email, para4Action);   // 2nd para is the action sequence
             //    } else if (TargetMobileData.getMobileOS().toString().startsWith("ios")) {

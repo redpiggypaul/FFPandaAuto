@@ -99,7 +99,7 @@ public class IOSPage_Login extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(theD, tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(theD, this.eleContentMap);
-        loadingJudgement(theD, this.eleContentMap);
+      //  loadingJudgement(theD, this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);
@@ -118,7 +118,7 @@ public class IOSPage_Login extends IOSPageTemplate {
         content = new FFPandaIOSPageContent(tempName, osType);
         eleContentMap = content.getContentMap4Base(tempName, osType);
         byMap = content.getByMap(this.eleContentMap);
-        loadingJudgement(this.eleContentMap);
+     //   loadingJudgement(this.eleContentMap);
         this.path4Log = p4L;
         this.content.setFlag4MoveCheck(this.pageMoveableCheckDisable);
         this.content.setMoveable(this.moveable);

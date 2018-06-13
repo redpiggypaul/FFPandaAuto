@@ -23,6 +23,7 @@ import static utility.OSMatcher.matchOS;
 public class XmlUtils {
     private static Logger theLogger;
     private static String logSpace4thisPage = "             ";
+
     public XmlUtils(Logger l) {
         theLogger = l;
     }
@@ -85,14 +86,13 @@ public class XmlUtils {
                         String pName = elementObj.attributeValue("PageName");
                         String oType = elementObj.attributeValue("OperationType");
                         String eleName = elementObj.attributeValue("elementName");
-                        String eleType = elementObj.attributeValue("elementType");
                         String elePara = elementObj.attributeValue("elementParameter");
                         Integer s = Integer.parseInt(elementObj.attributeValue("Step"));
 
                         //System.out.println(oName);
                         //System.out.println(s.toString());
                         operationItem eLocator;
-                        eLocator = new operationItem(oName, pName, oType, eleName, eleType, elePara, s);
+                        eLocator = new operationItem(oName, pName, oType, eleName, elePara, s);
                         opeMap.put(new StringBuilder(oName + ":" + s), eLocator);
                     }
                 } else {
@@ -372,7 +372,7 @@ public class XmlUtils {
     }
 */
     public static HashMap<String, ElementMapping> readIOSXMLDocument4X
-            (String fileNameXML) throws Exception {
+    (String fileNameXML) throws Exception {
         //System.out.println(logSpace4thisPage + "readIOSXMLDocument4X NOT ready !!!");
         return null;
     }
@@ -1082,7 +1082,7 @@ public class XmlUtils {
                             String windowValue = elementObj.attributeValue("triggerWindow");
                             //System.out.println(logSpace4thisPage + "### " + name);
                             //System.out.println(logSpace4thisPage + "### " + waitTime);
-                            if(windowValue!="") {
+                            if (windowValue != "") {
                                 elementsMap.put(name, windowValue);
                             }
                         } catch (Exception e) {
@@ -1239,7 +1239,6 @@ public class XmlUtils {
     }
 
 
-
     public static HashMap<String, Integer> findANDWaitStepList
             (String fileName) throws Exception {
         HashMap<String, Integer> elementsMap = new HashMap<String, Integer>();
@@ -1309,7 +1308,7 @@ public class XmlUtils {
                             String windowValue = elementObj.attributeValue("triggerWindow");
                             //System.out.println(logSpace4thisPage + "### " + name);
                             //System.out.println(logSpace4thisPage + "### " + defaultValue);
-                            if(windowValue!="") {
+                            if (windowValue != "") {
                                 elementsMap.put(name, windowValue);
                             }
                         } catch (Exception e) {
@@ -1335,9 +1334,9 @@ public class XmlUtils {
     public static void main(String args[]) {
         try {
             SortedSet<operationItem> parts = new TreeSet<operationItem>();
-            operationItem aa = (new operationItem("xxx", "", "", "", "", "", 1));
-            operationItem bb = (new operationItem("asv", "", "", "", "", "", 2));
-            operationItem cc = (new operationItem("123", "", "", "", "", "", 3));
+            operationItem aa = (new operationItem("xxx", "", "", "", "", 1));
+            operationItem bb = (new operationItem("asv", "", "", "", "", 2));
+            operationItem cc = (new operationItem("123", "", "", "", "", 3));
             //  operationItem[] ada  = new operationItem[]{aa, bb, cc};
             parts.add(aa);
             parts.add(bb);
@@ -1348,18 +1347,17 @@ public class XmlUtils {
 
             //System.out.println(logSpace4thisPage + System.getProperty("user.dir"));
 
-    //        readActionXMLDoc4Set(("\\OperationXML\\Action\\test.xml").replaceAll("\\\\", File.separator), "");
+            //        readActionXMLDoc4Set(("\\OperationXML\\Action\\test.xml").replaceAll("\\\\", File.separator), "");
             // MAC: /Users/appledev131/Documents/AUTO/REXAUTO
             //  HashMap map = readANDXMLDocumentN("/PageXML/And/homePage.xml");
             //     HashMap map = readXMLDocument("/PageXML/And/homePage.xml", 1);
-      //      HashMap mapAction = readActionXMLDocumentAll(("\\OperationXML\\Action\\Action_login.xml").replaceAll("\\\\", File.separator), 1);
+            //      HashMap mapAction = readActionXMLDocumentAll(("\\OperationXML\\Action\\Action_login.xml").replaceAll("\\\\", File.separator), 1);
 
 
             long gstartTime = System.currentTimeMillis();
-            readANDXMLDocument4Base("/src/main/java/utility/"+"test.xml");
+            readANDXMLDocument4Base("/src/main/java/utility/" + "test.xml");
 
             System.out.println(System.currentTimeMillis() - gstartTime + " ms");
-
 
 
         } catch (Exception e) {

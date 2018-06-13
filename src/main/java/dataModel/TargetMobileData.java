@@ -42,6 +42,14 @@ public class TargetMobileData {
         up4CurrentScreen = currentScreenLength / 100 * 300 * 3 / 10;
     }
 
+    public  static  void setCurrentScreen4DryRun(AppiumDriver driver)
+    {
+        currentScreenWidth = 300;
+        currentScreenLength = 900;
+        down4CurrentScreen = currentScreenLength / 100 * 100;
+        up4CurrentScreen = currentScreenLength / 100 * 300 * 3 / 10;
+    }
+
     public static int getSingleElementSearchTimeDuration() {
         return singleElementSearchTimeDuration;
     }

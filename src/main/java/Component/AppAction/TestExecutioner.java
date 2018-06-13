@@ -17,6 +17,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import utility.StringB;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -49,6 +50,7 @@ public class TestExecutioner {
     //   protected IOSPageLogin basePageIOS = null;
 //    protected IOSPageNaviBar theNaviBarIOS = null;
     //   protected IOSPageHome theHomeIOS = null;
+
     protected StringBuilder result4exe = null;
 
     protected AppiumDriver theDriver = null;
@@ -56,6 +58,8 @@ public class TestExecutioner {
     protected ArrayList<String> theActionSeq = new ArrayList<String>();
     protected ArrayList<String> paraList4TC = new ArrayList<String>();
     protected StringBuilder path4Log = new StringBuilder("");
+    protected StringBuilder filepath4PageClassFile = new StringBuilder("");
+
     protected StringBuilder content4input = new StringBuilder("");
     protected StringBuilder content4check = new StringBuilder("");
     protected StringBuilder content4pagecheck = new StringBuilder("");
@@ -71,10 +75,9 @@ public class TestExecutioner {
     protected StringBuilder completeWindowFromElement = new StringBuilder("");
     protected ArrayList<StringBuilder> eleWinListAfterClick = new ArrayList<StringBuilder>();
     protected ArrayList<StringBuilder> eleErrorWinListAfterClick = new ArrayList<StringBuilder>();
-    private static StringBuilder logSpace4thisPage = new StringBuilder(" 000 BaseAction 000 ");
+    private static StringBuilder logSpace4thisPage = new StringBuilder(" 000 TestExecutioner 000 ");
     protected HashMap<String, Object> pageGroup = new HashMap<String, Object>();
     private StringBuilder testENVpreName = new StringBuilder();
-    private StringBuilder filepath4PageClassFile = new StringBuilder();
     protected IOSPage_Login basePageIOS = null;
     protected IOSPage_NaviBar theNaviBarIOS = null;
     protected IOSPage_Home theHomeIOS = null;
@@ -82,10 +85,13 @@ public class TestExecutioner {
     // protected IPADPageNaviBar theNaviBarIPAD = null;
     // protected IPADPageHome theHomeIPAD = null;
 
+    long startTimeFromTCNG = Long.parseLong("0");
+
     protected StringBuilder deviceType = new StringBuilder("");
 
     //FF Panda
-    public TestExecutioner(AppiumDriver driver, StringBuilder currentPageName, int operaTypeInd, ArrayList<String> actionSequence, ArrayList<String> extPara, StringBuilder path4LogWithTCName, StringBuilder expResultContent) throws Exception {
+    public TestExecutioner(AppiumDriver driver, StringBuilder currentPageName, int operaTypeInd, ArrayList<String> actionSequence, ArrayList<String> extPara,
+                           StringBuilder path4LogWithTCName, StringBuilder expResultContent, long time4start) throws Exception {
         long startTime = System.currentTimeMillis();
 
         if (!autoOSType.toString().toLowerCase().contains("windows")) {
@@ -101,7 +107,8 @@ public class TestExecutioner {
         this.path4Log = mkdir4Log(path4LogWithTCName);
         this.classNameMap = PandaClassShortName2CompleteName.IOSList();
         this.contentFromExcept = expResultContent;
-        System.out.println("^^^^^^    BaseAction init ：" + (System.currentTimeMillis() - startTime) + " ms    ^^^^^^");
+        this.startTimeFromTCNG = time4start;
+        System.out.println("^^^^^^    TestExecutioner init ：" + (System.currentTimeMillis() - startTime) + " ms    ^^^^^^");
     }
 
 
@@ -183,7 +190,7 @@ public class TestExecutioner {
         try {
 
             StringBuilder filepath4XML = new StringBuilder();
-            StringBuilder filepath4PageClassFile = new StringBuilder();
+            //  StringBuilder filepath4PageClassFile = new StringBuilder();
             if (deviceType.toString().contains("pad")) {
             /*
                 testENVpreName = new StringBuilder("IPADPage_");
@@ -198,7 +205,7 @@ public class TestExecutioner {
            */
             } else {
                 testENVpreName = new StringBuilder("IOSPage_");
-                filepath4PageClassFile = new StringBuilder("farfetch.panda.beta.ios.AppPage.IOS.");
+                this.filepath4PageClassFile = new StringBuilder("farfetch.panda.beta.ios.AppPage.IOS.");
                 this.basePageIOS = new IOSPage_Login((IOSDriver) result, this.path4Log);
                 this.theNaviBarIOS = new IOSPage_NaviBar((IOSDriver) result, this.path4Log);
                 this.theHomeIOS = new IOSPage_Home((IOSDriver) result, this.path4Log);
@@ -270,7 +277,8 @@ public class TestExecutioner {
                     if (tSet[0].equalsIgnoreCase(opeName)) {
                         operationItem eLocator;
                         eLocator = (operationItem) obj.getValue();
-                        result.put(obj.getKey().toString(), eLocator);
+                        //            result.put(obj.getKey().toString(), eLocator);
+                        result.put(tSet[1], eLocator);
                     }
                 } else {
                     System.out.println("Wrong format from getOperationSeq, readXML");
@@ -285,14 +293,26 @@ public class TestExecutioner {
         }
     }
 
-    private List<Object> getSortOperationList(HashMap<String, operationItem> singleSeqMap, String thisOperationName) throws Exception {
+    private ArrayList<operationItem> getSortOperationList(HashMap<String, operationItem> singleSeqMap, String thisOperationName) throws Exception {
+        ArrayList<operationItem> result = new ArrayList<operationItem>();
         List<Object> list = new ArrayList<>();
-        list.add((operationItem) singleSeqMap.keySet());
-        Object[] ary = list.toArray();
-        Arrays.sort(ary);
-        list = Arrays.asList(ary);
-        return list;
+        try {
+
+            list.add(singleSeqMap.keySet());
+            Object[] ary = list.toArray();
+            Arrays.sort(ary);
+            list.clear();
+            list = Arrays.asList(ary);
+
+            for (int i = 0; i < list.size(); i++) {
+                result.add(singleSeqMap.get(list.get(i)));
+            }
+        } catch (Exception e) {
+        } finally {
+            return result;
+        }
     }
+
 
     public Object createInstance(Class cType, IOSDriver theD) throws Exception {
         //System.out.println(" ~~~~~~ In the createInstance()");
@@ -344,26 +364,62 @@ public class TestExecutioner {
             if (ind4ope == 0) {
                 ind4ope = firstStepHandler(actionSequence, (IOSDriver) theDriver, ind4ope);
             }
-            singleSeqMap = analyOpeSequence(wholeSeqMap, actionSequence.get(ind4ope).toString());    // get the part 4 current test case 获得当前action 关键字的所有operation步骤
-            List list4currentOperation = getSortOperationList(singleSeqMap, actionSequence.get(ind4ope).toString()); // get the sorted operation list 获得排序后的operation步骤
+            singleSeqMap = analyOpeSequence(wholeSeqMap, actionSequence.get(ind4ope));    // get the part 4 current test case 获得当前action 关键字的所有operation步骤
+            // get the sorted operation list 获得排序后的operation步骤
+            //    List indexList4currentOperation = getSortOperationList(singleSeqMap, actionSequence.get(ind4ope));
+
+            List indexList4currentOperation = new ArrayList(singleSeqMap.keySet());
+            Object[] ary = indexList4currentOperation.toArray();
+            Arrays.sort(ary);
+            indexList4currentOperation = Arrays.asList(ary);
+
+            //   List realList = (List) indexList4currentOperation.get(0);
             StringBuilder operationPage4this = null;
             operationItem tOpeItem = null;
-
+            //    int startIndex = Integer.valueOf(indexList4currentOperation.get(0).toString());
 
             int ind_opeItem = 0;
-            for (Object opeItem : list4currentOperation) {      // every operation Item Loop 把排序后的operation步骤一一执行
+            for (Object opeItem : indexList4currentOperation) {      // every operation Item Loop 把排序后的operation步骤一一执行
                 lastOpeItemElementName4Error = new StringBuilder(currentOpeItemElementName4Error);
                 ind_opeItem++; // only for index step/operation, not for location item
-                System.out.println("Start to handle the " + ind_opeItem + "nd :: " + list4currentOperation.size() + " opeItem in : " + opeItem);
-                System.out.println("Check the Object in the sub operation item list : " + singleSeqMap.get(opeItem).getElementName());
                 operationItem currentOpeItem = singleSeqMap.get(opeItem);   // get the single operation info from operation List  获得单个operation步骤
-                System.out.println("Check the sub operationItem " + currentOpeItem.getElementName());
 
                 operationPage4this = new StringBuilder(currentOpeItem.getPageName());  // get the page info fot this operation 获得步骤所在的页面名字
                 StringBuilder operationPage4Last = operationPage4this; // for possible error in next operation
                 tempName4Screen = operationPage4this;   // record the operation name for possible screen shot file
                 StringBuilder para4NextStep = new StringBuilder("");
                 boolean flag4pageGroup = false;
+                // 如果上一步的导向的页面和这一步所在的页面不一致，则尝试检查这一步所在的页面的title元素是否出现
+                if ((!appPageName4next.equalsIgnoreCase("")) && (!appPageName4next.equalsIgnoreCase(operationPage4this.toString()))) {
+                    boolean flag4CurrentGroup = false;
+                    Object appPage4Check = new Object();
+                    for (Iterator it = pageGroup.entrySet().iterator(); it.hasNext(); ) {
+                        System.out.println(" ~~~~~~~~~ loop the page group for Page Check");
+                        Map.Entry eleEntry = (Map.Entry) it.next();
+                        String tempPageName = eleEntry.getValue().getClass().getSimpleName();
+                        if (tempPageName.contains(new String(testENVpreName.toString() + operationPage4this.toString()))) {
+                            System.out.println("Get the : " + tempPageName + " in the pageGroup ");
+                            appPage4Check = eleEntry.getValue();      //  object form single page class
+
+                            currentOpeItemElementName4Error = new StringBuilder(currentOpeItem.getElementName());
+                            flag4CurrentGroup = true;
+                            break;
+                        }
+                    }
+                    if (flag4CurrentGroup == false) {
+                        classType = Class.forName(new StringBuilder().append(filepath4PageClassFile).append(testENVpreName).append(appPageName4next).toString());
+                        long startCreateTime4check = System.currentTimeMillis();
+                        appPage4Check = createInstance(classType, driver);
+                        System.out.println("^^^^^^    createInstance4check：" + (System.currentTimeMillis() - startCreateTime4check) + " ms    ^^^^^^");
+                        pageGroup.put(operationPage4this.toString(), appPage4Check);  //放入已加载页面集合
+                    } else {
+                    }
+                    Method setMethod = classType.getDeclaredMethod("comPageCheck", new Class[]{IOSDriver.class, StringBuilder.class, StringBuilder.class});
+                    StringBuilder checkResult = (StringBuilder) setMethod.invoke(appPage4Check, theDriver, new StringBuilder("ready"), new StringBuilder("title"));
+                    if (checkResult.toString().equalsIgnoreCase("fail")) {
+                        throw new XMLException("The next page from Last step : " + appPageName4next + " is Different with " + operationPage4this.toString() + ", and the Page/Title check failed");
+                    }
+                }
 
                 System.out.println(" ~~~~~~~~~ Start the Loop");
                 for (Iterator it = pageGroup.entrySet().iterator(); it.hasNext(); ) {
@@ -379,28 +435,28 @@ public class TestExecutioner {
                         currentOpeItemElementName4Error = new StringBuilder(currentOpeItem.getElementName());
                         flag4pageGroup = true;
                         break;
-                        //    elePageName4next = commonMethodHandleIOS(currentOpeItem.getElementType(), currentOpeItem, devicePage4next, classType, extPara, this.paraIndex);
                     }
                 }
                 if (flag4pageGroup == true) {//如果在已经加载的页面集之内
                     //判断异常处理后的下一步所在页面是否和用例中action内的operation list的上一个元素的路由页面一致
                     if ((!appPageName4nextFromWinHandle.equals("") && (appPageName4nextFromWinHandle.equalsIgnoreCase(appPageName4next))) || (appPageName4nextFromWinHandle.equals(""))) {
                         appPageName4nextFromWinHandle = new String("");
-                        appPageName4next = commonMethodHandleIOS(new StringBuilder(currentOpeItem.getElementType().toLowerCase()), currentOpeItem, appPage4Current, classType, extPara, this.paraIndex);
+                        appPageName4next = commonMethodHandleIOS(new StringBuilder(currentOpeItem.getOperationType().toLowerCase()), currentOpeItem, appPage4Current, classType, extPara, this.paraIndex);
                     } else {
                         throw new FFPandaException("after handle trigger window, the next operation page is :" + appPageName4nextFromWinHandle + ", which is mis-match with TC : " + appPageName4next);
                     }
                 } else {  //如果不在已经加载的页面集之内，则创建对应页面的对象
                     //判断异常处理后的下一步所在页面是否和用例中action内的operation list的本次operation的元素的当前页面一致
                     classType = Class.forName(new StringBuilder().append(filepath4PageClassFile).append(testENVpreName).append(operationPage4this).toString());
-                    long startTime = System.currentTimeMillis();
+                    long startCreateTime = System.currentTimeMillis();
                     appPage4Current = createInstance(classType, driver);
-                    System.out.println("^^^^^^    createInstance：" + (System.currentTimeMillis() - startTime) + " ms    ^^^^^^");
+                    System.out.println("^^^^^^    createInstance：" + (System.currentTimeMillis() - startCreateTime) + " ms    ^^^^^^");
                     pageGroup.put(operationPage4this.toString(), appPage4Current);  //放入已加载页面集合
-
+                    //TODO add the logic for check loading for "nextPage" OR the First step
+                    System.out.println(" ~~~~~~ ~~~~~~ Time cost from TC NG start the setup for Driver in super : " + (System.currentTimeMillis() - this.startTimeFromTCNG) + "ms ~~~~~~ ~~~~~~");
                     if ((!appPageName4nextFromWinHandle.equals("") && (appPageName4nextFromWinHandle.equalsIgnoreCase(appPage4Current.toString()))) || (appPageName4nextFromWinHandle.equals(""))) {
                         appPageName4nextFromWinHandle = new String("");
-                        appPageName4next = commonMethodHandleIOS(new StringBuilder(currentOpeItem.getElementType().toLowerCase()), currentOpeItem, appPage4Current, classType, extPara, this.paraIndex);
+                        appPageName4next = commonMethodHandleIOS(new StringBuilder(currentOpeItem.getOperationType().toLowerCase()), currentOpeItem, appPage4Current, classType, extPara, this.paraIndex);
                     } else {
                         throw new FFPandaException("after handle trigger window, the next operation page is :" + appPageName4nextFromWinHandle + ", which is mis-match with TC : " + appPageName4next);
                     }
@@ -420,6 +476,7 @@ public class TestExecutioner {
                     this.completeWindowFromElement = new StringBuilder("");
                     eleErrorWinListAfterClick.clear();
                 }
+
 
                 //  end the page check after every element operation done
                 if ((appPageName4next != null) && (!appPageName4next.equals(""))) {
@@ -444,17 +501,17 @@ public class TestExecutioner {
             System.out.println("    ^^^^^^ Check the issue in the end ");
         }  // every Key Word - single Action  END
 
-        result4exe = resultContentCheck(result4exe, theDriver);
+        result4exe = resultContentCheckDRYRUN(result4exe, theDriver);
         if (result4exe.toString().equals("teststart")) {
             System.out.println(" All action pass ! ");
         } else {
-            System.out.println(" Last action in " + appPage4last + " cause some error ! ");
+            System.out.println(" Last action in " + appPage4last.getClass() + " cause some error ! ");
         }
     }
 
     public StringBuilder resultContentCheck(StringBuilder inRes, WebDriver driver) throws Exception {  //TODO involve the ex para for excepted content from TC para
         System.out.println("++++++++++++++++ " + this.appInputFeedBackMode + " ++++++++++++++++");
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver);
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver);  //TODO ESCAPE for DryRUN
         if (inRes.toString().equals("teststart") && !this.content4check.toString().contains("_REX_")) {
             System.out.println("++++++++++++++++ " + inRes.toString() + " ++++++++++++++++");
             if (this.content4input.equals(this.content4check)) {
@@ -481,6 +538,34 @@ public class TestExecutioner {
         }
     }
 
+
+    public StringBuilder resultContentCheckDRYRUN(StringBuilder inRes, WebDriver driver) throws Exception {  //TODO involve the ex para for excepted content from TC para
+        System.out.println("++++++++++++++++ " + this.appInputFeedBackMode + " ++++++++++++++++");
+        if (inRes.toString().equals("teststart") && !this.content4check.toString().contains("_REX_")) {
+            System.out.println("++++++++++++++++ " + inRes.toString() + " ++++++++++++++++");
+            if (this.content4input.equals(this.content4check)) {
+                return inRes;
+            } else if (!this.contentFromExcept.equals("")) {
+                return contentCheckExceptAndResult(inRes);
+            } else {
+                if (!this.content4check.toString().contains("_:REX:_")) {
+                    return textContentCheck(inRes);
+                } else if (this.content4check.toString().contains("_:REX:_") && !this.content4input.equals("") && this.contentFromExcept.equals("")) {
+                    return textContentCheck(inRes);
+                } else {
+                    return contentCheckExceptAndResult(inRes);
+                }
+            }
+        } else {
+            if (this.contentFromExcept.equals("")) {
+                // ADD the new page failure info check and compare with the ext excepted error info
+                return textContentCheck(inRes);
+            } else {
+                //return new StringBuilder("cool");
+                return contentCheckExceptAndResult(inRes);
+            }
+        }
+    }
 
     public IOSDriver comOperationInIOS(IOSDriver theDriver, ArrayList<String> actionSequence, ArrayList<String> extPara, StringBuilder deviceType) throws Exception {
         IOSDriver result = null;
@@ -561,13 +646,26 @@ public class TestExecutioner {
         ArrayList<String> extPara = extraPara;
         String para4this = null;
         operationItem cOpeItem = cOperationItem;
-        String resultPageName = null;
+        String resultPageName = new String("");
         try {
             if (tempType.contains("btn")) {
                 System.out.println("Try to find the btn method !!!");
-
                 Object nextPageName = null;
-                if (!tempType.contains("_match")) {
+                if (tempType.startsWith("dryrun")) {
+                    //    Object temp = Class.forName(classType.getName()).newInstance();
+                    Method setMethod = classType.getDeclaredMethod("btnOperationRoute_DRYRUN", new Class[]{String.class});
+                    nextPageName = setMethod.invoke(devicePage4next, cOpeItem.getElementName());
+                    Method getMethod = classType.getDeclaredMethod("value4compareDRYRUN", new Class[]{});
+                    String temp4date = (String) getMethod.invoke(devicePage4next);
+                    if (temp4date != null && temp4date != "") {
+                        date4diffPage = new StringBuilder(temp4date);
+                        if (key4searchMatch.toString().equals("")) {
+                            key4searchMatch = new StringBuilder(temp4date);
+                        } else {
+                            key4searchMatch = new StringBuilder(key4searchMatch + "::" + temp4date);
+                        }
+                    }
+                } else if (!tempType.contains("_match")) {
                     Method setMethod = classType.getDeclaredMethod("btnOperationRoute", new Class[]{IOSDriver.class, String.class});
                     nextPageName = setMethod.invoke(devicePage4next, theDriver, cOpeItem.getElementName());
                     Method getMethod = classType.getDeclaredMethod("value4compare", new Class[]{});
@@ -614,7 +712,18 @@ public class TestExecutioner {
                 System.out.println("Check the extPara [" + newIndex + "] is : " + extPara.get(newIndex));
                 para4this = choosePara(extPara.get(newIndex), cOpeItem.getElementPara(), newIndex);
                 newIndex++;
-                if (tempType.contains("_input")) {
+                if (tempType.equalsIgnoreCase("dryrun_text")) {
+                    Method setMethod = classType.getMethod("dryrun_text", new Class[]{String.class, String.class});
+                    setMethod.invoke(devicePage4next, cOpeItem.getElementName(), para4this);
+
+
+                } else if (tempType.equalsIgnoreCase("dryrun_textfield_input")) {
+                    Method setMethod = classType.getMethod("dryrun_textfield_input", new Class[]{String.class, String.class});
+                    String tempR = (String) setMethod.invoke(devicePage4next, cOpeItem.getElementName(), para4this);
+                    //    content4input = new StringBuilder(content4input + "::" + tempR);
+                    content4input.append("::").append(tempR);
+
+                } else if (tempType.contains("_input")) {
                     Method setMethod = classType.getMethod("textOperationWithSaveInput", new Class[]{IOSDriver.class, String.class, String.class});
                     String tempR = (String) setMethod.invoke(devicePage4next, theDriver, cOpeItem.getElementName(), para4this);
                     if (tempR != "" && tempR != null && !tempR.equalsIgnoreCase("emptyContent")) {
@@ -690,8 +799,14 @@ public class TestExecutioner {
                     setMethod.invoke(devicePage4next, theDriver);
                 }
             } else if (tempType.contains("checkcontent")) {
+
                 System.out.println("Try to find the checkcontent method !!!");
-                if (tempType.contains("_match")) {
+                if (tempType.equalsIgnoreCase("dryrun_checkcontent")) {
+                    Method setMethod = classType.getMethod("dryrun_getElementContent", new Class[]{String.class});
+                    String tempResult = (String) setMethod.invoke(devicePage4next, cOpeItem.getElementName());
+                    content4check = new StringBuilder(content4check + "::" + tempResult);
+
+                } else if (tempType.contains("_match")) {
                     System.out.println("Check the extPara [" + newIndex + "] is : " + extPara.get(newIndex));
                     para4this = choosePara(extPara.get(newIndex), cOpeItem.getElementPara(), newIndex);
                     newIndex++;
@@ -949,7 +1064,7 @@ public class TestExecutioner {
                     date4diffPage = new StringBuilder(temp4date);
                 }
             } else if (tempType.contains("sortcontent")) {
-                System.out.println("Try to find the checkcontent method !!!");
+                System.out.println("Try to find the sortcontent method !!!");
                 if (tempType.contains("_match")) {
                     System.out.println("Check the extPara [" + newIndex + "] is : " + extPara.get(newIndex));
                     para4this = choosePara(extPara.get(newIndex), cOpeItem.getElementPara(), newIndex);
@@ -974,38 +1089,41 @@ public class TestExecutioner {
                 System.out.println("ready to handle the element trigger window");
                 Method getWinMapMethod = classType.getDeclaredMethod("getEleWinMap", new Class[]{});
                 HashMap<String, String> tempWinMap = (HashMap<String, String>) getWinMapMethod.invoke(devicePage4next);
-                for (Iterator it = tempWinMap.entrySet().iterator(); it.hasNext(); ) {
-                    Map.Entry eleEntry = (Map.Entry) it.next();
-                    String tempElemetName = eleEntry.getKey().toString();
-                    if (tempElemetName.equals(cOpeItem.getElementName())) {
-                        String tempWinName = eleEntry.getValue().toString();
-                        List<StringBuilder> tempWinList = new ArrayList<StringBuilder>();
-                        tempWinList.clear();
-                        if (tempWinName.contains(";")) {
-                            String[] tString4name = tempWinName.split(";");
-                            for (int ind = 0; ind < tString4name.length; ind++) {
-                                tempWinList.add(new StringBuilder(tString4name[ind]));
-                            }
-                        } else {
-                            tempWinList.add(new StringBuilder(tempWinName));
-                        }
-                        //     eleWinListAfterClick = new ArrayList<String>()
-                        for (StringBuilder thex : tempWinList) {
-                            if (thex.toString().toLowerCase().contains("errorwin")) {
-                                eleWinListAfterClick.add(thex);
-                                if (thex.toString().equalsIgnoreCase("errorwin")) {
-                                    this.errWindowFromElement = new StringBuilder(thex);
-                                } else {
-                                    eleErrorWinListAfterClick.add(thex);
+                if ((tempWinMap.size() == 1) && (tempWinMap.get(0).equals(""))) {
+
+                } else {
+                    for (Iterator it = tempWinMap.entrySet().iterator(); it.hasNext(); ) {
+                        Map.Entry eleEntry = (Map.Entry) it.next();
+                        String tempElemetName = eleEntry.getKey().toString();
+                        if (tempElemetName.equals(cOpeItem.getElementName())) {
+                            String tempWinName = eleEntry.getValue().toString();
+                            List<StringBuilder> tempWinList = new ArrayList<StringBuilder>();
+                            tempWinList.clear();
+                            if (tempWinName.contains(";")) {
+                                String[] tString4name = tempWinName.split(";");
+                                for (int ind = 0; ind < tString4name.length; ind++) {
+                                    tempWinList.add(new StringBuilder(tString4name[ind]));
                                 }
-                            } else if (thex.toString().toLowerCase().contains("confirmwin")) {
-                                eleWinListAfterClick.add(thex);
-                                this.confirmWindowFromElement = new StringBuilder(thex);
-                            } else if (thex.toString().toLowerCase().contains("completewin")) {
-                                eleWinListAfterClick.add(thex);
-                                this.completeWindowFromElement = new StringBuilder(thex);
                             } else {
-                                throw new XMLException("wrong content in triggerWindow part of page XML!!!");
+                                tempWinList.add(new StringBuilder(tempWinName));
+                            }
+                            for (StringBuilder thex : tempWinList) {
+                                if (thex.toString().toLowerCase().contains("errorwin")) {
+                                    eleWinListAfterClick.add(thex);
+                                    if (thex.toString().equalsIgnoreCase("errorwin")) {
+                                        this.errWindowFromElement = new StringBuilder(thex);
+                                    } else {
+                                        eleErrorWinListAfterClick.add(thex);
+                                    }
+                                } else if (thex.toString().toLowerCase().contains("confirmwin")) {
+                                    eleWinListAfterClick.add(thex);
+                                    this.confirmWindowFromElement = new StringBuilder(thex);
+                                } else if (thex.toString().toLowerCase().contains("completewin")) {
+                                    eleWinListAfterClick.add(thex);
+                                    this.completeWindowFromElement = new StringBuilder(thex);
+                                } else {
+                                    throw new XMLException("wrong content in triggerWindow part of page XML!!!");
+                                }
                             }
                         }
                     }
@@ -1026,7 +1144,7 @@ public class TestExecutioner {
             if (t.getClass().getSimpleName().contains("TimeoutException")) {
                 throw new TimeoutException(t);
             } else {
-                System.out.println("Exception appear in BaseAction :: commonMethodHandleIOS");
+                System.out.println("Exception appear in TestExecutioner :: commonMethodHandleIOS");
                 throw e;
             }
         }
@@ -1168,6 +1286,49 @@ public class TestExecutioner {
         return result;
     }
 
+    public StringBuilder contentCheckExceptAndResult(StringBuilder mode, StringBuilder inputPara, StringBuilder resultFromExe, StringBuilder exceptResult) throws Exception {
+        StringBuilder result = new StringBuilder();
+        try {
+            String tResult = "";
+            Date date = new Date();
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String time = format.format(date);
+            boolean flag4match = false;
+            if (this.content4check.toString().equals("")) {
+                this.content4check = new StringBuilder(resultFromExe.toString());
+                appInputFeedBackMode = new StringBuilder("try2match");
+            }
+            this.contentFromExcept = removeUselessChart(this.contentFromExcept);
+            this.content4input = removeUselessChart(this.content4input);
+            this.content4check = removeUselessChart(this.content4check);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            return result;
+        }
+    }
+
+    public StringBuilder removeUselessChart(StringBuilder input) throws Exception {
+        StringBuilder result = new StringBuilder();
+        String temp = input.toString();
+        try {
+            if (temp.startsWith("::::")) {
+                temp = new String(temp.replaceFirst("::::", ""));
+            }
+            if (temp.startsWith("::")) {
+                temp = new String(temp.replaceFirst("::", ""));
+            }
+            if (temp.endsWith("::")) {
+                temp = new String(temp.substring(0, input.toString().length() - 2));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            result = new StringBuilder(temp);
+            return result;
+        }
+    }
+
 
     public StringBuilder contentCheckExceptAndResult(StringBuilder inRes) throws Exception {
         String tResult = "";
@@ -1179,30 +1340,14 @@ public class TestExecutioner {
             this.content4check = new StringBuilder(inRes.toString());
             appInputFeedBackMode = new StringBuilder("try2match");
         }
-        if (this.contentFromExcept.toString().startsWith("::")) {
-            this.contentFromExcept = new StringBuilder(this.contentFromExcept.toString().replaceFirst("::", ""));
-        }
-        if (this.contentFromExcept.toString().endsWith("::")) {
-            this.contentFromExcept = new StringBuilder(this.contentFromExcept.substring(0, this.contentFromExcept.length() - 2));
-        }
-        if (this.content4check.toString().startsWith("::")) {
-            this.content4check = new StringBuilder(this.content4check.toString().replaceFirst("::", ""));
-        }
-        if (this.content4check.toString().endsWith("::")) {
-            this.content4check = new StringBuilder(this.content4check.substring(0, this.content4check.length() - 2));
-        }
-        if (this.content4input.toString().startsWith("::::")) {
-            this.content4input = new StringBuilder(this.content4input.toString().replaceFirst("::::", ""));
-        }
-        if (this.content4input.toString().startsWith("::")) {
-            this.content4input = new StringBuilder(this.content4input.toString().replaceFirst("::", ""));
-        }
-        if (this.content4input.toString().endsWith("::")) {
-            this.content4input = new StringBuilder(this.content4check.substring(0, this.content4input.length() - 2));
-        }
+        this.contentFromExcept = removeUselessChart(this.contentFromExcept);
+        this.content4input = removeUselessChart(this.content4input);
+        this.content4check = removeUselessChart(this.content4check);
+
         System.out.println("*** in contentCheckExceptAndResult ***");
         System.out.println("*here is the except  : " + this.contentFromExcept + "; length : " + this.contentFromExcept.length());
         System.out.println("*here is the result : " + this.content4check + "; length : " + this.content4check.length());
+        System.out.println("*here is the input : " + this.content4input + "; length : " + this.content4input.length());
         try {
             if (this.contentFromExcept.length() != this.content4check.length()) {
                 if (appInputFeedBackMode.toString().equalsIgnoreCase("try2match") || appInputFeedBackMode.toString().equalsIgnoreCase("sortmatch")) {
@@ -1210,8 +1355,13 @@ public class TestExecutioner {
                         tResult = new String("teststart");
                         //result = new StringBuilder("teststart");
                     }
-                } else if (!this.content4input.equals("") && this.contentFromExcept.length() == 0) {
-                    System.out.println("Temp solution, empty expected result AND some thing in input:" + this.content4input);
+                } else if (!this.content4input.toString().equals("") && this.contentFromExcept.length() == 0) {
+                    if (this.content4input.toString().equals(this.content4check.toString())) {
+                        tResult = new String("teststart");
+                        appInputFeedBackMode = new StringBuilder("checkENDwithPass");
+                    } else {
+                        System.out.println("Temp solution, empty expected result AND some thing in input:" + this.content4input);
+                    }
                 } else {
                     if ((Math.abs(this.contentFromExcept.length() - this.content4check.length()) < 10) && (this.contentFromExcept.toString().contains("::")) && (this.content4check.toString().contains("::"))) {
                         StringBuilder newCon4Except = new StringBuilder("");
@@ -1237,7 +1387,7 @@ public class TestExecutioner {
             }
             if (appInputFeedBackMode.toString().equalsIgnoreCase("exact")) {
                 if ((this.contentFromExcept != null) && (!this.contentFromExcept.toString().equals("")) && (this.content4check != null) && (!this.content4check.toString().equals(""))) {
-                    if (this.content4check.equals(this.contentFromExcept)) {
+                    if (this.content4check.toString().equals(this.contentFromExcept.toString())) {
                         tResult = new String(inRes.toString());
                         System.out.println("result in SB : " + tResult);
                     } else {
@@ -1303,8 +1453,6 @@ public class TestExecutioner {
                         extraList.add(temp);
                     }
                 }
-
-
                 //TODO
                 // extra match first, delete the matched item from list, should follow the seque in the input list
                 boolean flag4del = false;
@@ -1329,15 +1477,12 @@ public class TestExecutioner {
                         break;
                     }
                 }
-
-
                 if (extraList.size() == 0) {
                     flag4match = true;
                 } else {
                     tResult = new String("Extra compare 4 duplicatedMatch failed : " + extraList.get(0));
                     ScreenShot(theDriver, "textContent_nomatch_" + time + ".png", this.path4Log);
                 }
-
                 duplicatedList = removeDuplicate(duplicatedList);
                 ArrayList<String> fuzzyList = new ArrayList<String>();
 
@@ -1385,7 +1530,6 @@ public class TestExecutioner {
                     tResult = new String("checkList is not empty, compare 4 duplicatedMatch failed : " + checkList.get(0));
                     ScreenShot(theDriver, "textContent_nomatch_" + time + ".png", this.path4Log);
                 }
-
             } else if (appInputFeedBackMode.toString().equalsIgnoreCase("sortMatch")) {
                 ArrayList<String> extraList = new ArrayList<String>();
                 ArrayList<String> duplicatedList = new ArrayList<String>();
@@ -1397,7 +1541,6 @@ public class TestExecutioner {
                         extraList.add(temp);
                     }
                 }
-
                 if (duplicatedList.size() != 0) {
                     duplicatedList = removeDuplicate(duplicatedList);
                     ArrayList<String> fuzzyList = new ArrayList<String>();
@@ -1458,8 +1601,8 @@ public class TestExecutioner {
             return result;
         } catch (Exception e) {
             // result.append("Exception appear during element content compare");
-            ScreenShot(theDriver, "runtime_Exception" + time + ".png", this.path4Log);
-            throw new FFPandaException("BaseAction : contentCheckExceptAndResult : " + e.getMessage());
+            //     ScreenShot(theDriver, "runtime_Exception" + time + ".png", this.path4Log);  //TODO ESCAPE for dryrun
+            throw new FFPandaException("TestExecutioner : contentCheckExceptAndResult : " + e.getMessage());
         }
     }
 
@@ -1536,7 +1679,7 @@ public class TestExecutioner {
                     }
                 } else {
                     if ((this.content4input != null) && (!this.content4input.toString().equals("")) && (this.content4check != null) && (!this.content4check.toString().equals(""))) {
-                        if (this.content4check.equals(this.content4input)) {
+                        if (this.content4check.toString().equals(this.content4input.toString())) {
                             result.append("teststart");
                             System.out.println("result in SB : " + result);
                         } else {
@@ -1555,7 +1698,7 @@ public class TestExecutioner {
             }
             if (appInputFeedBackMode.toString().equalsIgnoreCase("try2match")) {// for try2mtach
                 if ((this.content4input != null) && (!this.content4input.toString().equals("")) && (this.content4check != null) && (!this.content4check.toString().equals(""))) {
-                    if (this.content4check.equals(this.content4input)) {
+                    if (this.content4check.toString().equals(this.content4input.toString())) {
                         result.append(inRes);
                         System.out.println("result in SB : " + result);
                     } else if (!content4check.toString().contains("_REX_") && !content4input.toString().contains("_REX_")) {
@@ -1915,7 +2058,7 @@ public class TestExecutioner {
         } catch (Exception e) {
             result.append("Exception appear during element content compare");
             ScreenShot(theDriver, "runtime_Exception" + time + ".png", this.path4Log);
-            throw new FFPandaException("BaseAction : textContentCheck : " + e.getMessage());
+            throw new FFPandaException("TestExecutioner : textContentCheck : " + e.getMessage());
         }
     }
 

@@ -1,0 +1,3 @@
+<page name="Home">
+    <element pageName="Home" elementName="uidField" textContent="label"  defaultValue="dv3" locatorType="id" locatorStr="setting_label_3" triggerWindow="" showMode="ready" nextPage="" />
+</page>

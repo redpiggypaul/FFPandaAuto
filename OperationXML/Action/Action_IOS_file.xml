@@ -1,9 +1,15 @@
 <page name="IOS_file">
-    <element OperationName="ios_action_key" Step="1" PageName="Account" OperationType="" elementName="generalBtn" elementType="btn" elementParameter="" />
-    <element OperationName="ios_action_key" Step="2" PageName="Account" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
-    <element OperationName="ios_action_key" Step="3" PageName="Account" OperationType="" elementName="email" elementType="textfield_input" elementParameter="psw" />
-	<element OperationName="Demo" Step="1" PageName="Account" OperationType="" elementName="btn1" elementType="btn" elementParameter="" />
-	<element OperationName="Demo" Step="2" PageName="Account" OperationType="" elementName="textfiled2" elementType="text" elementParameter="" />
-	<element OperationName="Demo" Step="3" PageName="Account" OperationType="" elementName="textfiled3" elementType="textfield_input" elementParameter="" />
-	<element OperationName="Demo" Step="4" PageName="Account" OperationType="" elementName="text4" elementType="checkcontent" elementParameter="" />
+    <element OperationName="ios_action_key" Step="1" PageName="Account"   elementName="generalBtn" OperationType="btn" elementParameter="" />
+    <element OperationName="ios_action_key" Step="2" PageName="Account"   elementName="editBtn" OperationType="btn" elementParameter="" />
+    <element OperationName="ios_action_key" Step="3" PageName="Account"   elementName="email" OperationType="textfield_input" elementParameter="psw" />
+	<element OperationName="Demo" Step="2" PageName="FFDryRunDemo"   elementName="btn1" OperationType="DRYRUN_btn" elementParameter="" />
+	<element OperationName="Demo" Step="3" PageName="FFDryRunDemo"   elementName="textfiled2" OperationType="DRYRUN_text" elementParameter="" />
+	<element OperationName="Demo" Step="4" PageName="FFDryRunDemo"   elementName="textfiled3" OperationType="DRYRUN_textfield_input" elementParameter="" />
+	<element OperationName="Demo" Step="6" PageName="FFDryRunDemo"   elementName="text4" OperationType="DRYRUN_checkcontent" elementParameter="" />
+	<element OperationName="Demo" Step="7" PageName="FFDryRunDemo"   elementName="btn2" OperationType="DRYRUN_btn" elementParameter="" />
+	<element OperationName="Demo2" Step="1" PageName="FFDryRunDemo"   elementName="btn1" OperationType="DRYRUN_btn" elementParameter="" />
+	<element OperationName="Demo2" Step="2" PageName="FFDryRunDemo"   elementName="textfiled2" OperationType="DRYRUN_text" elementParameter="" />
+	<element OperationName="Demo2" Step="3" PageName="FFDryRunDemo"   elementName="textfiled3" OperationType="DRYRUN_textfield_input" elementParameter="" />
+	<element OperationName="Demo2" Step="4" PageName="FFDryRunDemo"   elementName="text4" OperationType="DRYRUN_checkcontent" elementParameter="" />
+	<element OperationName="Demo3" Step="1" PageName="FFDryRunDemo"   elementName="btn1" OperationType="DRYRUN_btn" elementParameter="" />
 </page>

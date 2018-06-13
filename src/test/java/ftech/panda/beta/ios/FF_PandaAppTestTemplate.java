@@ -42,6 +42,8 @@ public class FF_PandaAppTestTemplate {
 
     private DesiredCapabilities capabilities = new DesiredCapabilities();
 
+    protected long startTime4template = Long.parseLong("0");
+
     // TargetMobileData localTargetMobileData = new TargetMobileData();
 
     public FF_PandaAppTestTemplate() throws FileNotFoundException {
@@ -176,6 +178,7 @@ public class FF_PandaAppTestTemplate {
         int Screen_X = driver.manage().window().getSize().getWidth();//获取手机屏幕宽度
         int Screen_Y = driver.manage().window().getSize().getHeight();//获取手机屏幕长度
         setScreenInfoIOS(Screen_X, Screen_Y);
+        startTime4template= System.currentTimeMillis();
         return driver;
     }
 
@@ -262,6 +265,7 @@ public class FF_PandaAppTestTemplate {
         int Screen_X = driver.manage().window().getSize().getWidth();//获取手机屏幕宽度
         int Screen_Y = driver.manage().window().getSize().getHeight();//获取手机屏幕长度
         setScreenInfoIOS(Screen_X, Screen_Y);
+        startTime4template= System.currentTimeMillis();
         return driver;
     }
 
@@ -564,6 +568,9 @@ public class FF_PandaAppTestTemplate {
             } else if (TargetMobileData.getMobileOS().toString().toLowerCase().startsWith("ios")) {
                 app = new File(TestPlatformData.getMACInstallFilePath().toString().replaceAll("\\\\", File.separator), TestPlatformData.getMACInstallFilePath().toString());
                 System.out.println("System.getPre + user.dir : " + System.getProperty("user.dir"));
+            }
+            else if (TargetMobileData.getMobileOS().toString().toLowerCase().startsWith("DRYRUN")) {
+                app = new File(TestPlatformData.getMACInstallFilePath().toString().replaceAll("\\\\", File.separator), TestPlatformData.getMACInstallFilePath().toString());
             }
             if (TargetMobileData.getMobileOS().toString().equalsIgnoreCase("Android")) {
                 driver = setupAndroid(app, this.port.toString());

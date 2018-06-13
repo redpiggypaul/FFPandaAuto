@@ -1,0 +1,6 @@
+<page name="IOS_file2">
+	<element OperationName="DemoEND" Step="1" PageName="FFDryRunDemo" OperationType="DRYRUN_btn" elementName="btn1" elementParameter="" />
+	<element OperationName="DemoEND" Step="2" PageName="FFDryRunDemo" OperationType="DRYRUN_text" elementName="textfiled2" elementParameter="" />
+	<element OperationName="DemoEND" Step="3" PageName="FFDryRunDemo_2" OperationType="DRYRUN_checkcontent" elementName="textfiled2" elementParameter="" />
+	<element OperationName="DemoEND" Step="4" PageName="FFDryRunDemo_2" OperationType="DRYRUN_checkcontent" elementName="textfiled2" elementParameter="" />
+</page>

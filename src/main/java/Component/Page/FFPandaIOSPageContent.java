@@ -24,8 +24,8 @@ public class FFPandaIOSPageContent {
     private HashMap<StringBuilder, FFPandaElementEntity> eleContMapInContentBase = new HashMap<StringBuilder, FFPandaElementEntity>();  // for all element
     private int osTypeInContent = 0;  // 1 for android, 2 for ios
     private HashMap<StringBuilder, FFPandaElementEntity> eleContMap4Route = new HashMap<StringBuilder, FFPandaElementEntity>();  // for all element with route
-    private HashMap<StringBuilder, StringBuilder> eleDefaultValueMap = new HashMap<StringBuilder, StringBuilder>();
-    protected HashMap<StringBuilder, StringBuilder> eleTextContentMap = new HashMap<StringBuilder, StringBuilder>();
+    private HashMap<StringBuilder, ArrayList<StringBuilder>> eleDefaultValueMap = new HashMap<StringBuilder, ArrayList<StringBuilder>>();
+    protected HashMap<StringBuilder, ArrayList<StringBuilder>> eleTextContentMap = new HashMap<StringBuilder, ArrayList<StringBuilder>>();
     public HashMap<StringBuilder, StringBuilder> eleWindowMap = new HashMap<StringBuilder, StringBuilder>();
     private String logSpace4thisPage = " --- IOSPageContentMap ---";
     public boolean flag4EleWindow = false;
@@ -81,11 +81,11 @@ public class FFPandaIOSPageContent {
         return eleContMap4Route;
     }
 
-    public HashMap<StringBuilder, StringBuilder> getEleDValueMap() throws Exception {
+    public HashMap<StringBuilder, ArrayList<StringBuilder>> getEleDValueMap() throws Exception {
         return eleDefaultValueMap;
     }
 
-    public HashMap<StringBuilder, StringBuilder> getEleTextMap() throws Exception {
+    public HashMap<StringBuilder, ArrayList<StringBuilder>> getEleTextMap() throws Exception {
         return eleTextContentMap;
     }
 
@@ -176,8 +176,8 @@ public class FFPandaIOSPageContent {
                         emptyMapGroup.eleContMapInContentBase.put(eleName, eLocator);
                         emptyMapGroup.eleContMapInContent.put(eleName, eLocator);
                         emptyMapGroup.eleContMap4Route.put(eleName, eLocator);
-                        emptyMapGroup.eleDefaultValueMap.put(eleName, value);
-                        emptyMapGroup.eleTextContentMap.put(eleName, text);
+                        emptyMapGroup.eleDefaultValueMap.put(eleName, eLocator.getDefaultValueList());
+                        emptyMapGroup.eleTextContentMap.put(eleName, eLocator.getTextContentList());
                         if (!tWin.equals("")) {
                             emptyMapGroup.eleWindowMap.put(eleName, tWin);
                         }
@@ -318,7 +318,7 @@ public class FFPandaIOSPageContent {
         HashMap result = new HashMap<String, By>();
         result.clear();
         By tempElement = null;
-        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in  FFPandaIOSPageContent. getByMap (IOSDriver driver)  : " + driver.toString());
+//        System.out.println(logSpace4thisPage + "xxxxxx ------ Check the driver in  FFPandaIOSPageContent. getByMap (IOSDriver driver)  : " + driver.toString());
 
         for (Iterator it = eleConMap.entrySet().iterator(); it.hasNext(); ) {
             try {

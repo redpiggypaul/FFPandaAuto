@@ -52,8 +52,8 @@ public class FFPandaJsonReader {
             language.addProperty("elementName", theEle.getElementName().toString());
             language.addProperty("locatorType", theEle.getLocatorType().toString());
             language.addProperty("locatorStr", theEle.getLocatorStr().toString());
-            language.addProperty("defaultValue", theEle.getDefaultValue().toString());
-            language.addProperty("textContent", theEle.getTextContent().toString());
+            language.addProperty("defaultValue", theEle.getDefaultValueASLongStr().toString());
+            language.addProperty("textContent", theEle.getTextContentASLongStr().toString());
             language.addProperty("triggerWindow", theEle.getTriggerWin().toString());
             language.addProperty("showMode", theEle.getShowMode().toString());
             language.addProperty("nextPage", theEle.getNextPage().toString());

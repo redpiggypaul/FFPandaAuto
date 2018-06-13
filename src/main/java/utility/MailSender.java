@@ -1,7 +1,6 @@
 package utility;
 
 import utility.readProperity.SingleTonReadMailConfigProperity;
-import utility.readProperity.SingleTonReadProperity;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -16,18 +15,18 @@ import java.util.Properties;
 import javax.mail.Transport;
 
 public class MailSender {
-    private static StringBuilder mail_smtp_host = SingleTonReadProperity.getProValue("mail_smtp_host");
-    private static StringBuilder mail_smtp_socket = SingleTonReadProperity.getProValue("mail_smtp_socket");
-    private static StringBuilder mail_socket = SingleTonReadProperity.getProValue("mail_socket");
-    private static StringBuilder mail_auth = SingleTonReadProperity.getProValue("mail_auth");
-    private static StringBuilder mail_port = SingleTonReadProperity.getProValue("mail_port");
+    private static StringBuilder mail_smtp_host = SingleTonReadMailConfigProperity.getProValue("mail_smtp_host");
+    private static StringBuilder mail_smtp_socket = SingleTonReadMailConfigProperity.getProValue("mail_smtp_socket");
+    private static StringBuilder mail_socket = SingleTonReadMailConfigProperity.getProValue("mail_socket");
+    private static StringBuilder mail_auth = SingleTonReadMailConfigProperity.getProValue("mail_auth");
+    private static StringBuilder mail_port = SingleTonReadMailConfigProperity.getProValue("mail_port");
 
-    private static StringBuilder senderAddress = SingleTonReadProperity.getProValue("senderAddress");
-    private static StringBuilder senderKey = SingleTonReadProperity.getProValue("senderKey");
-    private static StringBuilder receiverList = SingleTonReadProperity.getProValue("receiverList");
-    private static StringBuilder mailTitle = SingleTonReadProperity.getProValue("mailTitle");
-    private static StringBuilder mailText = SingleTonReadProperity.getProValue("mailText");
-    private static StringBuilder mailAttSourceFile = SingleTonReadProperity.getProValue("mailAttSourceFile");
+    private static StringBuilder senderAddress = SingleTonReadMailConfigProperity.getProValue("senderAddress");
+    private static StringBuilder senderKey = SingleTonReadMailConfigProperity.getProValue("senderKey");
+    private static StringBuilder receiverList = SingleTonReadMailConfigProperity.getProValue("receiverList");
+    private static StringBuilder mailTitle = SingleTonReadMailConfigProperity.getProValue("mailTitle");
+    private static StringBuilder mailText = SingleTonReadMailConfigProperity.getProValue("mailText");
+    private static StringBuilder mailAttSourceFile = SingleTonReadMailConfigProperity.getProValue("mailAttSourceFile");
     private static ArrayList<InternetAddress> list4receiver;
 
     public MailSender() {

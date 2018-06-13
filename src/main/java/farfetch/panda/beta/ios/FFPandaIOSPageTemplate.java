@@ -475,6 +475,23 @@ public abstract class FFPandaIOSPageTemplate {
         }
     }
 
+    public ArrayList<StringBuilder> getElementXMLDvalueList(String eleName, HashMap<String, FFPandaElementEntity> eleMap) throws Exception {
+        ArrayList<StringBuilder>  result = new  ArrayList<StringBuilder> ();
+        try {
+            for (Iterator it = eleMap.entrySet().iterator(); it.hasNext(); ) {
+                final Map.Entry tempContentEntry = (Map.Entry) it.next();
+                if (tempContentEntry.getKey().toString().equalsIgnoreCase(eleName)) {
+                    String new_eleName = new String(tempContentEntry.getKey().toString());
+                    result = eleMap.get(new_eleName).getDefaultValueList();
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            return result;
+        }
+    }
+
     public WebElement findsameID4XPATH(IOSDriver driver, String titleStr, String btnStr, int timeValue, String path, String tText, int startIndex) throws Exception {
         StringBuilder result = new StringBuilder();
         WebElement tempElement = null;

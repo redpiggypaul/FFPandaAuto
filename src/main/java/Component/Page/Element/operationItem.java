@@ -9,23 +9,24 @@ public class operationItem implements Comparable<operationItem> {
     private String operationType;
 
     private String elementName;
-    private String elementType;
     private String elementPara;
 
     private int step;
 
-    public operationItem(String oName, String pName, String oType, String eleName, String eleType, String elePara, int s) {
+    public operationItem(String oName, String pName, String oType, String eleName, String elePara, int s) {
         this.operationName = oName;
         this.pageName = pName;
         this.operationType = oType;
 
         this.elementName = eleName;
-        this.elementType = eleType;
         this.elementPara = elePara;
 
         this.step = s;
     }
 
+    public String getOperationType() {
+        return operationType;
+    }
 
     public String getOpeName() {
         return operationName;
@@ -43,23 +44,16 @@ public class operationItem implements Comparable<operationItem> {
         return elementName;
     }
 
-    public String getElementType() {
-        return elementType;
-    }
-
-    public String getElementPara()
-    {
+    public String getElementPara() {
         return elementPara;
     }
 
-    public int getStep()
-    {
+    public int getStep() {
         return step;
     }
 
-    public String toString()
-    {
-        return "[opeName = " + this.operationName + ", step = " + this.step +", para = " + this.elementPara +  "]";
+    public String toString() {
+        return "[opeName = " + this.operationName + ", step = " + this.step + ", para = " + this.elementPara + "]";
     }
 
     /**

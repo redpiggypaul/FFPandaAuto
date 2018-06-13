@@ -1,4 +1,0 @@
-<reportReader name="Account">
-    <element OperationName="changeEmail" Step="1" PageName="Account" OperationType="" elementName="generalBtn" elementType="btn" elementParameter="" />
-    <element OperationName="changeEmail" Step="2" PageName="Account" OperationType="" elementName="editBtn" elementType="btn" elementParameter="" />
-</reportReader>

@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 public class SingleTonReadProperity implements Serializable {
-    private static StringBuilder filePathAndName = new StringBuilder(System.getProperty("user.dir") + "\\src\\FFenvConfig\\report_config.properties");
+    private static StringBuilder filePathAndName = new StringBuilder(System.getProperty("user.dir") + "\\src\\FFenvConfig\\config.properties");
 
     //initailzed during class loading
     private static final SingleTonReadProperity INSTANCE = new SingleTonReadProperity();

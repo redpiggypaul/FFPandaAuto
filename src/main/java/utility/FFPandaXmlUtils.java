@@ -85,14 +85,14 @@ public class FFPandaXmlUtils {
                         String pName = elementObj.attributeValue("PageName");
                         String oType = elementObj.attributeValue("OperationType");
                         String eleName = elementObj.attributeValue("elementName");
-                        String eleType = elementObj.attributeValue("elementType");
+                        //     String eleType = elementObj.attributeValue("elementType");
                         String elePara = elementObj.attributeValue("elementParameter");
                         Integer s = Integer.parseInt(elementObj.attributeValue("Step"));
 
                         //System.out.println(oName);
                         //System.out.println(s.toString());
                         operationItem eLocator;
-                        eLocator = new operationItem(oName, pName, oType, eleName, eleType, elePara, s);
+                        eLocator = new operationItem(oName, pName, oType, eleName, elePara, s);
                         opeMap.put(new String(oName + ":" + s), eLocator);
                     }
                 } else {
@@ -763,7 +763,7 @@ public class FFPandaXmlUtils {
                         try {
                             Element elementObj = (Element) it.next();
                             String name = new String(elementObj.attributeValue("elementName"));
-                            String nextPage =  new String(elementObj.attributeValue("nextPage"));
+                            String nextPage = new String(elementObj.attributeValue("nextPage"));
                             elementsMap.put(name, nextPage);
                         } catch (Exception e) {
                             throw new XMLException("The content in Element Line " + lineN + "is incorrect : " + e.getCause());
@@ -1101,9 +1101,9 @@ public class FFPandaXmlUtils {
     public static void main(String args[]) {
         try {
             SortedSet<operationItem> parts = new TreeSet<operationItem>();
-            operationItem aa = (new operationItem("xxx", "", "", "", "", "", 1));
-            operationItem bb = (new operationItem("asv", "", "", "", "", "", 2));
-            operationItem cc = (new operationItem("123", "", "", "", "", "", 3));
+            operationItem aa = (new operationItem("xxx", "", "", "", "", 1));
+            operationItem bb = (new operationItem("asv", "", "", "", "", 2));
+            operationItem cc = (new operationItem("123", "", "", "", "", 3));
             //  operationItem[] ada  = new operationItem[]{aa, bb, cc};
             parts.add(aa);
             parts.add(bb);
