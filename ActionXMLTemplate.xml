@@ -1,3 +1,0 @@
-<page name="ActionTemplate">
-    <element OperationName="tempName" Step="tempStep" PageName="tempPage" OperationType="opeType" elementName="eleName" elementType="eleType" elementParameter="localPara" />
-</page>

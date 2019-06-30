@@ -1,8 +1,0 @@
-<page name="FFDryRunDemo_2">
-    <element pageName="FFDryRunDemo_2" elementName="btn1" textContent="BTN1"  defaultValue="" locatorType="id" locatorStr="btn_1" triggerWindow="" showMode="ready" nextPage="" />
-    <element pageName="FFDryRunDemo_2" elementName="textfield2" textContent=""  defaultValue="dv2" locatorType="id" locatorStr="text_2" triggerWindow="" showMode="ready" nextPage="" />
-    <element pageName="FFDryRunDemo_2" elementName="textfield3" textContent=""  defaultValue="dv3" locatorType="id" locatorStr="text_3" triggerWindow="" showMode="ready" nextPage="" />
-    <element pageName="FFDryRunDemo_2" elementName="text4" textContent=""  defaultValue="dv3" locatorType="id" locatorStr="text_4" triggerWindow="" showMode="ready" nextPage="" />
-    <element pageName="FFDryRunDemo_2" elementName="btn2" textContent="BTN2"  defaultValue="" locatorType="id" locatorStr="btn_2" triggerWindow="" showMode="ready" nextPage="" />
-    <element pageName="FFDryRunDemo_2" elementName="PageTitle" textContent="Title"  defaultValue="" locatorType="id" locatorStr="label-3" triggerWindow="" showMode="" nextPage="" />
-</page>
